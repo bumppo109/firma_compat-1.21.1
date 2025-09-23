@@ -1,0 +1,13 @@
+{
+  "itemGroup.firma_compat": "Example Mod Tab",
+  "block.firma_compat.example_block": "Example Block",
+  "item.firma_compat.example_item": "Example Item",
+
+  "firma_compat.configuration.title": "Firma: Compatibility Configs",
+  "firma_compat.configuration.section.firma_compat.common.toml": "Firma: Compatibility Configs",
+  "firma_compat.configuration.section.firma_compat.common.toml.title": "Firma: Compatibility Configs",
+  "firma_compat.configuration.items": "Item List",
+  "firma_compat.configuration.logDirtBlock": "Log Dirt Block",
+  "firma_compat.configuration.magicNumberIntroduction": "Magic Number Text",
+  "firma_compat.configuration.magicNumber": "Magic Number"
+}
