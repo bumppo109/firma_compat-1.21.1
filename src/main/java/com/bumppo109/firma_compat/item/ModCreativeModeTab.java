@@ -14,12 +14,12 @@ public class ModCreativeModeTab {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, FirmaCompatibility.MODID);
 
-    public static final Supplier<CreativeModeTab> BISMUTH_ITEMS_TAB = CREATIVE_MODE_TAB.register("bismuth_items_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.EXAMPLE_ITEM.get()))
-                    .title(Component.translatable("creativetab.tutorialmod.bismuth_items"))
-                    .displayItems((itemDisplayParameters, output) -> {
-                        //output.accept(ModItems.BISMUTH);
-                    }).build());
+    //public static final Supplier<CreativeModeTab> BISMUTH_ITEMS_TAB = CREATIVE_MODE_TAB.register("bismuth_items_tab",
+    //        () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.OAK_LUMBER.get()))
+    //                .title(Component.translatable("creativetab.firma_compat.bismuth_items"))
+    //                .displayItems((itemDisplayParameters, output) -> {
+    //                    output.accept(ModItems.BISMUTH);
+    //                }).build());
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TAB.register(eventBus);
