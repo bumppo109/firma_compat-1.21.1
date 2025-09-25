@@ -3,6 +3,7 @@ package com.bumppo109.firma_compat;
 import com.bumppo109.firma_compat.block.ModBlocks;
 import com.bumppo109.firma_compat.item.ModCreativeModeTab;
 import com.bumppo109.firma_compat.item.ModItems;
+import com.bumppo109.firma_compat.modules.TFCStoneModule;
 import com.bumppo109.firma_compat.modules.TFCWoodModule;
 import org.slf4j.Logger;
 
@@ -31,6 +32,7 @@ public class FirmaCompatibility {
 
     protected void addModules(){
         addIfLoaded("tfc", () -> TFCWoodModule::new);
+        addIfLoaded("tfc", () -> TFCStoneModule::new);
     }
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.

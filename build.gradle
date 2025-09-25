@@ -23,6 +23,17 @@ repositories {
     maven {
         url "https://cursemaven.com"
     }
+
+    maven {
+        // location of the maven that hosts JEI files since January 2023
+        name = "Jared's maven"
+        url = "https://maven.blamejared.com/"
+    }
+    maven {
+        // location of a maven mirror for JEI files, as a fallback
+        name = "ModMaven"
+        url = "https://modmaven.dev"
+    }
 }
 
 base {
@@ -116,28 +127,37 @@ configurations {
 }
 
 dependencies {
-    // Example optional mod dependency with JEI
-    // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
-    // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
-    // compileOnly "mezz.jei:jei-${mc_version}-neoforge-api:${jei_version}"
-    // We add the full version to localRuntime, not runtimeOnly, so that we do not publish a dependency on it
-    // localRuntime "mezz.jei:jei-${mc_version}-neoforge:${jei_version}"
+    //JEI
+        // compile against the JEI API but do not include it at runtime
+        compileOnly("mezz.jei:jei-${minecraft_version}-neoforge-api:${jei_version}")
+        // at runtime, use the full JEI jar for NeoForge
+        runtimeOnly("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}")
+
+    //TODO - remove after testing
+    implementation "curse.maven:regions-unexplored-659110:6273893"
+    implementation "curse.maven:terrablender-neoforge-940057:6054947"
+
+    //Wood Good 1.21-2.11.4
+    implementation "curse.maven:every-compat-628539:7010172"
+    //Stone Zone 1.21-2.11.3
+    implementation "curse.maven:stone-zone-1154622:6978588"
+
+    //Moonlight Lib 1.21-2.23.9
+    implementation "curse.maven:selene-499980:7017282"
+
+    //TerraFirmaCraft
+    //1.21.1-4.0.3
+    implementation "curse.maven:terrafirmacraft-302973:7010707"
+    //1.21.1-4.04
+    //implementation "curse.maven:terrafirmacraft-302973:7024199"
+
+    //Patchoili 1.21.1-92
+    implementation "curse.maven:patchouli-306770:6842247"
 
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
     // The group id is ignored when searching -- in this case, it is "blank"
     // implementation "blank:coolmod-${mc_version}:${coolmod_version}"
-
-    //Wood Good 1.21-2.11.4
-    implementation "curse.maven:every-compat-628539:7010172"
-
-    //Moonlight Lib 1.21-2.23.9
-    implementation "curse.maven:selene-499980:7017282"
-
-    //TerraFirmaCraft 1.21.1-4.0.3
-    implementation "curse.maven:terrafirmacraft-302973:7010707"
-    //Patchoili 1.21.1-92
-    implementation "curse.maven:patchouli-306770:6842247"
 
     // Example mod dependency using a file as dependency
     // implementation files("libs/coolmod-${mc_version}-${coolmod_version}.jar")
