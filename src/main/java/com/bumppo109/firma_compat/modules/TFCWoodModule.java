@@ -1,6 +1,7 @@
 package com.bumppo109.firma_compat.modules;
 
 import com.google.gson.JsonObject;
+import net.dries007.tfc.common.blockentities.ToolRackBlockEntity;
 import net.dries007.tfc.common.blocks.ExtendedProperties;
 import net.dries007.tfc.common.blocks.GroundcoverBlock;
 import net.dries007.tfc.common.blocks.GroundcoverBlockType;

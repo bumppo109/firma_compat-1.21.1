@@ -43,12 +43,11 @@ public class TFCStoneModule extends StoneZoneModule {
 
         ResourceKey<CreativeModeTab> tab = CreativeModeTabs.BUILDING_BLOCKS;
 
-        // LOOSE_ROCK = StoneZoneEntrySet.of(StoneType.class,null,"rock/loose/", //TODO - seems following the TFC prefix path causes EC error
-        LOOSE_ROCK = StoneZoneEntrySet.of(StoneType.class,"loose_rock",
+        LOOSE_ROCK = StoneZoneEntrySet.builder(StoneType.class, "","rock/loose/",
                 getModBlock("rock/loose/andesite"), () -> VanillaStoneTypes.ANDESITE,
                 stoneType -> new LooseRockBlock(Utils.copyPropertySafe(stoneType.stone))
                 )
-                .createPaletteFromStone()
+                //.createPaletteFromStone()
                 .addTexture(modRes("item/loose_rock/andesite"))
                 .addTag(modRes("loose_rocks"), Registries.BLOCK)
                 .addTag(modRes("rock_knapping"), Registries.ITEM)
