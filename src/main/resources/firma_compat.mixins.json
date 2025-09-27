@@ -1,12 +1,12 @@
 {
   "required": true,
+  "minVersion": "0.8",
   "package": "com.bumppo109.firma_compat.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
+  "client": [],
   "injectors": {
     "defaultRequire": 1
   },
-  "overwrites": {
-    "requireAnnotations": true
-  }
+  "refmap": "firma_compat.refmap.json"
 }

@@ -1,16 +1,20 @@
 package com.bumppo109.firma_compat.modules;
 
 import com.google.gson.JsonObject;
+import net.dries007.tfc.client.render.blockentity.ToolRackBlockEntityRenderer;
 import net.dries007.tfc.common.blockentities.ToolRackBlockEntity;
 import net.dries007.tfc.common.blocks.ExtendedProperties;
 import net.dries007.tfc.common.blocks.GroundcoverBlock;
 import net.dries007.tfc.common.blocks.GroundcoverBlockType;
+import net.dries007.tfc.common.blocks.wood.TFCLoomBlock;
 import net.dries007.tfc.common.blocks.wood.ToolRackBlock;
 import net.mehvahdjukaar.every_compat.EveryCompat;
 import net.mehvahdjukaar.every_compat.api.ItemOnlyEntrySet;
 import net.mehvahdjukaar.every_compat.api.PaletteStrategies;
 import net.mehvahdjukaar.every_compat.api.SimpleEntrySet;
 import net.mehvahdjukaar.every_compat.api.SimpleModule;
+import net.mehvahdjukaar.moonlight.api.misc.Registrator;
+import net.mehvahdjukaar.moonlight.api.platform.ClientHelper;
 import net.mehvahdjukaar.moonlight.api.resources.RPUtils;
 import net.mehvahdjukaar.moonlight.api.resources.ResType;
 import net.mehvahdjukaar.moonlight.api.resources.pack.ResourceGenTask;
@@ -28,6 +32,9 @@ import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.dries007.tfc.common.blocks.devices.BarrelBlock;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.LoomBlock;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -42,10 +49,11 @@ public class TFCWoodModule extends SimpleModule {
     //public final SimpleEntrySet<WoodType, BarrelBlock> BOOKSHELF;
     //public final SimpleEntrySet<WoodType, BarrelBlock> LOG_FENCE;
     public final SimpleEntrySet<WoodType, ToolRackBlock> TOOL_RACK;
+    public static BlockEntityType<ToolRackBlockEntity> TOOL_RACK_ENTITY;
     //public final SimpleEntrySet<WoodType, BarrelBlock> CRAFTING_TABLE;
     //public final SimpleEntrySet<WoodType, BarrelBlock> CHEST;
     //public final SimpleEntrySet<WoodType, BarrelBlock> TRAPPED_CHEST;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> LOOM;
+    public final SimpleEntrySet<WoodType, TFCLoomBlock> LOOM;
     //public final SimpleEntrySet<WoodType, BarrelBlock> SLUICE;
     public final SimpleEntrySet<WoodType, BarrelBlock> BARREL;
     //public final SimpleEntrySet<WoodType, BarrelBlock> LECTERN;
@@ -73,12 +81,8 @@ public class TFCWoodModule extends SimpleModule {
     //public final SimpleEntrySet<WoodType, BarrelBlock> BLUE_STEEL_HANGING_SIGN;
     //public final SimpleEntrySet<WoodType, BarrelBlock> RED_STEEL_HANGING_SIGN;
 
-
-
-
-
     public TFCWoodModule(String modId) {
-        super(modId, "firma_compat");
+        super(modId, "tfc");
 
         ResourceKey<CreativeModeTab> tab = CreativeModeTabs.BUILDING_BLOCKS;
 
@@ -87,7 +91,7 @@ public class TFCWoodModule extends SimpleModule {
                         w -> new Item(new Item.Properties())
                 )
                 .setTabKey(tab)
-                //.addTexture(modRes("item/oak_lumber"), PaletteStrategies.MAIN_CHILD)
+                .addTexture(modRes("item/oak_lumber"), PaletteStrategies.MAIN_CHILD)
                 .addTag(modRes("lumber"), Registries.ITEM)
                 .build();
         this.addEntry(LUMBER);
@@ -96,7 +100,7 @@ public class TFCWoodModule extends SimpleModule {
                         getModBlock("wood/twig/oak"), () -> VanillaWoodTypes.OAK,
                         w -> new GroundcoverBlock(GroundcoverBlockType.STICK)
                 )
-                //.addTexture(modRes("item/oak_twig"), PaletteStrategies.MAIN_CHILD)
+                .addTexture(modRes("item/oak_twig"), PaletteStrategies.MAIN_CHILD)
                 .addTexture(modRes("block/wood/log/oak"), PaletteStrategies.LOG_SIDE_STANDARD)
                 .addTexture(modRes("block/wood/log_top/oak"), PaletteStrategies.STRIPPED_LOG_TOP_STANDARD)
                 .addTag(modRes("twigs"), Registries.BLOCK)
@@ -107,12 +111,24 @@ public class TFCWoodModule extends SimpleModule {
                 .build();
         this.addEntry(TWIG);
 
+        LOOM = SimpleEntrySet.builder(WoodType.class, "loom",
+                        getModBlock("wood/loom/oak", TFCLoomBlock.class), () -> VanillaWoodTypes.OAK,
+                        woodType -> new TFCLoomBlock(ExtendedProperties.of())
+                )
+                .addTile(getModTile("loom"))
+                //.addTile(ToolRackBlockEntity::new)
+                .addRecipe(modRes("crafting/wood/loom/oak"))
+                .addTag(BlockTags.MINEABLE_WITH_AXE, Registries.BLOCK)
+                .addTag(modRes("tool_racks"), Registries.ITEM)
+                .setTabKey(tab)
+                .build();
+        this.addEntry(LOOM);
+
         TOOL_RACK = SimpleEntrySet.builder(WoodType.class, "tool_rack",
                         getModBlock("wood/tool_rack/oak", ToolRackBlock.class), () -> VanillaWoodTypes.OAK,
                         woodType -> new ToolRackBlock(ExtendedProperties.of())
                 )
                 .addTile(getModTile("tool_rack"))
-                //.addTile(getModTile("wood/tool_rack/oak"))
                 //.addTile(ToolRackBlockEntity::new)
                 .addRecipe(modRes("crafting/wood/barrel/oak"))
                 .addTag(BlockTags.MINEABLE_WITH_AXE, Registries.BLOCK)
@@ -137,19 +153,19 @@ public class TFCWoodModule extends SimpleModule {
         this.addEntry(BARREL);
     }
 
-        @Override
-        // RECIPES, TAGS
-        public void addDynamicServerResources(Consumer<ResourceGenTask> executor) {
-            super.addDynamicServerResources(executor);
-            executor.accept((manager, sink) -> {
-                for(var woodType : WoodTypeRegistry.INSTANCE){
+    @Override
+    // RECIPES, TAGS
+    public void addDynamicServerResources(Consumer<ResourceGenTask> executor) {
+        super.addDynamicServerResources(executor);
+        executor.accept((manager, sink) -> {
+            for(var woodType : WoodTypeRegistry.INSTANCE){
 
-                    //creates missing log tags as everycomp:[modid]/[woodType]_logs
-                    fuelData(woodType, sink, manager);
-                    //add horizontal_support block to tfc/support/horizontal_support_beam.json tag
-                }
-            });
-        }
+                //creates missing log tags as everycomp:[modid]/[woodType]_logs
+                fuelData(woodType, sink, manager);
+                //add horizontal_support block to tfc/support/horizontal_support_beam.json tag
+            }
+        });
+    }
 
     public void fuelData(WoodType woodType, ResourceSink sink, ResourceManager manager) {
 

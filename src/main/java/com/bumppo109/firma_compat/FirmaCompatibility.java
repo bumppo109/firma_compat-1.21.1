@@ -1,10 +1,14 @@
 package com.bumppo109.firma_compat;
 
 import com.bumppo109.firma_compat.block.ModBlocks;
+import com.bumppo109.firma_compat.block.VanillaWood;
+import com.bumppo109.firma_compat.block.entities.ModBlockEntities;
 import com.bumppo109.firma_compat.item.ModCreativeModeTab;
 import com.bumppo109.firma_compat.item.ModItems;
 import com.bumppo109.firma_compat.modules.TFCStoneModule;
 import com.bumppo109.firma_compat.modules.TFCWoodModule;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -43,10 +47,17 @@ public class FirmaCompatibility {
 
         this.addModules();
 
-        ModCreativeModeTab.register(modEventBus);
+        for(VanillaWood wood : VanillaWood.VALUES){
+            BlockSetType.register(wood.getBlockSet());
+            WoodType.register(wood.getVanillaWoodType());
+        }
 
-        ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
+        ModBlocks.BLOCKS.register(modEventBus);
+        ModBlockEntities.BLOCK_ENTITIES.register(modEventBus);
+
+
+        ModCreativeModeTab.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (FirmaCompatibility) to respond directly to events.
@@ -61,7 +72,10 @@ public class FirmaCompatibility {
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
-
+        event.enqueueWork(() -> {
+            //VanillaWood.registerBlockSetTypes();
+            //MinecraftWood.registerBlockSetTypes();
+        });
     }
 
     // Add the example block item to the building blocks tab

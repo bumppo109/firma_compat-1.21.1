@@ -1,71 +1,62 @@
 package com.bumppo109.firma_compat.item;
 
 import com.bumppo109.firma_compat.FirmaCompatibility;
-import net.minecraft.core.registries.BuiltInRegistries;
+import com.bumppo109.firma_compat.block.ModBlocks;
+import com.bumppo109.firma_compat.block.VanillaWood;
+import net.dries007.tfc.common.blocks.wood.Wood;
+import net.dries007.tfc.util.Helpers;
+import net.dries007.tfc.util.Metal;
+import net.dries007.tfc.util.registry.RegistryHolder;
+import net.minecraft.core.Direction;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.world.item.HangingSignItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Item.Properties;
+import net.minecraft.world.item.StandingAndWallBlockItem;
+import net.minecraft.world.level.ItemLike;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+import java.util.Locale;
+import java.util.Map;
 import java.util.function.Supplier;
 
 public class ModItems {
-    public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(BuiltInRegistries.ITEM, FirmaCompatibility.MODID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(Registries.ITEM, FirmaCompatibility.MODID);
 
-//Lumber
-    public static final Supplier<Item> ACACIA_LUMBER = ITEMS.register("acacia_lumber",
-            () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> BIRCH_LUMBER = ITEMS.register("birch_lumber",
-            () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> CHERRY_LUMBER = ITEMS.register("cherry_lumber",
-            () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> DARK_OAK_LUMBER = ITEMS.register("dark_oak_lumber",
-            () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> JUNGLE_LUMBER = ITEMS.register("jungle_lumber",
-            () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> MANGROVE_LUMBER = ITEMS.register("mangrove_lumber",
-            () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> OAK_LUMBER = ITEMS.register("oak_lumber",
-            () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> PALE_OAK_LUMBER = ITEMS.register("pale_oak_lumber",
-            () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> SPRUCE_LUMBER = ITEMS.register("spruce_lumber",
-            () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> CRIMSON_LUMBER = ITEMS.register("crimson_lumber",
-            () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> WARPED_LUMBER = ITEMS.register("warped_lumber",
-            () -> new Item(new Item.Properties()));
+    public static final Map<VanillaWood, ItemId> LUMBER = Helpers.mapOf(VanillaWood.class, wood -> register("wood/lumber/" + wood.name()));
 
-//Rock Bricks
-    public static final Supplier<Item> STONE_BRICK = ITEMS.register("stone_brick",
-            () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> DEEPSLATE_BRICK = ITEMS.register("deepslate_brick",
-            () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> ANDESITE_BRICK = ITEMS.register("andesite_brick",
-            () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> DIORITE_BRICK = ITEMS.register("diorite_brick",
-            () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> GRANITE_BRICK = ITEMS.register("granite_brick",
-            () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> TUFF_BRICK = ITEMS.register("tuff_brick",
-            () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> CALCITE_BRICK = ITEMS.register("calcite_brick",
-            () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> DRIPSTONE_BRICK = ITEMS.register("dripstone_brick",
-            () -> new Item(new Item.Properties()));
-//Nether Bricks
-    public static final Supplier<Item> POLISHED_BLACKSTONE_BRICK = ITEMS.register("polished_blackstone_brick",
-            () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> BASALT_BRICK = ITEMS.register("basalt_brick",
-            () -> new Item(new Item.Properties()));
-//End Bricks
-    public static final Supplier<Item> END_STONE_BRICK = ITEMS.register("end_stone_brick",
-            () -> new Item(new Item.Properties()));
-//Misc Bricks
-    public static final Supplier<Item> PRISMARINE_BRICK = ITEMS.register("prismarine_brick",
-            () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> RED_NETHER_BRICK = ITEMS.register("red_nether_brick",
-            () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> QUARTZ_BRICK = ITEMS.register("quartz_brick",
-            () -> new Item(new Item.Properties()));
+    public static final Map<VanillaWood, ItemId> SUPPORTS = Helpers.mapOf(VanillaWood.class, wood ->
+            register("wood/support/" + wood.name(), () -> new StandingAndWallBlockItem(ModBlocks.WOODS.get(wood).get(VanillaWood.BlockType.VERTICAL_SUPPORT).get(), ModBlocks.WOODS.get(wood).get(VanillaWood.BlockType.HORIZONTAL_SUPPORT).get(), new Properties(), Direction.DOWN))
+    );
 
+    public static final Map<VanillaWood, Map<Metal, ItemId>> HANGING_SIGNS = Helpers.mapOf(VanillaWood.class, wood ->
+            Helpers.mapOf(Metal.class, Metal::allParts, metal ->
+                    register("wood/hanging_sign/" + metal.name() + "/" + wood.name(), () -> new HangingSignItem(ModBlocks.CEILING_HANGING_SIGNS.get(wood).get(metal).get(), ModBlocks.WALL_HANGING_SIGNS.get(wood).get(metal).get(), new Properties()))
+            )
+    );
+
+    private static ItemId register(String name)
+    {
+        return register(name, () -> new Item(new Properties()));
+    }
+
+    private static ItemId register(String name, Properties properties)
+    {
+        return new ItemId(ITEMS.register(name.toLowerCase(Locale.ROOT), () -> new Item(properties)));
+    }
+
+    private static ItemId register(String name, Supplier<Item> item)
+    {
+        return new ItemId(ITEMS.register(name.toLowerCase(Locale.ROOT), item));
+    }
+
+    public record ItemId(DeferredHolder<Item, Item> holder) implements RegistryHolder<Item, Item>, ItemLike
+    {
+        @Override
+        public Item asItem()
+        {
+            return get();
+        }
+    }
 }
