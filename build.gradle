@@ -138,12 +138,19 @@ dependencies {
     implementation "curse.maven:terrablender-neoforge-940057:6054947"
 
     //Wood Good 1.21-2.11.4
-    implementation "curse.maven:every-compat-628539:7010172"
+    //implementation "curse.maven:every-compat-628539:7010172"
+    //1.21-2.11.7
+    implementation "curse.maven:every-compat-628539:7068983"
+
     //Stone Zone 1.21-2.11.3
-    implementation "curse.maven:stone-zone-1154622:6978588"
+    //implementation "curse.maven:stone-zone-1154622:6978588"
+    //1.21-2.11.4
+    implementation "curse.maven:stone-zone-1154622:7063132"
 
     //Moonlight Lib 1.21-2.23.9
-    implementation "curse.maven:selene-499980:7017282"
+    //implementation "curse.maven:selene-499980:7017282"
+    //1.21-2.24.0
+    implementation "curse.maven:selene-499980:7068422"
 
     //TerraFirmaCraft
     //1.21.1-4.0.3

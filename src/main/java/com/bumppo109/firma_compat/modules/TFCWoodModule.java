@@ -6,8 +6,11 @@ import net.dries007.tfc.common.blockentities.ToolRackBlockEntity;
 import net.dries007.tfc.common.blocks.ExtendedProperties;
 import net.dries007.tfc.common.blocks.GroundcoverBlock;
 import net.dries007.tfc.common.blocks.GroundcoverBlockType;
+import net.dries007.tfc.common.blocks.rotation.AxleBlock;
+import net.dries007.tfc.common.blocks.rotation.WindmillBlock;
 import net.dries007.tfc.common.blocks.wood.TFCLoomBlock;
 import net.dries007.tfc.common.blocks.wood.ToolRackBlock;
+import net.dries007.tfc.common.blocks.wood.Wood;
 import net.mehvahdjukaar.every_compat.EveryCompat;
 import net.mehvahdjukaar.every_compat.api.ItemOnlyEntrySet;
 import net.mehvahdjukaar.every_compat.api.PaletteStrategies;
@@ -48,14 +51,14 @@ public class TFCWoodModule extends SimpleModule {
     public final SimpleEntrySet<WoodType, Block> TWIG;
     //public final SimpleEntrySet<WoodType, BarrelBlock> BOOKSHELF;
     //public final SimpleEntrySet<WoodType, BarrelBlock> LOG_FENCE;
-    public final SimpleEntrySet<WoodType, ToolRackBlock> TOOL_RACK;
-    public static BlockEntityType<ToolRackBlockEntity> TOOL_RACK_ENTITY;
+    //public final SimpleEntrySet<WoodType, ToolRackBlock> TOOL_RACK;
+    //public static BlockEntityType<ToolRackBlockEntity> TOOL_RACK_ENTITY;
     //public final SimpleEntrySet<WoodType, BarrelBlock> CRAFTING_TABLE;
     //public final SimpleEntrySet<WoodType, BarrelBlock> CHEST;
     //public final SimpleEntrySet<WoodType, BarrelBlock> TRAPPED_CHEST;
-    public final SimpleEntrySet<WoodType, TFCLoomBlock> LOOM;
+    //public final SimpleEntrySet<WoodType, TFCLoomBlock> LOOM;
     //public final SimpleEntrySet<WoodType, BarrelBlock> SLUICE;
-    public final SimpleEntrySet<WoodType, BarrelBlock> BARREL;
+    //public final SimpleEntrySet<WoodType, BarrelBlock> BARREL;
     //public final SimpleEntrySet<WoodType, BarrelBlock> LECTERN;
     //public final SimpleEntrySet<WoodType, BarrelBlock> SCRIBING_TABLE;
     //public final SimpleEntrySet<WoodType, BarrelBlock> SEWING_TABLE;
@@ -111,6 +114,7 @@ public class TFCWoodModule extends SimpleModule {
                 .build();
         this.addEntry(TWIG);
 
+        /*
         LOOM = SimpleEntrySet.builder(WoodType.class, "loom",
                         getModBlock("wood/loom/oak", TFCLoomBlock.class), () -> VanillaWoodTypes.OAK,
                         woodType -> new TFCLoomBlock(ExtendedProperties.of())
@@ -123,34 +127,8 @@ public class TFCWoodModule extends SimpleModule {
                 .setTabKey(tab)
                 .build();
         this.addEntry(LOOM);
+        */
 
-        TOOL_RACK = SimpleEntrySet.builder(WoodType.class, "tool_rack",
-                        getModBlock("wood/tool_rack/oak", ToolRackBlock.class), () -> VanillaWoodTypes.OAK,
-                        woodType -> new ToolRackBlock(ExtendedProperties.of())
-                )
-                .addTile(getModTile("tool_rack"))
-                //.addTile(ToolRackBlockEntity::new)
-                .addRecipe(modRes("crafting/wood/barrel/oak"))
-                .addTag(BlockTags.MINEABLE_WITH_AXE, Registries.BLOCK)
-                .addTag(modRes("tool_racks"), Registries.ITEM)
-                .setTabKey(tab)
-                .build();
-        this.addEntry(TOOL_RACK);
-
-        BARREL = SimpleEntrySet.builder(WoodType.class, "barrel",
-                        getModBlock("wood/barrel/oak", BarrelBlock.class), () -> VanillaWoodTypes.OAK,
-                        woodType -> new BarrelBlock(ExtendedProperties.of())
-                )
-                .addTexture(modRes("block/wood/planks/oak"), PaletteStrategies.PLANKS_STANDARD)
-                .addTexture(modRes("block/wood/sheet/oak"), PaletteStrategies.STRIPPED_LOG_SIDE_STANDARD)
-                .addTile(getModTile("barrel"))
-                //.addTile(BarrelBlockEntity::new)
-                .defaultRecipe()
-                .addTag(BlockTags.MINEABLE_WITH_AXE, Registries.BLOCK)
-                .addTag(modRes("barrels"), Registries.ITEM)
-                .setTabKey(tab)
-                .build();
-        this.addEntry(BARREL);
     }
 
     @Override

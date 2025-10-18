@@ -47,11 +47,6 @@ public class FirmaCompatibility {
 
         this.addModules();
 
-        for(VanillaWood wood : VanillaWood.VALUES){
-            BlockSetType.register(wood.getBlockSet());
-            WoodType.register(wood.getVanillaWoodType());
-        }
-
         ModItems.ITEMS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
         ModBlockEntities.BLOCK_ENTITIES.register(modEventBus);
@@ -74,7 +69,6 @@ public class FirmaCompatibility {
     private void commonSetup(FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
             //VanillaWood.registerBlockSetTypes();
-            //MinecraftWood.registerBlockSetTypes();
         });
     }
 
