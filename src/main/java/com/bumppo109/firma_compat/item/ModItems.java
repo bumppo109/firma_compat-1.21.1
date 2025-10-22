@@ -24,17 +24,20 @@ import java.util.function.Supplier;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(Registries.ITEM, FirmaCompatibility.MODID);
 
-    public static final Map<VanillaWood, ItemId> LUMBER = Helpers.mapOf(VanillaWood.class, wood -> register("wood/lumber/" + wood.name()));
+    public static final Map<VanillaWood, ItemId> LUMBER = Helpers.mapOf(VanillaWood.class, wood -> register(wood.name() + "_lumber"));
 
     public static final Map<VanillaWood, ItemId> SUPPORTS = Helpers.mapOf(VanillaWood.class, wood ->
-            register("wood/support/" + wood.name(), () -> new StandingAndWallBlockItem(ModBlocks.WOODS.get(wood).get(VanillaWood.BlockType.VERTICAL_SUPPORT).get(), ModBlocks.WOODS.get(wood).get(VanillaWood.BlockType.HORIZONTAL_SUPPORT).get(), new Properties(), Direction.DOWN))
+            register(wood.name() + "_support", () -> new StandingAndWallBlockItem(ModBlocks.WOODS.get(wood).get(VanillaWood.BlockType.VERTICAL_SUPPORT).get(), ModBlocks.WOODS.get(wood).get(VanillaWood.BlockType.HORIZONTAL_SUPPORT).get(), new Properties(), Direction.DOWN))
     );
 
+    /*
     public static final Map<VanillaWood, Map<Metal, ItemId>> HANGING_SIGNS = Helpers.mapOf(VanillaWood.class, wood ->
             Helpers.mapOf(Metal.class, Metal::allParts, metal ->
                     register("wood/hanging_sign/" + metal.name() + "/" + wood.name(), () -> new HangingSignItem(ModBlocks.CEILING_HANGING_SIGNS.get(wood).get(metal).get(), ModBlocks.WALL_HANGING_SIGNS.get(wood).get(metal).get(), new Properties()))
             )
     );
+
+     */
 
     private static ItemId register(String name)
     {
