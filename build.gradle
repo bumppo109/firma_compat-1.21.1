@@ -154,7 +154,9 @@ dependencies {
 
     //TerraFirmaCraft
     //1.21.1-4.0.3
-    implementation "curse.maven:terrafirmacraft-302973:7010707"
+    //implementation "curse.maven:terrafirmacraft-302973:7010707"
+    //1.21.1-4.0.9
+    implementation "curse.maven:terrafirmacraft-302973:7150812"
     //1.21.1-4.04
     //implementation "curse.maven:terrafirmacraft-302973:7024199"
 

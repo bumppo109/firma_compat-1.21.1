@@ -103,7 +103,7 @@ public class TFCWoodModule extends SimpleModule {
                         getModBlock("wood/twig/oak"), () -> VanillaWoodTypes.OAK,
                         w -> new GroundcoverBlock(GroundcoverBlockType.STICK)
                 )
-                .addTexture(modRes("item/oak_twig"), PaletteStrategies.MAIN_CHILD)
+                .addTexture(modRes("item/wood/twig"), PaletteStrategies.MAIN_CHILD)
                 .addTexture(modRes("block/wood/log/oak"), PaletteStrategies.LOG_SIDE_STANDARD)
                 .addTexture(modRes("block/wood/log_top/oak"), PaletteStrategies.STRIPPED_LOG_TOP_STANDARD)
                 .addTag(modRes("twigs"), Registries.BLOCK)
@@ -113,21 +113,6 @@ public class TFCWoodModule extends SimpleModule {
                 .setTabKey(tab)
                 .build();
         this.addEntry(TWIG);
-
-        /*
-        LOOM = SimpleEntrySet.builder(WoodType.class, "loom",
-                        getModBlock("wood/loom/oak", TFCLoomBlock.class), () -> VanillaWoodTypes.OAK,
-                        woodType -> new TFCLoomBlock(ExtendedProperties.of())
-                )
-                .addTile(getModTile("loom"))
-                //.addTile(ToolRackBlockEntity::new)
-                .addRecipe(modRes("crafting/wood/loom/oak"))
-                .addTag(BlockTags.MINEABLE_WITH_AXE, Registries.BLOCK)
-                .addTag(modRes("tool_racks"), Registries.ITEM)
-                .setTabKey(tab)
-                .build();
-        this.addEntry(LOOM);
-        */
 
     }
 
@@ -147,7 +132,7 @@ public class TFCWoodModule extends SimpleModule {
 
     public void fuelData(WoodType woodType, ResourceSink sink, ResourceManager manager) {
 
-        ResourceLocation dataLoc = modRes("tfc/fuel/oak_logs.json"); //TODO - do I need to specify data/?
+        ResourceLocation dataLoc = modRes("tfc/fuel/oak_logs.json");
 
         try (InputStream dataStream = manager.getResource(dataLoc)
                 .orElseThrow(() -> new FileNotFoundException("File not found @ " + dataLoc)).open()) {
@@ -160,7 +145,7 @@ public class TFCWoodModule extends SimpleModule {
 
             // Adding to resources
             sink.addJson(
-                    modRes("tfc/fuel/" + woodType.getTypeName() + "_logs"),
+                    modRes("tfc/fuel/" + woodType.getTypeName() + "_logs.json"),
                     fuelData,
                     ResType.GENERIC
             );

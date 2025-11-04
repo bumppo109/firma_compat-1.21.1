@@ -1,6 +1,8 @@
 package com.bumppo109.firma_compat.modules;
 
+import net.dries007.tfc.common.blocks.ExtendedProperties;
 import net.dries007.tfc.common.blocks.rock.LooseRockBlock;
+import net.dries007.tfc.common.blocks.rock.RockAnvilBlock;
 import net.mehvahdjukaar.every_compat.api.SimpleEntrySet;
 import net.mehvahdjukaar.moonlight.api.resources.BlockTypeResTransformer;
 import net.mehvahdjukaar.moonlight.api.resources.pack.ResourceGenTask;
@@ -40,7 +42,7 @@ public class TFCStoneModule extends StoneZoneModule {
     public final SimpleEntrySet<StoneType, Block> LOOSE_ROCK;
 
     public TFCStoneModule(String modId) {
-        super(modId, "firma_compat");
+        super(modId, "tfc");
 
         ResourceKey<CreativeModeTab> tab = CreativeModeTabs.BUILDING_BLOCKS;
 
@@ -57,8 +59,6 @@ public class TFCStoneModule extends StoneZoneModule {
                 .setTabKey(tab)
                 .build();
         this.addEntry(LOOSE_ROCK);
-
-
 
     }
 

@@ -3,7 +3,10 @@
   "minVersion": "0.8",
   "package": "com.bumppo109.firma_compat.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
+  "mixins": [
+    "SimpleWaterloggedBlockMixin",
+    "BlockEntityTypeAccessorMixin"
+  ],
   "client": [],
   "injectors": {
     "defaultRequire": 1
