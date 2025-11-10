@@ -1,0 +1,28 @@
+{
+	"variants": {
+		"layers=1": {
+			"model": "firma_compat:block/wood/fallen_leaves/crimson_height2"
+		},
+		"layers=2": {
+			"model": "firma_compat:block/wood/fallen_leaves/crimson_height4"
+		},
+		"layers=3": {
+			"model": "firma_compat:block/wood/fallen_leaves/crimson_height6"
+		},
+		"layers=4": {
+			"model": "firma_compat:block/wood/fallen_leaves/crimson_height8"
+		},
+		"layers=5": {
+			"model": "firma_compat:block/wood/fallen_leaves/crimson_height10"
+		},
+		"layers=6": {
+			"model": "firma_compat:block/wood/fallen_leaves/crimson_height12"
+		},
+		"layers=7": {
+			"model": "firma_compat:block/wood/fallen_leaves/crimson_height14"
+		},
+		"layers=8": {
+			"model": "minecraft:block/crimson_leaves"
+		}
+	}
+}

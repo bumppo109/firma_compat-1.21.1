@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/ruby/stone",
+    "firma_compat:ore/ruby/deepslate",
+    "firma_compat:ore/ruby/andesite",
+    "firma_compat:ore/ruby/diorite",
+    "firma_compat:ore/ruby/granite",
+    "firma_compat:ore/ruby/calcite",
+    "firma_compat:ore/ruby/tuff",
+    "firma_compat:ore/ruby/dripstone",
+    "firma_compat:ore/ruby/basalt",
+    "firma_compat:ore/ruby/blackstone",
+    "firma_compat:ore/ruby/end_stone"
+  ]
+}

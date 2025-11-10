@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/chiseled_bookshelf_inventory",
+	"textures": {
+		"top": "firma_compat:block/wood/bookshelf/top_mangrove",
+		"side": "firma_compat:block/wood/bookshelf/side_mangrove",
+		"front": "firma_compat:block/wood/bookshelf/mangrove_empty"
+	}
+}

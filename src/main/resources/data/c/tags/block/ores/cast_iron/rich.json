@@ -1,0 +1,39 @@
+{
+  "values": [
+    "firma_compat:ore/rich_hematite/stone",
+    "firma_compat:ore/rich_hematite/deepslate",
+    "firma_compat:ore/rich_hematite/andesite",
+    "firma_compat:ore/rich_hematite/diorite",
+    "firma_compat:ore/rich_hematite/granite",
+    "firma_compat:ore/rich_hematite/calcite",
+    "firma_compat:ore/rich_hematite/tuff",
+    "firma_compat:ore/rich_hematite/dripstone",
+    "firma_compat:ore/rich_hematite/basalt",
+    "firma_compat:ore/rich_hematite/blackstone",
+    "firma_compat:ore/rich_hematite/end_stone",
+
+    "firma_compat:ore/rich_limonite/stone",
+    "firma_compat:ore/rich_limonite/deepslate",
+    "firma_compat:ore/rich_limonite/andesite",
+    "firma_compat:ore/rich_limonite/diorite",
+    "firma_compat:ore/rich_limonite/granite",
+    "firma_compat:ore/rich_limonite/calcite",
+    "firma_compat:ore/rich_limonite/tuff",
+    "firma_compat:ore/rich_limonite/dripstone",
+    "firma_compat:ore/rich_limonite/basalt",
+    "firma_compat:ore/rich_limonite/blackstone",
+    "firma_compat:ore/rich_limonite/end_stone",
+
+    "firma_compat:ore/rich_magnetite/stone",
+    "firma_compat:ore/rich_magnetite/deepslate",
+    "firma_compat:ore/rich_magnetite/andesite",
+    "firma_compat:ore/rich_magnetite/diorite",
+    "firma_compat:ore/rich_magnetite/granite",
+    "firma_compat:ore/rich_magnetite/calcite",
+    "firma_compat:ore/rich_magnetite/tuff",
+    "firma_compat:ore/rich_magnetite/dripstone",
+    "firma_compat:ore/rich_magnetite/basalt",
+    "firma_compat:ore/rich_magnetite/blackstone",
+    "firma_compat:ore/rich_magnetite/end_stone"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"key": {
+		"X": {
+			"item": "firma_compat:brick/prismarine"
+		},
+		"Y": {
+			"item": "tfc:mortar"
+		},
+        "A": {
+          "item": "minecraft:black_dye"
+        }
+	},
+	"pattern": [
+		"XAX",
+		"YXY"
+	],
+	"result": {
+		"count": 4,
+		"id": "firma_compat:rock/aqueduct/dark_prismarine"
+	}
+}

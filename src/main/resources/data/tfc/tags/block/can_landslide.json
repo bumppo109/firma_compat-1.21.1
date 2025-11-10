@@ -1,0 +1,22 @@
+{
+  "values": [
+    "minecraft:clay",
+    "minecraft:packed_mud",
+    "firma_compat:rock/cobblestone/stone",
+    "firma_compat:rock/cobblestone/deepslate",
+    "firma_compat:rock/cobblestone/andesite",
+    "firma_compat:rock/cobblestone/diorite",
+    "firma_compat:rock/cobblestone/granite",
+    "firma_compat:rock/cobblestone/tuff",
+    "firma_compat:rock/cobblestone/calcite",
+    "firma_compat:rock/cobblestone/dripstone",
+    "firma_compat:rock/cobblestone/basalt",
+    "firma_compat:rock/cobblestone/blackstone",
+    "firma_compat:rock/cobblestone/end_stone",
+    "firma_compat:rock/cobblestone/netherrack",
+    "firma_compat:deposit/cassiterite/gravel",
+    "firma_compat:deposit/native_copper/gravel",
+    "firma_compat:deposit/native_silver/gravel",
+    "firma_compat:deposit/native_gold/gravel"
+  ]
+}

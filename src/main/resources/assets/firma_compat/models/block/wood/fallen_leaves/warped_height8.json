@@ -1,0 +1,6 @@
+{
+	"parent": "tfc:block/groundcover/fallen_leaves_height8",
+	"textures": {
+		"all": "minecraft:block/warped_wart_block"
+	}
+}

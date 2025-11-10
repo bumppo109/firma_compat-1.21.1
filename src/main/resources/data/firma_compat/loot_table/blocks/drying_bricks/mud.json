@@ -1,0 +1,170 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "firma_compat:mud_brick",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "firma_compat:drying_bricks/mud",
+              "properties": {
+                "count": "1",
+                "dried": "true"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "firma_compat:mud_brick",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "firma_compat:drying_bricks/mud",
+              "properties": {
+                "count": "2",
+                "dried": "true"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "firma_compat:mud_brick",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "firma_compat:drying_bricks/mud",
+              "properties": {
+                "count": "3",
+                "dried": "true"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "firma_compat:mud_brick",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 4
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "firma_compat:drying_bricks/mud",
+              "properties": {
+                "count": "4",
+                "dried": "true"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "firma_compat:drying_bricks/mud",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "firma_compat:drying_bricks/mud",
+              "properties": {
+                "count": "1",
+                "dried": "false"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "firma_compat:drying_bricks/mud",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 2
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "firma_compat:drying_bricks/mud",
+              "properties": {
+                "count": "2",
+                "dried": "false"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "firma_compat:drying_bricks/mud",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 3
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "firma_compat:drying_bricks/mud",
+              "properties": {
+                "count": "3",
+                "dried": "false"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "firma_compat:drying_bricks/mud",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 4
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "firma_compat:drying_bricks/mud",
+              "properties": {
+                "count": "4",
+                "dried": "false"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

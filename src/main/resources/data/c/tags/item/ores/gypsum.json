@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/gypsum/stone",
+    "firma_compat:ore/gypsum/deepslate",
+    "firma_compat:ore/gypsum/andesite",
+    "firma_compat:ore/gypsum/diorite",
+    "firma_compat:ore/gypsum/granite",
+    "firma_compat:ore/gypsum/calcite",
+    "firma_compat:ore/gypsum/tuff",
+    "firma_compat:ore/gypsum/dripstone",
+    "firma_compat:ore/gypsum/basalt",
+    "firma_compat:ore/gypsum/blackstone",
+    "firma_compat:ore/gypsum/end_stone"
+  ]
+}

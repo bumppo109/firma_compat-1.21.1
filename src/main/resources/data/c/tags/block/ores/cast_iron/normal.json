@@ -1,0 +1,39 @@
+{
+  "values": [
+    "firma_compat:ore/normal_hematite/stone",
+    "firma_compat:ore/normal_hematite/deepslate",
+    "firma_compat:ore/normal_hematite/andesite",
+    "firma_compat:ore/normal_hematite/diorite",
+    "firma_compat:ore/normal_hematite/granite",
+    "firma_compat:ore/normal_hematite/calcite",
+    "firma_compat:ore/normal_hematite/tuff",
+    "firma_compat:ore/normal_hematite/dripstone",
+    "firma_compat:ore/normal_hematite/basalt",
+    "firma_compat:ore/normal_hematite/blackstone",
+    "firma_compat:ore/normal_hematite/end_stone",
+
+    "firma_compat:ore/normal_limonite/stone",
+    "firma_compat:ore/normal_limonite/deepslate",
+    "firma_compat:ore/normal_limonite/andesite",
+    "firma_compat:ore/normal_limonite/diorite",
+    "firma_compat:ore/normal_limonite/granite",
+    "firma_compat:ore/normal_limonite/calcite",
+    "firma_compat:ore/normal_limonite/tuff",
+    "firma_compat:ore/normal_limonite/dripstone",
+    "firma_compat:ore/normal_limonite/basalt",
+    "firma_compat:ore/normal_limonite/blackstone",
+    "firma_compat:ore/normal_limonite/end_stone",
+
+    "firma_compat:ore/normal_magnetite/stone",
+    "firma_compat:ore/normal_magnetite/deepslate",
+    "firma_compat:ore/normal_magnetite/andesite",
+    "firma_compat:ore/normal_magnetite/diorite",
+    "firma_compat:ore/normal_magnetite/granite",
+    "firma_compat:ore/normal_magnetite/calcite",
+    "firma_compat:ore/normal_magnetite/tuff",
+    "firma_compat:ore/normal_magnetite/dripstone",
+    "firma_compat:ore/normal_magnetite/basalt",
+    "firma_compat:ore/normal_magnetite/blackstone",
+    "firma_compat:ore/normal_magnetite/end_stone"
+  ]
+}

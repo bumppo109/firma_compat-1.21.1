@@ -1,0 +1,530 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 24,
+    "density": 0.25,
+    "min_y": 40,
+    "max_y": 130,
+    "size": 20,
+    "random_name": "firma_compat_surface_native_copper",
+    "blocks": [
+      {
+        "replace": [
+          "minecraft:stone"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/stone"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:deepslate"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/deepslate"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:andesite"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/andesite"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:diorite"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/diorite"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:granite"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/granite"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:tuff"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/tuff"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:calcite"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/calcite"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:dripstone_block"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/dripstone"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/basalt"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:blackstone"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/blackstone"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:end_stone"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/end_stone"
+        ],
+        "with": [
+          {
+            "weight": 35,
+            "block": "firma_compat:ore/poor_native_copper/andesite"
+          },
+          {
+            "weight": 40,
+            "block": "firma_compat:ore/normal_native_copper/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/rich_native_copper/andesite"
+          },
+          {
+            "weight": 10,
+            "block": "firma_compat:deposit/native_copper/gravel"
+          }
+        ]
+      }
+    ],
+    "indicator": {
+      "rarity": 14,
+      "depth": 35,
+      "underground_rarity": 1,
+      "underground_count": 0,
+      "blocks": [
+        {
+          "block": "tfc:ore/small_native_copper"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+	"multipart": [
+		{
+			"apply": {
+				"model": "firma_compat:block/rock/aqueduct/purpur_block/base"
+			}
+		},
+		{
+			"when": {
+				"north": "false"
+			},
+			"apply": {
+				"model": "firma_compat:block/rock/aqueduct/purpur_block/north"
+			}
+		},
+		{
+			"when": {
+				"east": "false"
+			},
+			"apply": {
+				"model": "firma_compat:block/rock/aqueduct/purpur_block/east"
+			}
+		},
+		{
+			"when": {
+				"south": "false"
+			},
+			"apply": {
+				"model": "firma_compat:block/rock/aqueduct/purpur_block/south"
+			}
+		},
+		{
+			"when": {
+				"west": "false"
+			},
+			"apply": {
+				"model": "firma_compat:block/rock/aqueduct/purpur_block/west"
+			}
+		}
+	]
+}

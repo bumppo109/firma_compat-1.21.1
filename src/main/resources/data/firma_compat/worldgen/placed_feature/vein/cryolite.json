@@ -1,0 +1,9 @@
+{
+  "feature": "firma_compat:vein/cryolite",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 10
+    }
+  ]
+}

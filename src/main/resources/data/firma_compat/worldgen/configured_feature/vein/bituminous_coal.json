@@ -1,0 +1,236 @@
+{
+  "type": "tfc:disc_vein",
+  "config": {
+    "rarity": 210,
+    "density": 0.9,
+    "min_y": -35,
+    "max_y": -12,
+    "project": true,
+    "project_offset": true,
+    "size": 50,
+    "height": 3,
+    "random_name": "firma_compat_bituminous_coal",
+    "blocks": [
+      {
+        "replace": [
+          "minecraft:stone"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/stone"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:deepslate"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/deepslate"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:andesite"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/andesite"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:diorite"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/diorite"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:granite"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/granite"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:tuff"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/tuff"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:calcite"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/calcite"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:dripstone_block"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/dripstone"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/basalt"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:blackstone"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/blackstone"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:end_stone"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/end_stone"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "minecraft:mud"
+    },
+    "Y": {
+      "item": "tfc:straw"
+    }
+  },
+  "pattern": [
+    "XY "
+  ],
+  "result": {
+    "count": 4,
+    "id": "firma_compat:drying_bricks/mud"
+  }
+}

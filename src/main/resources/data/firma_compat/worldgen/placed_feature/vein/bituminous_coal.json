@@ -1,0 +1,9 @@
+{
+  "feature": "firma_compat:vein/bituminous_coal",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 3
+    }
+  ]
+}

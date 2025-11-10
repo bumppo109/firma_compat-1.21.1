@@ -1,0 +1,442 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 45,
+    "density": 0.5,
+    "min_y": -30,
+    "max_y": 70,
+    "size": 30,
+    "random_name": "firma_compat_normal_malachite",
+    "blocks": [
+      {
+        "replace": [
+          "minecraft:stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:deepslate"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/deepslate"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/deepslate"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/deepslate"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/deepslate"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/deepslate"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/deepslate"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/deepslate"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:andesite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/andesite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/andesite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/andesite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/andesite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/andesite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:diorite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/diorite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/diorite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/diorite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/diorite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/diorite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/diorite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/diorite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:granite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/granite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/granite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/granite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/granite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/granite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/granite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/granite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:tuff"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/tuff"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/tuff"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/tuff"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/tuff"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/tuff"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/tuff"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/tuff"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:calcite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/calcite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/calcite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/calcite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/calcite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/calcite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/calcite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/calcite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:dripstone_block"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/dripstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/dripstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/dripstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/dripstone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/dripstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/dripstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/dripstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/basalt"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/basalt"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/basalt"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/basalt"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/basalt"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/basalt"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/basalt"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:blackstone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/blackstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/blackstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/blackstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/blackstone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/blackstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/blackstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/blackstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:end_stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/end_stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/end_stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/end_stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/end_stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_malachite/end_stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_malachite/end_stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_malachite/end_stone"
+          }
+        ]
+      }
+    ],
+    "indicator": {
+      "rarity": 25,
+      "depth": 35,
+      "underground_rarity": 1,
+      "underground_count": 0,
+      "blocks": [
+        {
+          "block": "tfc:ore/small_malachite"
+        }
+      ]
+    }
+  }
+}

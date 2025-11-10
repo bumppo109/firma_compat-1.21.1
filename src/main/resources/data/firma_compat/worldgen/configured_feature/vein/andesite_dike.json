@@ -1,0 +1,63 @@
+{
+  "type": "tfc:pipe_vein",
+  "config": {
+    "rarity": 300,
+    "min_y": -64,
+    "max_y": 180,
+    "density": 0.98,
+    "random_name": "firma_compat_granite",
+    "height": 150,
+    "radius": 18,
+    "min_skew": 7,
+    "max_skew": 20,
+    "min_slant": 2,
+    "max_slant": 5,
+    "project": false,
+    "sign": 0,
+    "blocks": [
+      {
+        "replace": [
+          "minecraft:stone",
+          "minecraft:deepslate",
+          "minecraft:andesite",
+          "minecraft:diorite",
+          "minecraft:granite",
+          "minecraft:tuff",
+          "minecraft:calcite",
+          "minecraft:dripstone_block",
+          "minecraft:basalt",
+          "minecraft:blackstone",
+          "minecraft:netherrack",
+          "minecraft:end_stone",
+          "minecraft:gravel"
+        ],
+        "with": [
+          {
+            "block": "minecraft:andesite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/stone",
+          "firma_compat:rock/hardened/deepslate",
+          "firma_compat:rock/hardened/andesite",
+          "firma_compat:rock/hardened/diorite",
+          "firma_compat:rock/hardened/granite",
+          "firma_compat:rock/hardened/tuff",
+          "firma_compat:rock/hardened/calcite",
+          "firma_compat:rock/hardened/dripstone",
+          "firma_compat:rock/hardened/basalt",
+          "firma_compat:rock/hardened/blackstone",
+          "firma_compat:rock/hardened/netherrack",
+          "firma_compat:rock/hardened/end_stone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:rock/hardened/andesite"
+          }
+        ]
+      }
+    ]
+  }
+}

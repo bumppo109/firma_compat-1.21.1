@@ -1,0 +1,6 @@
+{
+  "targets": ["tfc:kaolin_clay_grass"],
+  "colormap": {
+    "1":"minecraft:grass_color"
+  }
+}

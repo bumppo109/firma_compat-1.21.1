@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "firma_compat:wood/lumber/dark_oak"
+    },
+    "P": {
+      "item": "minecraft:dark_oak_planks"
+    },
+    "S": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "L L",
+    "S S"
+  ],
+  "result": {
+    "count": 2,
+    "id": "firma_compat:wood/shelf/dark_oak"
+  }
+}

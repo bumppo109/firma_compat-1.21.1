@@ -1,0 +1,12 @@
+{
+	"parent": "minecraft:block/cube",
+	"textures": {
+		"particle": "firma_compat:block/wood/workbench/jungle_front",
+		"north": "firma_compat:block/wood/workbench/jungle_front",
+		"south": "firma_compat:block/wood/workbench/jungle_side",
+		"east": "firma_compat:block/wood/workbench/jungle_side",
+		"west": "firma_compat:block/wood/workbench/jungle_front",
+		"up": "firma_compat:block/wood/workbench/jungle_top",
+		"down": "minecraft:block/jungle_planks"
+	}
+}

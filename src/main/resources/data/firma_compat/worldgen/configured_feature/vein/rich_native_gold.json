@@ -1,0 +1,442 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 50,
+    "density": 0.5,
+    "min_y": -80,
+    "max_y": 20,
+    "size": 40,
+    "random_name": "firma_compat_rich_native_gold",
+    "blocks": [
+      {
+        "replace": [
+          "minecraft:stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:deepslate"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/deepslate"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/deepslate"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/deepslate"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/deepslate"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/deepslate"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/deepslate"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/deepslate"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:andesite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/andesite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/andesite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/andesite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/andesite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/andesite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:diorite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/diorite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/diorite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/diorite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/diorite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/diorite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/diorite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/diorite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:granite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/granite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/granite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/granite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/granite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/granite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/granite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/granite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:tuff"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/tuff"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/tuff"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/tuff"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/tuff"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/tuff"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/tuff"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/tuff"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:calcite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/calcite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/calcite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/calcite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/calcite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/calcite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/calcite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/calcite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:dripstone_block"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/dripstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/dripstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/dripstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/dripstone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/dripstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/dripstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/dripstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/basalt"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/basalt"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/basalt"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/basalt"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/basalt"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/basalt"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/basalt"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:blackstone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/blackstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/blackstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/blackstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/blackstone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/blackstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/blackstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/blackstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:end_stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/end_stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/end_stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/end_stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/end_stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_native_gold/end_stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_native_gold/end_stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_native_gold/end_stone"
+          }
+        ]
+      }
+    ],
+    "indicator": {
+      "rarity": 0,
+      "depth": 35,
+      "underground_rarity": 1,
+      "underground_count": 4,
+      "blocks": [
+        {
+          "block": "tfc:ore/small_native_gold"
+        }
+      ]
+    }
+  }
+}

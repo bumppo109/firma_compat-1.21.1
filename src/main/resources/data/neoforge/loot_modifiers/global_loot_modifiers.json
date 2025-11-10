@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "entries": [
+    "firma_compat:straw_from_grass",
+    "firma_compat:remove/wheat_seeds",
+    "firma_compat:metal/iron_ingot_swap",
+    "firma_compat:metal/iron_block_swap",
+    "firma_compat:metal/gold_ingot_swap",
+    "firma_compat:metal/gold_block_swap",
+    "firma_compat:metal/copper_ingot_swap",
+    "firma_compat:gem/diamond_swap",
+    "firma_compat:gem/emerald_swap",
+    "firma_compat:gem/lapis_lazuli_swap",
+    "firma_compat:candle/black_candle_swap",
+    "firma_compat:candle/blue_candle_swap",
+    "firma_compat:candle/brown_candle_swap",
+    "firma_compat:candle/candle_swap",
+    "firma_compat:candle/cyan_candle_swap",
+    "firma_compat:candle/gray_candle_swap",
+    "firma_compat:candle/green_candle_swap",
+    "firma_compat:candle/light_blue_candle_swap",
+    "firma_compat:candle/light_gray_candle_swap",
+    "firma_compat:candle/lime_candle_swap",
+    "firma_compat:candle/magenta_candle_swap",
+    "firma_compat:candle/orange_candle_swap",
+    "firma_compat:candle/pink_candle_swap",
+    "firma_compat:candle/purple_candle_swap",
+    "firma_compat:candle/red_candle_swap",
+    "firma_compat:candle/white_candle_swap",
+    "firma_compat:candle/yellow_candle_swap"
+  ]
+}

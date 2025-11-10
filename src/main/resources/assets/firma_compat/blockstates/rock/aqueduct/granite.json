@@ -1,0 +1,41 @@
+{
+	"multipart": [
+		{
+			"apply": {
+				"model": "firma_compat:block/rock/aqueduct/granite/base"
+			}
+		},
+		{
+			"when": {
+				"north": "false"
+			},
+			"apply": {
+				"model": "firma_compat:block/rock/aqueduct/granite/north"
+			}
+		},
+		{
+			"when": {
+				"east": "false"
+			},
+			"apply": {
+				"model": "firma_compat:block/rock/aqueduct/granite/east"
+			}
+		},
+		{
+			"when": {
+				"south": "false"
+			},
+			"apply": {
+				"model": "firma_compat:block/rock/aqueduct/granite/south"
+			}
+		},
+		{
+			"when": {
+				"west": "false"
+			},
+			"apply": {
+				"model": "firma_compat:block/rock/aqueduct/granite/west"
+			}
+		}
+	]
+}

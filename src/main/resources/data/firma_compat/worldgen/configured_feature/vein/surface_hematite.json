@@ -1,0 +1,442 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 45,
+    "density": 0.4,
+    "min_y": 10,
+    "max_y": 90,
+    "size": 20,
+    "random_name": "firma_compat_surface_hematite",
+    "blocks": [
+      {
+        "replace": [
+          "minecraft:stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:deepslate"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/deepslate"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/deepslate"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/deepslate"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/deepslate"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/deepslate"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/deepslate"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/deepslate"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:andesite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/andesite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/andesite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/andesite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/andesite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/andesite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:diorite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/diorite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/diorite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/diorite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/diorite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/diorite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/diorite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/diorite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:granite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/granite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/granite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/granite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/granite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/granite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/granite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/granite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:tuff"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/tuff"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/tuff"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/tuff"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/tuff"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/tuff"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/tuff"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/tuff"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:calcite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/calcite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/calcite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/calcite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/calcite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/calcite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/calcite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/calcite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:dripstone_block"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/dripstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/dripstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/dripstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/dripstone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/dripstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/dripstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/dripstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/basalt"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/basalt"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/basalt"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/basalt"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/basalt"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/basalt"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/basalt"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:blackstone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/blackstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/blackstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/blackstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/blackstone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/blackstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/blackstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/blackstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:end_stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/end_stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/end_stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/end_stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/end_stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_hematite/end_stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_hematite/end_stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_hematite/end_stone"
+          }
+        ]
+      }
+    ],
+    "indicator": {
+      "rarity": 24,
+      "depth": 35,
+      "underground_rarity": 1,
+      "underground_count": 0,
+      "blocks": [
+        {
+          "block": "tfc:ore/small_hematite"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "firma_compat:wood/lumber/dark_oak"
+    },
+    "P": {
+      "item": "minecraft:dark_oak_log"
+    }
+  },
+  "pattern": [
+    "PLP",
+    "PLP"
+  ],
+  "result": {
+    "count": 8,
+    "id": "firma_compat:wood/log_fence/dark_oak"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/amethyst/stone",
+    "firma_compat:ore/amethyst/deepslate",
+    "firma_compat:ore/amethyst/andesite",
+    "firma_compat:ore/amethyst/diorite",
+    "firma_compat:ore/amethyst/granite",
+    "firma_compat:ore/amethyst/calcite",
+    "firma_compat:ore/amethyst/tuff",
+    "firma_compat:ore/amethyst/dripstone",
+    "firma_compat:ore/amethyst/basalt",
+    "firma_compat:ore/amethyst/blackstone",
+    "firma_compat:ore/amethyst/end_stone"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+	"parent": "firma_compat:block/ore_column",
+	"textures": {
+		"side": "minecraft:block/basalt_side",
+		"top_bottom": "minecraft:block/basalt_top",
+		"overlay": "tfc:block/ore/rich_garnierite"
+	}
+}

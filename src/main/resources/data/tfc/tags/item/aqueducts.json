@@ -1,0 +1,19 @@
+{
+  "values": [
+    "firma_compat:rock/aqueduct/stone",
+    "firma_compat:rock/aqueduct/deepslate",
+    "firma_compat:rock/aqueduct/andesite",
+    "firma_compat:rock/aqueduct/diorite",
+    "firma_compat:rock/aqueduct/granite",
+    "firma_compat:rock/aqueduct/tuff",
+    "firma_compat:rock/aqueduct/blackstone",
+    "firma_compat:rock/aqueduct/end_stone",
+    "firma_compat:rock/aqueduct/prismarine_brick",
+    "firma_compat:rock/aqueduct/dark_prismarine",
+    "firma_compat:rock/aqueduct/quartz_brick",
+    "firma_compat:rock/aqueduct/nether_brick",
+    "firma_compat:rock/aqueduct/red_nether_brick",
+    "firma_compat:rock/aqueduct/purpur_block",
+    "firma_compat:rock/aqueduct/brick"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "firma_compat:wood/axle/dark_oak"
+    },
+    "L": {
+      "item": "firma_compat:wood/lumber/dark_oak"
+    },
+    "M": {
+      "item": "tfc:brass_mechanisms"
+    },
+    "R": {
+      "tag": "c:dusts/redstone"
+    },
+    "S": {
+      "item":"minecraft:stripped_dark_oak_log"
+    }
+  },
+  "pattern": [
+    "LSL",
+    "MAR",
+    "LSL"
+  ],
+  "result": {
+    "count": 2,
+    "id": "firma_compat:wood/clutch/dark_oak"
+  }
+}

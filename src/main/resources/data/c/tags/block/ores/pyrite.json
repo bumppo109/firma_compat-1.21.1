@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/pyrite/stone",
+    "firma_compat:ore/pyrite/deepslate",
+    "firma_compat:ore/pyrite/andesite",
+    "firma_compat:ore/pyrite/diorite",
+    "firma_compat:ore/pyrite/granite",
+    "firma_compat:ore/pyrite/calcite",
+    "firma_compat:ore/pyrite/tuff",
+    "firma_compat:ore/pyrite/dripstone",
+    "firma_compat:ore/pyrite/basalt",
+    "firma_compat:ore/pyrite/blackstone",
+    "firma_compat:ore/pyrite/end_stone"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+	"parent": "minecraft:block/cube",
+	"textures": {
+		"particle": "firma_compat:block/wood/workbench/warped_front",
+		"north": "firma_compat:block/wood/workbench/warped_front",
+		"south": "firma_compat:block/wood/workbench/warped_side",
+		"east": "firma_compat:block/wood/workbench/warped_side",
+		"west": "firma_compat:block/wood/workbench/warped_front",
+		"up": "firma_compat:block/wood/workbench/warped_top",
+		"down": "minecraft:block/warped_planks"
+	}
+}

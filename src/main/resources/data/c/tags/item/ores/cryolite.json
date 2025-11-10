@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/cryolite/stone",
+    "firma_compat:ore/cryolite/deepslate",
+    "firma_compat:ore/cryolite/andesite",
+    "firma_compat:ore/cryolite/diorite",
+    "firma_compat:ore/cryolite/granite",
+    "firma_compat:ore/cryolite/calcite",
+    "firma_compat:ore/cryolite/tuff",
+    "firma_compat:ore/cryolite/dripstone",
+    "firma_compat:ore/cryolite/basalt",
+    "firma_compat:ore/cryolite/blackstone",
+    "firma_compat:ore/cryolite/end_stone"
+  ]
+}

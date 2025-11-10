@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "firma_compat:wood/axle/acacia"
+    },
+    "L": {
+      "item": "firma_compat:wood/lumber/acacia"
+    },
+    "M": {
+      "item": "tfc:brass_mechanisms"
+    },
+    "R": {
+      "tag": "c:dusts/redstone"
+    },
+    "S": {
+      "item": "minecraft:stripped_acacia_log"
+    }
+  },
+  "pattern": [
+    "LSL",
+    "MAR",
+    "LSL"
+  ],
+  "result": {
+    "count": 2,
+    "id": "firma_compat:wood/clutch/acacia"
+  }
+}

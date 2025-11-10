@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/borax/stone",
+    "firma_compat:ore/borax/deepslate",
+    "firma_compat:ore/borax/andesite",
+    "firma_compat:ore/borax/diorite",
+    "firma_compat:ore/borax/granite",
+    "firma_compat:ore/borax/calcite",
+    "firma_compat:ore/borax/tuff",
+    "firma_compat:ore/borax/dripstone",
+    "firma_compat:ore/borax/basalt",
+    "firma_compat:ore/borax/blackstone",
+    "firma_compat:ore/borax/end_stone"
+  ]
+}

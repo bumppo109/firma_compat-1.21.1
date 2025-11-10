@@ -1,0 +1,6 @@
+// 1.21.1	2025-11-02T10:37:50.393896	Tags for minecraft:item mod id firma_compat
+5be316556b45286fa3a34fd1205020e28f7194f2 data/c/tags/item/barrels/wooden.json
+1ee40817f04e2dc1f02ca9625ab35ea33f087312 data/c/tags/item/minecarts.json
+ede621ab4844c7c041411c0e62d81d4eca0a7b40 data/tfc/tags/item/carried_by_horse.json
+9ee5dc95c04b83486bb58d05dc309ca79e1ee9d2 data/tfc/tags/item/lumber.json
+912e65dccbe896c25509808e2cb8602585c2b4a9 data/tfc/tags/item/support_beams.json

@@ -1,0 +1,17 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"key": {
+		"X": {
+			"item": "firma_compat:rock/loose/end_stone"
+		}
+	},
+	"pattern": [
+		"XX ",
+		"XX "
+	],
+	"result": {
+		"count": 4,
+		"id": "firma_compat:rock/cobblestone/end_stone"
+	}
+}

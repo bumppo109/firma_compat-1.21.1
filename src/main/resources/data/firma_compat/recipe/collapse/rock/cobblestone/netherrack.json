@@ -1,0 +1,8 @@
+{
+  "type": "tfc:collapse",
+  "ingredient": [
+    "minecraft:netherrack",
+    "firma_compat:rock/hardened/netherrack"
+  ],
+  "result": "firma_compat:rock/cobblestone/netherrack"
+}

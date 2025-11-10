@@ -1,0 +1,233 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 14,
+    "density": 0.6,
+    "min_y": -70,
+    "max_y": 10,
+    "size": 18,
+    "random_name": "firma_compat_cinnabar",
+    "blocks": [
+      {
+        "replace": [
+          "minecraft:stone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/stone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:deepslate"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/deepslate"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/deepslate"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/deepslate"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:andesite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/andesite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/andesite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/andesite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:diorite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/diorite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/diorite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/diorite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:granite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/granite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/granite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/granite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:tuff"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/tuff"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/tuff"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/tuff"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:calcite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/calcite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/calcite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/calcite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:dripstone_block"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/dripstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/dripstone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/dripstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/basalt"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/basalt"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/basalt"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:blackstone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/blackstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/blackstone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/blackstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:end_stone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/end_stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/end_stone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:ore/cinnabar/end_stone"
+          }
+        ]
+      }
+    ]
+  }
+}

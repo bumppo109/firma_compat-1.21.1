@@ -1,0 +1,15 @@
+{
+  "feature": "tfc:driftwood_patch",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 4
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "tfc:biome"
+    }
+  ]
+}

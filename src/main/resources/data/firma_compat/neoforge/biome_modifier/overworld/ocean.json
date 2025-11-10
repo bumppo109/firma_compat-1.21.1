@@ -1,0 +1,11 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_ocean",
+  "features": [
+    "firma_compat:seaweed_patch",
+    "firma_compat:clam_patch",
+    "firma_compat:mussel_patch",
+    "firma_compat:mollusk_patch"
+  ],
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,9 @@
+{
+  "feature": "firma_compat:vein/normal_native_silver",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 5
+    }
+  ]
+}

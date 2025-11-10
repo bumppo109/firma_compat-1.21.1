@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/emerald/stone",
+    "firma_compat:ore/emerald/deepslate",
+    "firma_compat:ore/emerald/andesite",
+    "firma_compat:ore/emerald/diorite",
+    "firma_compat:ore/emerald/granite",
+    "firma_compat:ore/emerald/calcite",
+    "firma_compat:ore/emerald/tuff",
+    "firma_compat:ore/emerald/dripstone",
+    "firma_compat:ore/emerald/basalt",
+    "firma_compat:ore/emerald/blackstone",
+    "firma_compat:ore/emerald/end_stone"
+  ]
+}

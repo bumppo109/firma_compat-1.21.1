@@ -1,0 +1,7 @@
+{
+	"parent": "tfc:block/aqueduct/east",
+	"textures": {
+		"texture": "minecraft:block/polished_granite",
+		"particle": "minecraft:block/polished_granite"
+	}
+}

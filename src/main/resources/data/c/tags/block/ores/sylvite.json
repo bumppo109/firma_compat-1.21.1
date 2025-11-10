@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/sylvite/stone",
+    "firma_compat:ore/sylvite/deepslate",
+    "firma_compat:ore/sylvite/andesite",
+    "firma_compat:ore/sylvite/diorite",
+    "firma_compat:ore/sylvite/granite",
+    "firma_compat:ore/sylvite/calcite",
+    "firma_compat:ore/sylvite/tuff",
+    "firma_compat:ore/sylvite/dripstone",
+    "firma_compat:ore/sylvite/basalt",
+    "firma_compat:ore/sylvite/blackstone",
+    "firma_compat:ore/sylvite/end_stone"
+  ]
+}

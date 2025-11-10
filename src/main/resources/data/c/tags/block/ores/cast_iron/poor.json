@@ -1,0 +1,39 @@
+{
+  "values": [
+    "firma_compat:ore/poor_hematite/stone",
+    "firma_compat:ore/poor_hematite/deepslate",
+    "firma_compat:ore/poor_hematite/andesite",
+    "firma_compat:ore/poor_hematite/diorite",
+    "firma_compat:ore/poor_hematite/granite",
+    "firma_compat:ore/poor_hematite/calcite",
+    "firma_compat:ore/poor_hematite/tuff",
+    "firma_compat:ore/poor_hematite/dripstone",
+    "firma_compat:ore/poor_hematite/basalt",
+    "firma_compat:ore/poor_hematite/blackstone",
+    "firma_compat:ore/poor_hematite/end_stone",
+
+    "firma_compat:ore/poor_limonite/stone",
+    "firma_compat:ore/poor_limonite/deepslate",
+    "firma_compat:ore/poor_limonite/andesite",
+    "firma_compat:ore/poor_limonite/diorite",
+    "firma_compat:ore/poor_limonite/granite",
+    "firma_compat:ore/poor_limonite/calcite",
+    "firma_compat:ore/poor_limonite/tuff",
+    "firma_compat:ore/poor_limonite/dripstone",
+    "firma_compat:ore/poor_limonite/basalt",
+    "firma_compat:ore/poor_limonite/blackstone",
+    "firma_compat:ore/poor_limonite/end_stone",
+
+    "firma_compat:ore/poor_magnetite/stone",
+    "firma_compat:ore/poor_magnetite/deepslate",
+    "firma_compat:ore/poor_magnetite/andesite",
+    "firma_compat:ore/poor_magnetite/diorite",
+    "firma_compat:ore/poor_magnetite/granite",
+    "firma_compat:ore/poor_magnetite/calcite",
+    "firma_compat:ore/poor_magnetite/tuff",
+    "firma_compat:ore/poor_magnetite/dripstone",
+    "firma_compat:ore/poor_magnetite/basalt",
+    "firma_compat:ore/poor_magnetite/blackstone",
+    "firma_compat:ore/poor_magnetite/end_stone"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/poor_native_copper/stone",
+    "firma_compat:ore/poor_native_copper/deepslate",
+    "firma_compat:ore/poor_native_copper/andesite",
+    "firma_compat:ore/poor_native_copper/diorite",
+    "firma_compat:ore/poor_native_copper/granite",
+    "firma_compat:ore/poor_native_copper/calcite",
+    "firma_compat:ore/poor_native_copper/tuff",
+    "firma_compat:ore/poor_native_copper/dripstone",
+    "firma_compat:ore/poor_native_copper/basalt",
+    "firma_compat:ore/poor_native_copper/blackstone",
+    "firma_compat:ore/poor_native_copper/end_stone"
+  ]
+}

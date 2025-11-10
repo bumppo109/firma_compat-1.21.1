@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#minecraft:is_beach",
+  "features": [
+    "tfc:driftwood_patch",
+    "firma_compat:beach_seaweed_patch"
+  ],
+  "step": "vegetal_decoration"
+}

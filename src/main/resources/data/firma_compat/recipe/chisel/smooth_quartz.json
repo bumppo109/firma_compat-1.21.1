@@ -1,0 +1,8 @@
+{
+  "type": "tfc:chisel",
+  "ingredient": [
+    "minecraft:quartz"
+  ],
+  "mode": "tfc:smooth",
+  "result": "minecraft:smooth_quartz"
+}

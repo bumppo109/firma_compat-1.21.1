@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "redstone",
+	"group": "wooden_door",
+	"key": {
+		"#": {
+			"item": "firma_compat:wood/lumber/dark_oak"
+		}
+	},
+	"pattern": [
+		"##",
+		"##",
+		"##"
+	],
+	"result": {
+		"count": 1,
+		"id": "minecraft:dark_oak_door"
+	}
+}

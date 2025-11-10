@@ -1,0 +1,7 @@
+{
+	"type": "tfc:collapse",
+	"ingredient": [
+		"firma_compat:ore/rich_sphalerite/diorite"
+	],
+	"result": "firma_compat:ore/normal_sphalerite/diorite"
+}

@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/rich_native_silver/stone",
+    "firma_compat:ore/rich_native_silver/deepslate",
+    "firma_compat:ore/rich_native_silver/andesite",
+    "firma_compat:ore/rich_native_silver/diorite",
+    "firma_compat:ore/rich_native_silver/granite",
+    "firma_compat:ore/rich_native_silver/calcite",
+    "firma_compat:ore/rich_native_silver/tuff",
+    "firma_compat:ore/rich_native_silver/dripstone",
+    "firma_compat:ore/rich_native_silver/basalt",
+    "firma_compat:ore/rich_native_silver/blackstone",
+    "firma_compat:ore/rich_native_silver/end_stone"
+  ]
+}

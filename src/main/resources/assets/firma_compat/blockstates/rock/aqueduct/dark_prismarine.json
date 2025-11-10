@@ -1,0 +1,41 @@
+{
+	"multipart": [
+		{
+			"apply": {
+				"model": "firma_compat:block/rock/aqueduct/dark_prismarine/base"
+			}
+		},
+		{
+			"when": {
+				"north": "false"
+			},
+			"apply": {
+				"model": "firma_compat:block/rock/aqueduct/dark_prismarine/north"
+			}
+		},
+		{
+			"when": {
+				"east": "false"
+			},
+			"apply": {
+				"model": "firma_compat:block/rock/aqueduct/dark_prismarine/east"
+			}
+		},
+		{
+			"when": {
+				"south": "false"
+			},
+			"apply": {
+				"model": "firma_compat:block/rock/aqueduct/dark_prismarine/south"
+			}
+		},
+		{
+			"when": {
+				"west": "false"
+			},
+			"apply": {
+				"model": "firma_compat:block/rock/aqueduct/dark_prismarine/west"
+			}
+		}
+	]
+}

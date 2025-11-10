@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"key": {
+		"X": {
+			"item": "minecraft:nether_brick"
+		},
+		"Y": {
+			"item": "tfc:mortar"
+		},
+        "A": {
+          "item": "minecraft:nether_wart_block"
+        }
+	},
+	"pattern": [
+		"XAX",
+		"YXY"
+	],
+	"result": {
+		"count": 4,
+		"id": "firma_compat:rock/aqueduct/red_nether_brick"
+	}
+}

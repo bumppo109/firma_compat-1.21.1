@@ -1,0 +1,7 @@
+{
+	"parent": "tfc:block/aqueduct/east",
+	"textures": {
+		"texture": "minecraft:block/purpur_block",
+		"particle": "minecraft:block/purpur_block"
+	}
+}

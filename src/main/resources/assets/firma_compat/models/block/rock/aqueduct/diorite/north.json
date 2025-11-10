@@ -1,0 +1,7 @@
+{
+	"parent": "tfc:block/aqueduct/north",
+	"textures": {
+		"texture": "minecraft:block/polished_diorite",
+		"particle": "minecraft:block/polished_diorite"
+	}
+}

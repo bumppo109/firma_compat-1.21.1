@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/sulfur/stone",
+    "firma_compat:ore/sulfur/deepslate",
+    "firma_compat:ore/sulfur/andesite",
+    "firma_compat:ore/sulfur/diorite",
+    "firma_compat:ore/sulfur/granite",
+    "firma_compat:ore/sulfur/calcite",
+    "firma_compat:ore/sulfur/tuff",
+    "firma_compat:ore/sulfur/dripstone",
+    "firma_compat:ore/sulfur/basalt",
+    "firma_compat:ore/sulfur/blackstone",
+    "firma_compat:ore/sulfur/end_stone"
+  ]
+}

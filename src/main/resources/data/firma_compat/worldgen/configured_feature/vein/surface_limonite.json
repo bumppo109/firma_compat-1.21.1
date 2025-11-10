@@ -1,0 +1,442 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 90,
+    "density": 0.4,
+    "min_y": 10,
+    "max_y": 90,
+    "size": 20,
+    "random_name": "firma_compat_surface_limonite",
+    "blocks": [
+      {
+        "replace": [
+          "minecraft:stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:deepslate"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/deepslate"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/deepslate"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/deepslate"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/deepslate"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/deepslate"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/deepslate"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/deepslate"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:andesite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/andesite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/andesite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/andesite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/andesite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/andesite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:diorite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/diorite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/diorite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/diorite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/diorite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/diorite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/diorite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/diorite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:granite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/granite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/granite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/granite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/granite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/granite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/granite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/granite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:tuff"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/tuff"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/tuff"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/tuff"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/tuff"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/tuff"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/tuff"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/tuff"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:calcite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/calcite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/calcite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/calcite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/calcite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/calcite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/calcite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/calcite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:dripstone_block"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/dripstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/dripstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/dripstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/dripstone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/dripstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/dripstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/dripstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/basalt"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/basalt"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/basalt"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/basalt"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/basalt"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/basalt"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/basalt"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:blackstone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/blackstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/blackstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/blackstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/blackstone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/blackstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/blackstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/blackstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:end_stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/end_stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/end_stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/end_stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/end_stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_limonite/end_stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_limonite/end_stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_limonite/end_stone"
+          }
+        ]
+      }
+    ],
+    "indicator": {
+      "rarity": 24,
+      "depth": 35,
+      "underground_rarity": 1,
+      "underground_count": 0,
+      "blocks": [
+        {
+          "block": "tfc:ore/small_limonite"
+        }
+      ]
+    }
+  }
+}

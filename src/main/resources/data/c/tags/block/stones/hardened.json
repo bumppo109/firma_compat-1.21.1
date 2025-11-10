@@ -1,0 +1,16 @@
+{
+  "values": [
+    "firma_compat:rock/hardened/stone",
+    "firma_compat:rock/hardened/deepslate",
+    "firma_compat:rock/hardened/andesite",
+    "firma_compat:rock/hardened/diorite",
+    "firma_compat:rock/hardened/granite",
+    "firma_compat:rock/hardened/tuff",
+    "firma_compat:rock/hardened/calcite",
+    "firma_compat:rock/hardened/dripstone",
+    "firma_compat:rock/hardened/basalt",
+    "firma_compat:rock/hardened/blackstone",
+    "firma_compat:rock/hardened/end_stone",
+    "firma_compat:rock/hardened/netherrack"
+  ]
+}

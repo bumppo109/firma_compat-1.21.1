@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/opal/stone",
+    "firma_compat:ore/opal/deepslate",
+    "firma_compat:ore/opal/andesite",
+    "firma_compat:ore/opal/diorite",
+    "firma_compat:ore/opal/granite",
+    "firma_compat:ore/opal/calcite",
+    "firma_compat:ore/opal/tuff",
+    "firma_compat:ore/opal/dripstone",
+    "firma_compat:ore/opal/basalt",
+    "firma_compat:ore/opal/blackstone",
+    "firma_compat:ore/opal/end_stone"
+  ]
+}

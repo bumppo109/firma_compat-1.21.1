@@ -1,0 +1,8 @@
+{
+	"type": "tfc:chisel",
+	"ingredient": [
+		"minecraft:andesite"
+	],
+	"mode": "tfc:smooth",
+	"result": "minecraft:polished_andesite"
+}

@@ -1,0 +1,9 @@
+{
+  "feature": "firma_compat:vein/opal",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 2
+    }
+  ]
+}

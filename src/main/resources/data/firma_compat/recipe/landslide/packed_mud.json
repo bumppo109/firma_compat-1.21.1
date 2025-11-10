@@ -1,0 +1,7 @@
+{
+  "type": "tfc:landslide",
+  "ingredient": [
+    "minecraft:packed_mud"
+  ],
+  "result": "minecraft:packed_mud"
+}

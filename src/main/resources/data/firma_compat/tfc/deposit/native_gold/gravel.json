@@ -1,0 +1,11 @@
+{
+  "ingredient": {
+    "item": "firma_compat:deposit/native_gold/gravel"
+  },
+  "loot_table": "firma_compat:deposit/native_gold_gravel",
+  "model_stages": [
+    "tfc:item/pan/native_gold/andesite_full",
+    "tfc:item/pan/native_gold/andesite_half",
+    "tfc:item/pan/native_gold/result"
+  ]
+}

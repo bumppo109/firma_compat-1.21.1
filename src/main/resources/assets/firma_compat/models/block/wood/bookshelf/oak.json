@@ -1,0 +1,7 @@
+{
+	"parent": "minecraft:block/chiseled_bookshelf",
+	"textures": {
+		"top": "firma_compat:block/wood/bookshelf/top_oak",
+		"side": "firma_compat:block/wood/bookshelf/side_oak"
+	}
+}

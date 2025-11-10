@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/normal_native_gold/stone",
+    "firma_compat:ore/normal_native_gold/deepslate",
+    "firma_compat:ore/normal_native_gold/andesite",
+    "firma_compat:ore/normal_native_gold/diorite",
+    "firma_compat:ore/normal_native_gold/granite",
+    "firma_compat:ore/normal_native_gold/calcite",
+    "firma_compat:ore/normal_native_gold/tuff",
+    "firma_compat:ore/normal_native_gold/dripstone",
+    "firma_compat:ore/normal_native_gold/basalt",
+    "firma_compat:ore/normal_native_gold/blackstone",
+    "firma_compat:ore/normal_native_gold/end_stone"
+  ]
+}

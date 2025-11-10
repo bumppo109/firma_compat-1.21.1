@@ -1,0 +1,10 @@
+{
+	"parent": "tfc:block/scribing_table",
+	"textures": {
+		"top": "minecraft:block/stripped_crimson_stem",
+		"leg": "minecraft:block/crimson_stem",
+		"side": "minecraft:block/crimson_planks",
+		"misc": "tfc:block/wood/scribing_table/scribing_paraphernalia",
+		"particle": "minecraft:block/crimson_planks"
+	}
+}

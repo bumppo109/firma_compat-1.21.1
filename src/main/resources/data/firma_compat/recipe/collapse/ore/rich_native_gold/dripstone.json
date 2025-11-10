@@ -1,0 +1,7 @@
+{
+	"type": "tfc:collapse",
+	"ingredient": [
+		"firma_compat:ore/rich_native_gold/dripstone"
+	],
+	"result": "firma_compat:ore/normal_native_gold/dripstone"
+}

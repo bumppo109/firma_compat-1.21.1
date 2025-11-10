@@ -1,0 +1,7 @@
+{
+	"type": "tfc:collapse",
+	"ingredient": [
+		"firma_compat:ore/normal_hematite/granite"
+	],
+	"result": "firma_compat:ore/poor_hematite/granite"
+}

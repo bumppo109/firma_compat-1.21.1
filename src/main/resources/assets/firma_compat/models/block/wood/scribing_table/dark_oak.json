@@ -1,0 +1,10 @@
+{
+	"parent": "tfc:block/scribing_table",
+	"textures": {
+		"top": "minecraft:block/stripped_dark_oak_log",
+		"leg": "minecraft:block/dark_oak_log",
+		"side": "minecraft:block/dark_oak_planks",
+		"misc": "tfc:block/wood/scribing_table/scribing_paraphernalia",
+		"particle": "minecraft:block/dark_oak_planks"
+	}
+}

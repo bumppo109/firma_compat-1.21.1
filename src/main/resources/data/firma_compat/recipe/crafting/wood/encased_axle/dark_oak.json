@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "firma_compat:wood/axle/dark_oak"
+    },
+    "L": {
+      "item": "firma_compat:wood/lumber/dark_oak"
+    },
+    "S": {
+      "item":"minecraft:stripped_dark_oak_log"
+    }
+  },
+  "pattern": [
+    " S ",
+    "LAL",
+    " S "
+  ],
+  "result": {
+    "count": 4,
+    "id": "firma_compat:wood/encased_axle/dark_oak"
+  }
+}

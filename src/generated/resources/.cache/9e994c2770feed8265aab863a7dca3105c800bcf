@@ -1,0 +1,8 @@
+// 1.21.1	2025-11-02T10:37:50.372513	Tags for minecraft:block mod id firma_compat
+5c0a51ad2a697832320503c1fc683f6d5702ba63 data/c/tags/block/chests/trapped.json
+8cbade6386910496da25dba812066aadd16126b5 data/c/tags/block/chests/wooden.json
+2217f9da3ee9193e2107048ae7c2b3ce5aa72b1f data/c/tags/block/fences/wooden.json
+ae08525a8e3bd1f5b312a66b20c1d75a34d54aed data/minecraft/tags/block/mineable/axe.json
+2217f9da3ee9193e2107048ae7c2b3ce5aa72b1f data/minecraft/tags/block/wooden_fences.json
+19fe2ffb21c730ce32ab75d7e16e42347dfa7a09 data/tfc/tags/block/support_beams.json
+3fb84c6b7c1153d0bdaf7674f9304f40d5ceb92d data/tfc/tags/block/workbenches.json

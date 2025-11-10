@@ -1,0 +1,8 @@
+{
+	"type": "tfc:chisel",
+	"ingredient": [
+		"minecraft:tuff"
+	],
+	"mode": "tfc:smooth",
+	"result": "minecraft:polished_tuff"
+}

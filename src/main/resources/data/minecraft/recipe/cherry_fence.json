@@ -1,0 +1,21 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "redstone",
+	"group": "wooden_fence",
+	"key": {
+		"#": {
+			"item": "firma_compat:wood/lumber/cherry"
+		},
+		"A": {
+			"item": "minecraft:cherry_planks"
+		}
+	},
+	"pattern": [
+		"A#A",
+		"A#A"
+	],
+	"result": {
+		"count": 8,
+		"id": "minecraft:cherry_fence"
+	}
+}

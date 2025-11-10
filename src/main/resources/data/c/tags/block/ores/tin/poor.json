@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/poor_cassiterite/stone",
+    "firma_compat:ore/poor_cassiterite/deepslate",
+    "firma_compat:ore/poor_cassiterite/andesite",
+    "firma_compat:ore/poor_cassiterite/diorite",
+    "firma_compat:ore/poor_cassiterite/granite",
+    "firma_compat:ore/poor_cassiterite/calcite",
+    "firma_compat:ore/poor_cassiterite/tuff",
+    "firma_compat:ore/poor_cassiterite/dripstone",
+    "firma_compat:ore/poor_cassiterite/basalt",
+    "firma_compat:ore/poor_cassiterite/blackstone",
+    "firma_compat:ore/poor_cassiterite/end_stone"
+  ]
+}

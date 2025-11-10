@@ -1,0 +1,442 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 45,
+    "density": 0.6,
+    "min_y": -80,
+    "max_y": 20,
+    "size": 40,
+    "random_name": "firma_compat_normal_sphalerite",
+    "blocks": [
+      {
+        "replace": [
+          "minecraft:stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:deepslate"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/deepslate"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/deepslate"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/deepslate"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/deepslate"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/deepslate"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/deepslate"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/deepslate"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:andesite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/andesite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/andesite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/andesite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/andesite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/andesite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:diorite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/diorite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/diorite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/diorite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/diorite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/diorite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/diorite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/diorite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:granite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/granite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/granite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/granite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/granite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/granite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/granite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/granite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:tuff"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/tuff"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/tuff"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/tuff"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/tuff"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/tuff"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/tuff"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/tuff"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:calcite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/calcite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/calcite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/calcite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/calcite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/calcite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/calcite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/calcite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:dripstone_block"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/dripstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/dripstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/dripstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/dripstone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/dripstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/dripstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/dripstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/basalt"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/basalt"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/basalt"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/basalt"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/basalt"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/basalt"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/basalt"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:blackstone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/blackstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/blackstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/blackstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/blackstone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/blackstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/blackstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/blackstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:end_stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/end_stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/end_stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/end_stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/end_stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_sphalerite/end_stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_sphalerite/end_stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_sphalerite/end_stone"
+          }
+        ]
+      }
+    ],
+    "indicator": {
+      "rarity": 0,
+      "depth": 35,
+      "underground_rarity": 1,
+      "underground_count": 5,
+      "blocks": [
+        {
+          "block": "tfc:ore/small_sphalerite"
+        }
+      ]
+    }
+  }
+}

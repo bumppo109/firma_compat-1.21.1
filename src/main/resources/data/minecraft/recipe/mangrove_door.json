@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "redstone",
+	"group": "wooden_door",
+	"key": {
+		"#": {
+			"item": "firma_compat:wood/lumber/mangrove"
+		}
+	},
+	"pattern": [
+		"##",
+		"##",
+		"##"
+	],
+	"result": {
+		"count": 1,
+		"id": "minecraft:mangrove_door"
+	}
+}

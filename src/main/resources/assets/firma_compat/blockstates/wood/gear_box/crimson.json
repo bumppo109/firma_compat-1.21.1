@@ -1,0 +1,110 @@
+{
+	"multipart": [
+		{
+			"when": {
+				"north": true
+			},
+			"apply": {
+				"model": "firma_compat:block/wood/gear_box_port/crimson"
+			}
+		},
+		{
+			"when": {
+				"north": false
+			},
+			"apply": {
+				"model": "firma_compat:block/wood/gear_box_face/crimson"
+			}
+		},
+		{
+			"when": {
+				"south": true
+			},
+			"apply": {
+				"model": "firma_compat:block/wood/gear_box_port/crimson",
+				"y": 180
+			}
+		},
+		{
+			"when": {
+				"south": false
+			},
+			"apply": {
+				"model": "firma_compat:block/wood/gear_box_face/crimson",
+				"y": 180
+			}
+		},
+		{
+			"when": {
+				"east": true
+			},
+			"apply": {
+				"model": "firma_compat:block/wood/gear_box_port/crimson",
+				"y": 90
+			}
+		},
+		{
+			"when": {
+				"east": false
+			},
+			"apply": {
+				"model": "firma_compat:block/wood/gear_box_face/crimson",
+				"y": 90
+			}
+		},
+		{
+			"when": {
+				"west": true
+			},
+			"apply": {
+				"model": "firma_compat:block/wood/gear_box_port/crimson",
+				"y": 270
+			}
+		},
+		{
+			"when": {
+				"west": false
+			},
+			"apply": {
+				"model": "firma_compat:block/wood/gear_box_face/crimson",
+				"y": 270
+			}
+		},
+		{
+			"when": {
+				"down": true
+			},
+			"apply": {
+				"model": "firma_compat:block/wood/gear_box_port/crimson",
+				"x": 90
+			}
+		},
+		{
+			"when": {
+				"down": false
+			},
+			"apply": {
+				"model": "firma_compat:block/wood/gear_box_face/crimson",
+				"x": 90
+			}
+		},
+		{
+			"when": {
+				"up": true
+			},
+			"apply": {
+				"model": "firma_compat:block/wood/gear_box_port/crimson",
+				"x": 270
+			}
+		},
+		{
+			"when": {
+				"up": false
+			},
+			"apply": {
+				"model": "firma_compat:block/wood/gear_box_face/crimson",
+				"x": 270
+			}
+		}
+	]
+}

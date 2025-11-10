@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/cinnabar/stone",
+    "firma_compat:ore/cinnabar/deepslate",
+    "firma_compat:ore/cinnabar/andesite",
+    "firma_compat:ore/cinnabar/diorite",
+    "firma_compat:ore/cinnabar/granite",
+    "firma_compat:ore/cinnabar/calcite",
+    "firma_compat:ore/cinnabar/tuff",
+    "firma_compat:ore/cinnabar/dripstone",
+    "firma_compat:ore/cinnabar/basalt",
+    "firma_compat:ore/cinnabar/blackstone",
+    "firma_compat:ore/cinnabar/end_stone"
+  ]
+}

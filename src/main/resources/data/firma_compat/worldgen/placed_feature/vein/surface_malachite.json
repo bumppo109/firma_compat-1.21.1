@@ -1,0 +1,9 @@
+{
+  "feature": "firma_compat:vein/surface_malachite",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 5
+    }
+  ]
+}

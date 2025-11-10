@@ -1,0 +1,9 @@
+{
+  "feature": "firma_compat:vein/fake_native_gold",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 3
+    }
+  ]
+}

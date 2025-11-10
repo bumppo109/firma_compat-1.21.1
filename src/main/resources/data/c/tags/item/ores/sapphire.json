@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/sapphire/stone",
+    "firma_compat:ore/sapphire/deepslate",
+    "firma_compat:ore/sapphire/andesite",
+    "firma_compat:ore/sapphire/diorite",
+    "firma_compat:ore/sapphire/granite",
+    "firma_compat:ore/sapphire/calcite",
+    "firma_compat:ore/sapphire/tuff",
+    "firma_compat:ore/sapphire/dripstone",
+    "firma_compat:ore/sapphire/basalt",
+    "firma_compat:ore/sapphire/blackstone",
+    "firma_compat:ore/sapphire/end_stone"
+  ]
+}

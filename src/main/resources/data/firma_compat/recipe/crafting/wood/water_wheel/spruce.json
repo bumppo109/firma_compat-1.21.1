@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "firma_compat:wood/axle/spruce"
+    },
+    "L": {
+      "item": "firma_compat:wood/lumber/spruce"
+    },
+    "P": {
+      "item": "minecraft:spruce_planks"
+    }
+  },
+  "pattern": [
+    "LPL",
+    "PAP",
+    "LPL"
+  ],
+  "result": {
+    "count": 1,
+    "id": "firma_compat:wood/water_wheel/spruce"
+  }
+}

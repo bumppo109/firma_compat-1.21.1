@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/lapis_lazuli/stone",
+    "firma_compat:ore/lapis_lazuli/deepslate",
+    "firma_compat:ore/lapis_lazuli/andesite",
+    "firma_compat:ore/lapis_lazuli/diorite",
+    "firma_compat:ore/lapis_lazuli/granite",
+    "firma_compat:ore/lapis_lazuli/calcite",
+    "firma_compat:ore/lapis_lazuli/tuff",
+    "firma_compat:ore/lapis_lazuli/dripstone",
+    "firma_compat:ore/lapis_lazuli/basalt",
+    "firma_compat:ore/lapis_lazuli/blackstone",
+    "firma_compat:ore/lapis_lazuli/end_stone"
+  ]
+}

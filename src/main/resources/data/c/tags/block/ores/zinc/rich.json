@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/rich_sphalerite/stone",
+    "firma_compat:ore/rich_sphalerite/deepslate",
+    "firma_compat:ore/rich_sphalerite/andesite",
+    "firma_compat:ore/rich_sphalerite/diorite",
+    "firma_compat:ore/rich_sphalerite/granite",
+    "firma_compat:ore/rich_sphalerite/calcite",
+    "firma_compat:ore/rich_sphalerite/tuff",
+    "firma_compat:ore/rich_sphalerite/dripstone",
+    "firma_compat:ore/rich_sphalerite/basalt",
+    "firma_compat:ore/rich_sphalerite/blackstone",
+    "firma_compat:ore/rich_sphalerite/end_stone"
+  ]
+}

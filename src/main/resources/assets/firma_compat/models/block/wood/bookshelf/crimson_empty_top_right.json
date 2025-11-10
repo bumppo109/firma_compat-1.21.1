@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:block/chiseled_bookshelf_empty_slot_top_right",
+	"textures": {
+		"texture": "firma_compat:block/wood/bookshelf/crimson_empty"
+	}
+}

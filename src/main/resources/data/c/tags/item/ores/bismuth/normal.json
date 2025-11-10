@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/normal_bismuthinite/stone",
+    "firma_compat:ore/normal_bismuthinite/deepslate",
+    "firma_compat:ore/normal_bismuthinite/andesite",
+    "firma_compat:ore/normal_bismuthinite/diorite",
+    "firma_compat:ore/normal_bismuthinite/granite",
+    "firma_compat:ore/normal_bismuthinite/calcite",
+    "firma_compat:ore/normal_bismuthinite/tuff",
+    "firma_compat:ore/normal_bismuthinite/dripstone",
+    "firma_compat:ore/normal_bismuthinite/basalt",
+    "firma_compat:ore/normal_bismuthinite/blackstone",
+    "firma_compat:ore/normal_bismuthinite/end_stone"
+  ]
+}

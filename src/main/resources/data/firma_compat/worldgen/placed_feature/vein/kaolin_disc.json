@@ -1,0 +1,9 @@
+{
+  "feature": "tfc:vein/kaolin_disc",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 1
+    }
+  ]
+}

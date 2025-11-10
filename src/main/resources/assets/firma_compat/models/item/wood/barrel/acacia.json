@@ -1,0 +1,11 @@
+{
+	"parent": "firma_compat:block/wood/barrel/acacia",
+	"overrides": [
+		{
+			"predicate": {
+				"tfc:sealed": 1
+			},
+			"model": "firma_compat:block/wood/barrel_sealed/acacia"
+		}
+	]
+}

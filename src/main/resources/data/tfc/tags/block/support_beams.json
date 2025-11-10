@@ -1,0 +1,24 @@
+{
+  "values": [
+    "firma_compat:wood/horizontal_support/acacia",
+    "firma_compat:wood/horizontal_support/birch",
+    "firma_compat:wood/horizontal_support/cherry",
+    "firma_compat:wood/horizontal_support/dark_oak",
+    "firma_compat:wood/horizontal_support/jungle",
+    "firma_compat:wood/horizontal_support/mangrove",
+    "firma_compat:wood/horizontal_support/oak",
+    "firma_compat:wood/horizontal_support/spruce",
+    "firma_compat:wood/horizontal_support/crimson",
+    "firma_compat:wood/horizontal_support/warped",
+    "firma_compat:wood/vertical_support/acacia",
+    "firma_compat:wood/vertical_support/birch",
+    "firma_compat:wood/vertical_support/cherry",
+    "firma_compat:wood/vertical_support/dark_oak",
+    "firma_compat:wood/vertical_support/jungle",
+    "firma_compat:wood/vertical_support/mangrove",
+    "firma_compat:wood/vertical_support/oak",
+    "firma_compat:wood/vertical_support/spruce",
+    "firma_compat:wood/vertical_support/crimson",
+    "firma_compat:wood/vertical_support/warped"
+  ]
+}

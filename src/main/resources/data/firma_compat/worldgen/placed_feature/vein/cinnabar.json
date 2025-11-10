@@ -1,0 +1,9 @@
+{
+  "feature": "firma_compat:vein/cinnabar",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 5
+    }
+  ]
+}

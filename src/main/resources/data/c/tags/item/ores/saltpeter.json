@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/saltpeter/stone",
+    "firma_compat:ore/saltpeter/deepslate",
+    "firma_compat:ore/saltpeter/andesite",
+    "firma_compat:ore/saltpeter/diorite",
+    "firma_compat:ore/saltpeter/granite",
+    "firma_compat:ore/saltpeter/calcite",
+    "firma_compat:ore/saltpeter/tuff",
+    "firma_compat:ore/saltpeter/dripstone",
+    "firma_compat:ore/saltpeter/basalt",
+    "firma_compat:ore/saltpeter/blackstone",
+    "firma_compat:ore/saltpeter/end_stone"
+  ]
+}

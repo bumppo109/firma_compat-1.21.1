@@ -1,0 +1,15 @@
+{
+  "values": [
+    "firma_compat:ore/topaz/stone",
+    "firma_compat:ore/topaz/deepslate",
+    "firma_compat:ore/topaz/andesite",
+    "firma_compat:ore/topaz/diorite",
+    "firma_compat:ore/topaz/granite",
+    "firma_compat:ore/topaz/calcite",
+    "firma_compat:ore/topaz/tuff",
+    "firma_compat:ore/topaz/dripstone",
+    "firma_compat:ore/topaz/basalt",
+    "firma_compat:ore/topaz/blackstone",
+    "firma_compat:ore/topaz/end_stone"
+  ]
+}

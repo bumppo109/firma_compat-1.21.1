@@ -1,0 +1,49 @@
+{
+  "type": "tfc:disc_vein",
+  "config": {
+    "rarity": 30,
+    "min_y": -64,
+    "max_y": 100,
+    "size": 44,
+    "height": 2,
+    "density": 0.98,
+    "project": false,
+    "random_name": "firma_compat_gravel",
+    "blocks": [
+      {
+        "replace": [
+          "minecraft:stone",
+          "minecraft:deepslate",
+          "minecraft:andesite",
+          "minecraft:diorite",
+          "minecraft:granite",
+          "minecraft:tuff",
+          "minecraft:calcite",
+          "minecraft:dripstone_block",
+          "minecraft:basalt",
+          "minecraft:blackstone",
+          "minecraft:netherrack",
+          "minecraft:end_stone",
+          "minecraft:gravel",
+          "firma_compat:rock/hardened/stone",
+          "firma_compat:rock/hardened/deepslate",
+          "firma_compat:rock/hardened/andesite",
+          "firma_compat:rock/hardened/diorite",
+          "firma_compat:rock/hardened/granite",
+          "firma_compat:rock/hardened/tuff",
+          "firma_compat:rock/hardened/calcite",
+          "firma_compat:rock/hardened/dripstone",
+          "firma_compat:rock/hardened/basalt",
+          "firma_compat:rock/hardened/blackstone",
+          "firma_compat:rock/hardened/netherrack",
+          "firma_compat:rock/hardened/end_stone"
+        ],
+        "with": [
+          {
+            "block": "minecraft:gravel"
+          }
+        ]
+      }
+    ]
+  }
+}

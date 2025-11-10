@@ -1,0 +1,9 @@
+{
+  "feature": "firma_compat:vein/emerald",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 7
+    }
+  ]
+}

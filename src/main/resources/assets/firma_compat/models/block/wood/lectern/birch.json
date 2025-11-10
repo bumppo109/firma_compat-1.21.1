@@ -1,0 +1,11 @@
+{
+	"parent": "minecraft:block/lectern",
+	"textures": {
+		"bottom": "minecraft:block/birch_planks",
+		"base": "firma_compat:block/wood/lectern/acacia/base",
+		"front": "firma_compat:block/wood/lectern/acacia/front",
+		"sides": "firma_compat:block/wood/lectern/acacia/sides",
+		"top": "firma_compat:block/wood/lectern/acacia/top",
+		"particle": "firma_compat:block/wood/lectern/acacia/sides"
+	}
+}

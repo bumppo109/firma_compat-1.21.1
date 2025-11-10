@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"key": {
+		"X": {
+			"item": "minecraft:nether_brick"
+		},
+		"Y": {
+			"item": "tfc:mortar"
+		},
+        "Z": {
+            "item": "minecraft:nether_wart_block"
+        }
+	},
+	"pattern": [
+		"XYX",
+		"YZY",
+		"XYX"
+	],
+	"result": {
+		"count": 4,
+		"id": "minecraft:red_nether_bricks"
+	}
+}

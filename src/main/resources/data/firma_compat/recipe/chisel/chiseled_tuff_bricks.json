@@ -1,0 +1,8 @@
+{
+  "type": "tfc:chisel",
+  "ingredient": [
+    "minecraft:tuff_bricks"
+  ],
+  "mode": "tfc:smooth",
+  "result": "minecraft:chiseled_tuff_bricks"
+}

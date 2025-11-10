@@ -1,0 +1,442 @@
+{
+  "type": "tfc:cluster_vein",
+  "config": {
+    "rarity": 90,
+    "density": 0.4,
+    "min_y": 10,
+    "max_y": 90,
+    "size": 20,
+    "random_name": "firma_compat_surface_magnetite",
+    "blocks": [
+      {
+        "replace": [
+          "minecraft:stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:deepslate"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/deepslate"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/deepslate"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/deepslate"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/deepslate"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/deepslate"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/deepslate"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/deepslate"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:andesite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/andesite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/andesite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/andesite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/andesite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/andesite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/andesite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:diorite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/diorite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/diorite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/diorite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/diorite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/diorite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/diorite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/diorite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:granite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/granite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/granite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/granite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/granite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/granite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/granite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/granite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:tuff"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/tuff"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/tuff"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/tuff"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/tuff"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/tuff"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/tuff"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/tuff"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:calcite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/calcite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/calcite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/calcite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/calcite"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/calcite"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/calcite"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/calcite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:dripstone_block"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/dripstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/dripstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/dripstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/dripstone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/dripstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/dripstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/dripstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/basalt"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/basalt"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/basalt"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/basalt"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/basalt"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/basalt"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/basalt"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:blackstone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/blackstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/blackstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/blackstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/blackstone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/blackstone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/blackstone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/blackstone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:end_stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/end_stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/end_stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/end_stone"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "firma_compat:rock/hardened/end_stone"
+        ],
+        "with": [
+          {
+            "weight": 15,
+            "block": "firma_compat:ore/poor_magnetite/end_stone"
+          },
+          {
+            "weight": 25,
+            "block": "firma_compat:ore/normal_magnetite/end_stone"
+          },
+          {
+            "weight": 60,
+            "block": "firma_compat:ore/rich_magnetite/end_stone"
+          }
+        ]
+      }
+    ],
+    "indicator": {
+      "rarity": 24,
+      "depth": 35,
+      "underground_rarity": 1,
+      "underground_count": 0,
+      "blocks": [
+        {
+          "block": "tfc:ore/small_magnetite"
+        }
+      ]
+    }
+  }
+}
