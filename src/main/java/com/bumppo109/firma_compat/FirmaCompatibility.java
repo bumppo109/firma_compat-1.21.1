@@ -6,6 +6,7 @@ import com.bumppo109.firma_compat.blocks.ModCompatBlocks;
 import com.bumppo109.firma_compat.blocks.wood.VanillaWood;
 import com.bumppo109.firma_compat.event.ModEventClientBusEvents;
 import com.bumppo109.firma_compat.items.ModCompatItems;
+import com.bumppo109.firma_compat.items.ModCreativeTabs;
 import com.bumppo109.firma_compat.items.ModItems;
 import com.bumppo109.firma_compat.loot_modifiers.ModLootModifiers;
 import com.bumppo109.firma_compat.mixin.BlockEntityTypeAccessorMixin;
@@ -14,6 +15,8 @@ import com.bumppo109.firma_compat.modules.TFCWoodModule;
 import net.dries007.tfc.common.blockentities.TFCBlockEntities;
 import net.dries007.tfc.common.blocks.wood.Wood;
 import net.dries007.tfc.util.Metal;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.api.distmarker.Dist;
@@ -61,6 +64,7 @@ public class FirmaCompatibility {
 
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeTabs.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModBlocks.registerOres(modEventBus);
         ModItems.register(modEventBus);
@@ -97,6 +101,13 @@ public class FirmaCompatibility {
             ModCompatBlocks.registerFlowerPotFlowers();
             modifyBlockEntityTypes();
         });
+        ModBlocks.ORES.values().forEach(oreBlock -> {
+            ItemBlockRenderTypes.setRenderLayer(oreBlock.get(), RenderType.cutout());
+        });
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.CASSITERITE_GRAVEL_DEPOSIT.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.NATIVE_COPPER_GRAVEL_DEPOSIT.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.NATIVE_GOLD_GRAVEL_DEPOSIT.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.NATIVE_SILVER_GRAVEL_DEPOSIT.get(), RenderType.cutout());
     }
 
     private static void modifyBlockEntityTypes()
@@ -151,7 +162,13 @@ public class FirmaCompatibility {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == ModCreativeTabs.FIRMA_COMPAT_TAB) {
+            // Add all registered blocks (including ores via BLOCKS.getEntries())
+            ModBlocks.BLOCKS.getEntries().stream()
+                    .map(entry -> entry.get().asItem()) // Get the BlockItem
+                    .forEach(event::accept);
 
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
