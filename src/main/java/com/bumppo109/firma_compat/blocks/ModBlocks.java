@@ -2,19 +2,20 @@ package com.bumppo109.firma_compat.blocks;
 
 import com.bumppo109.firma_compat.FirmaCompatibility;
 import com.bumppo109.firma_compat.items.ModItems;
+import com.google.common.base.Suppliers;
+import net.dries007.tfc.common.blockentities.FarmlandBlockEntity;
 import net.dries007.tfc.common.blockentities.TFCBlockEntities;
 import net.dries007.tfc.common.blocks.ExtendedProperties;
+import net.dries007.tfc.common.blocks.TFCBlocks;
 import net.dries007.tfc.common.blocks.devices.DryingBricksBlock;
 import net.dries007.tfc.common.blocks.rock.AqueductBlock;
 import net.dries007.tfc.common.blocks.rock.LooseRockBlock;
 import net.dries007.tfc.common.blocks.rock.RockAnvilBlock;
+import net.dries007.tfc.common.blocks.soil.*;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.ItemLike;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.LiquidBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
@@ -35,14 +36,29 @@ public class ModBlocks {
     //Ore Map
     public static final Map<String, DeferredBlock<Block>> ORES = new HashMap<>();
 
-    //drying mud brick TODO - dries properly but doesnt return mud brick item
+    //drying mud brick
     public static final DeferredBlock<Block> DRYING_MUD_BRICK = registerBlock("drying_bricks/mud",
         () -> new DryingBricksBlock(ExtendedProperties.of(MapColor.DIRT).noCollission().noOcclusion().instabreak().sound(SoundType.STEM).randomTicks().blockEntity(TFCBlockEntities.TICK_COUNTER), ModItems.MUD_BRICK));
 
     public static final DeferredBlock<Block> STONE_ANVIL = registerBlock("rock/anvil/stone",
             () -> new RockAnvilBlock(ExtendedProperties.of().mapColor(MapColor.STONE).sound(SoundType.STONE).strength(2.0F, 10.0F).requiresCorrectToolForDrops().cloneItem(Blocks.STONE).blockEntity(TFCBlockEntities.ANVIL)));
 
-//Stone Blocks
+    public static final DeferredBlock<Block> DIRT = registerBlock("dirt",
+            () -> new DirtBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT).requiresCorrectToolForDrops(),ModBlocks.GRASS_BLOCK,Suppliers.ofInstance(Blocks.DIRT_PATH),ModBlocks.FARMLAND,Suppliers.ofInstance(Blocks.ROOTED_DIRT), Suppliers.ofInstance(Blocks.MUD)));
+    public static final DeferredBlock<Block> CLAY_DIRT = registerBlock("clay_dirt",
+            () -> new DirtBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.DIRT).requiresCorrectToolForDrops(),ModBlocks.CLAY_GRASS,Suppliers.ofInstance(Blocks.DIRT_PATH),ModBlocks.FARMLAND,Suppliers.ofInstance(Blocks.ROOTED_DIRT), Suppliers.ofInstance(Blocks.MUD)));
+    public static final DeferredBlock<Block> GRASS_BLOCK = registerBlock("grass",
+            () -> new ConnectedGrassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GRASS_BLOCK).requiresCorrectToolForDrops(),ModBlocks.DIRT,Suppliers.ofInstance(Blocks.DIRT_PATH),ModBlocks.FARMLAND));
+    public static final DeferredBlock<Block> CLAY_GRASS = registerBlock("clay_grass",
+            () -> new ConnectedGrassBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.GRASS_BLOCK).requiresCorrectToolForDrops(),ModBlocks.DIRT,Suppliers.ofInstance(Blocks.DIRT_PATH),ModBlocks.FARMLAND));
+    public static final DeferredBlock<Block> DUFF = registerBlock("duff",
+            () -> new ConnectedDuffBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PODZOL).requiresCorrectToolForDrops(),ModBlocks.DIRT,Suppliers.ofInstance(Blocks.DIRT_PATH),ModBlocks.FARMLAND));
+    public static final DeferredBlock<Block> CLAY_DUFF = registerBlock("clay_duff",
+            () -> new ConnectedDuffBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PODZOL).requiresCorrectToolForDrops(),ModBlocks.DIRT,Suppliers.ofInstance(Blocks.DIRT_PATH),ModBlocks.FARMLAND));
+    public static final DeferredBlock<Block> FARMLAND = registerBlock("farmland",
+            () -> new FarmlandBlock(ExtendedProperties.of(MapColor.DIRT).requiresCorrectToolForDrops().strength(1.3F).sound(SoundType.GRAVEL).randomTicks().isViewBlocking(TFCBlocks::always).isSuffocating(TFCBlocks::always).blockEntity(TFCBlockEntities.FARMLAND).serverTicks(FarmlandBlockEntity::serverTick),Suppliers.ofInstance(Blocks.DIRT)));
+
+    //Stone Blocks
     //loose
     public static final DeferredBlock<Block> LOOSE_STONE = registerBlock("rock/loose/stone",
         () -> new LooseRockBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));

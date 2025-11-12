@@ -118,14 +118,13 @@ public class TFCWoodModule extends SimpleModule {
 
     @Override
     // RECIPES, TAGS
+    //everycomp log tags formatted -> everycomp:[modid]/[woodType]_logs
     public void addDynamicServerResources(Consumer<ResourceGenTask> executor) {
         super.addDynamicServerResources(executor);
         executor.accept((manager, sink) -> {
             for(var woodType : WoodTypeRegistry.INSTANCE){
-
-                //creates missing log tags as everycomp:[modid]/[woodType]_logs
+                //tfc fuel data
                 fuelData(woodType, sink, manager);
-                //add horizontal_support block to tfc/support/horizontal_support_beam.json tag
             }
         });
     }

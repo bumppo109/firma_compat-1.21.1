@@ -18,8 +18,6 @@ import java.util.stream.Stream;
 public class ModCompatBlockEntities {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES = DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, FirmaCompatibility.MODID);
 
-    //public static final Id<TapBlockEntity> TAP_BLOCK_ENTITY = register("tap_block_entity", TapBlockEntity::new, AFCBlocks.TREE_TAP);
-
     private static <T extends BlockEntity> Id<T> register(String name, BlockEntityType.BlockEntitySupplier<T> factory, Supplier<? extends Block> block)
     {
         return new Id<>(RegistrationHelpers.register(BLOCK_ENTITIES, name, factory, block));

@@ -11,6 +11,8 @@ import java.util.function.Supplier;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(FirmaCompatibility.MODID);
 
+    public static final DeferredItem<Item> UNFIRED_DECORATED_POT = ITEMS.register("unfired_decorated_pot", () -> new Item(new Item.Properties()));
+
 //brick
     public static final DeferredItem<Item> STONE_BRICK = ITEMS.register("brick/stone", () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> POLISHED_BLACKSTONE_BRICK = ITEMS.register("brick/polished_blackstone", () -> new Item(new Item.Properties()));

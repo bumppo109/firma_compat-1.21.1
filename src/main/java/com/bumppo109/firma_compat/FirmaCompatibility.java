@@ -12,6 +12,7 @@ import com.bumppo109.firma_compat.loot_modifiers.ModLootModifiers;
 import com.bumppo109.firma_compat.mixin.BlockEntityTypeAccessorMixin;
 import com.bumppo109.firma_compat.modules.TFCStoneModule;
 import com.bumppo109.firma_compat.modules.TFCWoodModule;
+import com.bumppo109.firma_compat.util.ModTags;
 import net.dries007.tfc.common.blockentities.TFCBlockEntities;
 import net.dries007.tfc.common.blocks.wood.Wood;
 import net.dries007.tfc.util.Metal;
@@ -20,7 +21,6 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.api.distmarker.Dist;
-import net.neoforged.fml.ModList;
 import net.neoforged.fml.loading.FMLEnvironment;
 import org.slf4j.Logger;
 
@@ -131,6 +131,7 @@ public class FirmaCompatibility {
         modifyWood(TFCBlockEntities.WINDMILL.get(), Wood.BlockType.WINDMILL);
 
         modifyBlockEntityType(TFCBlockEntities.TICK_COUNTER.get(), Stream.of(ModBlocks.DRYING_MUD_BRICK.get()));
+        modifyBlockEntityType(TFCBlockEntities.FARMLAND.get(), Stream.of(ModBlocks.FARMLAND.get()));
         modifyBlockEntityType(TFCBlockEntities.ANVIL.get(), Stream.of(ModBlocks.STONE_ANVIL.get()));
 
         for (Metal metal : Metal.values())
@@ -174,5 +175,6 @@ public class FirmaCompatibility {
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
+
     }
 }

@@ -133,9 +133,29 @@ dependencies {
         // at runtime, use the full JEI jar for NeoForge
         runtimeOnly("mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}")
 
+    //TerraFirmaCraft
+    //1.21.1-4.0.3
+    //implementation "curse.maven:terrafirmacraft-302973:7010707"
+    //1.21.1-4.0.9
+    implementation "curse.maven:terrafirmacraft-302973:7150812"
+    //1.21.1-4.04
+    //implementation "curse.maven:terrafirmacraft-302973:7024199"
+
+    //Patchoili 1.21.1-92
+    implementation "curse.maven:patchouli-306770:6842247"
+
+    //Polytone 1.21-3.5.10
+    implementation "curse.maven:polytone-958094:7105947"
+
+    //KubeJS
+    implementation "curse.maven:kubejs-238086:7198768"
+    //Rhino
+    implementation "curse.maven:rhino-416294:7104526"
+    //Architectury
+
     //TODO - remove after testing
-    implementation "curse.maven:regions-unexplored-659110:6273893"
-    implementation "curse.maven:terrablender-neoforge-940057:6054947"
+    //implementation "curse.maven:regions-unexplored-659110:6273893"
+    //implementation "curse.maven:terrablender-neoforge-940057:6054947"
 
     //Wood Good 1.21-2.11.4
     //implementation "curse.maven:every-compat-628539:7010172"
@@ -151,35 +171,6 @@ dependencies {
     //implementation "curse.maven:selene-499980:7017282"
     //1.21-2.24.0
     implementation "curse.maven:selene-499980:7068422"
-
-    //TerraFirmaCraft
-    //1.21.1-4.0.3
-    //implementation "curse.maven:terrafirmacraft-302973:7010707"
-    //1.21.1-4.0.9
-    implementation "curse.maven:terrafirmacraft-302973:7150812"
-    //1.21.1-4.04
-    //implementation "curse.maven:terrafirmacraft-302973:7024199"
-
-    //Patchoili 1.21.1-92
-    implementation "curse.maven:patchouli-306770:6842247"
-
-    //Polytone 1.21-3.5.10
-    implementation "curse.maven:polytone-958094:7105947"
-
-    // Example mod dependency using a mod jar from ./libs with a flat dir repository
-    // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
-    // The group id is ignored when searching -- in this case, it is "blank"
-    // implementation "blank:coolmod-${mc_version}:${coolmod_version}"
-
-    // Example mod dependency using a file as dependency
-    // implementation files("libs/coolmod-${mc_version}-${coolmod_version}.jar")
-
-    // Example project dependency using a sister or child project:
-    // implementation project(":myproject")
-
-    // For more info:
-    // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
-    // http://www.gradle.org/docs/current/userguide/dependency_management.html
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

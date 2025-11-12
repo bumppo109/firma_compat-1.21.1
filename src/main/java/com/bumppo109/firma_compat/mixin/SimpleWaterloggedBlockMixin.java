@@ -1,5 +1,6 @@
 package com.bumppo109.firma_compat.mixin;
 
+import com.bumppo109.firma_compat.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.world.entity.player.Player;
@@ -24,7 +25,7 @@ public interface SimpleWaterloggedBlockMixin extends SimpleWaterloggedBlock {
      */
     @Overwrite
     default boolean canPlaceLiquid(@Nullable Player player, BlockGetter level, BlockPos pos, BlockState state, Fluid fluid) {
-        return fluid.is(FluidTags.WATER);  // Accepts any tagged fluid (vanilla water + customs)
+        return fluid.is(ModTags.Fluids.WATERLOGGING_WATER);  // Accepts any tagged fluid (vanilla water + customs)
     }
 
     /**
@@ -33,7 +34,7 @@ public interface SimpleWaterloggedBlockMixin extends SimpleWaterloggedBlock {
      */
     @Overwrite
     default boolean placeLiquid(LevelAccessor level, BlockPos pos, BlockState state, FluidState fluidState) {
-        if (fluidState.is(FluidTags.WATER)) {
+        if (fluidState.is(ModTags.Fluids.WATERLOGGING_WATER)) {
             if (!level.isClientSide()) {  // Mirror vanilla client check
                 level.setBlock(pos, state.setValue(BlockStateProperties.WATERLOGGED, true), 3);
                 level.scheduleTick(pos, fluidState.getType(), fluidState.getType().getTickDelay(level));
