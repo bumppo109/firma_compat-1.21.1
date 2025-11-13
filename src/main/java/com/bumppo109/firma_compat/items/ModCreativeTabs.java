@@ -2,7 +2,6 @@ package com.bumppo109.firma_compat.items;
 
 import com.bumppo109.firma_compat.FirmaCompatibility;
 import com.bumppo109.firma_compat.blocks.ModBlocks;
-import com.bumppo109.firma_compat.blocks.ModCompatBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -38,60 +37,6 @@ public class ModCreativeTabs {
                                 .filter(item -> item != net.minecraft.world.item.Items.AIR)
                                 .map(item -> item.getDefaultInstance())
                                 .forEach(output::accept);
-
-                        // Add all wood blocks from WOODS map
-                        ModCompatBlocks.WOODS.values().stream()
-                                .flatMap(innerMap -> innerMap.values().stream())  // Flatten inner maps
-                                .map(id -> id.asItem())  // Id implements ItemLike
-                                .filter(item -> item != Items.AIR)
-                                .map(item -> item.getDefaultInstance())
-                                .forEach(output::accept);
-
-                        // Add all ceiling hanging signs from CEILING_HANGING_SIGNS map
-                        ModCompatBlocks.CEILING_HANGING_SIGNS.values().stream()
-                                .flatMap(innerMap -> innerMap.values().stream())  // Flatten inner maps
-                                .map(id -> id.asItem())  // Id implements ItemLike
-                                .filter(item -> item != Items.AIR)
-                                .map(item -> item.getDefaultInstance())
-                                .forEach(output::accept);
-
-                        // Add all wall hanging signs from WALL_HANGING_SIGNS map
-                        ModCompatBlocks.WALL_HANGING_SIGNS.values().stream()
-                                .flatMap(innerMap -> innerMap.values().stream())  // Flatten inner maps
-                                .map(id -> id.asItem())  // Id implements ItemLike
-                                .filter(item -> item != Items.AIR)
-                                .map(item -> item.getDefaultInstance())
-                                .forEach(output::accept);
-
-                        // Add all lumber items from LUMBER map
-                        ModCompatItems.LUMBER.values().stream()
-                                .map(id -> id.asItem())
-                                .filter(item -> item != Items.AIR)
-                                .map(item -> item.getDefaultInstance())
-                                .forEach(output::accept);
-
-                        // Add all support items from SUPPORTS map
-                        ModCompatItems.SUPPORTS.values().stream()
-                                .map(id -> id.asItem())
-                                .filter(item -> item != Items.AIR)
-                                .map(item -> item.getDefaultInstance())
-                                .forEach(output::accept);
-
-                        // Add all chest minecart items from CHEST_MINECARTS map
-                        ModCompatItems.CHEST_MINECARTS.values().stream()
-                                .map(id -> id.asItem())
-                                .filter(item -> item != Items.AIR)
-                                .map(item -> item.getDefaultInstance())
-                                .forEach(output::accept);
-
-                        // Add all hanging sign items from HANGING_SIGNS map
-                        ModCompatItems.HANGING_SIGNS.values().stream()
-                                .flatMap(innerMap -> innerMap.values().stream())  // Flatten inner maps
-                                .map(id -> id.asItem())
-                                .filter(item -> item != Items.AIR)
-                                .map(item -> item.getDefaultInstance())
-                                .forEach(output::accept);
-
                         })
                     .build());
 

@@ -42,11 +42,11 @@ public class TFCStoneModule extends StoneZoneModule {
     public final SimpleEntrySet<StoneType, Block> LOOSE_ROCK;
 
     public TFCStoneModule(String modId) {
-        super(modId, "tfc");
+        super(modId, "firma_compat");
 
         ResourceKey<CreativeModeTab> tab = CreativeModeTabs.BUILDING_BLOCKS;
 
-        LOOSE_ROCK = StoneZoneEntrySet.builder(StoneType.class, "rock/loose/andesite",
+        LOOSE_ROCK = StoneZoneEntrySet.builder(StoneType.class, "andesite_loose",
                 getModBlock("rock/loose/andesite"), () -> VanillaStoneTypes.ANDESITE,
                 stoneType -> new LooseRockBlock(Utils.copyPropertySafe(stoneType.stone))
                 )

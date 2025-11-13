@@ -49,48 +49,14 @@ import static net.mehvahdjukaar.every_compat.common_classes.TagUtility.getATagOr
 public class TFCWoodModule extends SimpleModule {
     public final ItemOnlyEntrySet<WoodType, Item> LUMBER;
     public final SimpleEntrySet<WoodType, Block> TWIG;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> BOOKSHELF;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> LOG_FENCE;
-    //public final SimpleEntrySet<WoodType, ToolRackBlock> TOOL_RACK;
-    //public static BlockEntityType<ToolRackBlockEntity> TOOL_RACK_ENTITY;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> CRAFTING_TABLE;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> CHEST;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> TRAPPED_CHEST;
-    //public final SimpleEntrySet<WoodType, TFCLoomBlock> LOOM;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> SLUICE;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> BARREL;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> LECTERN;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> SCRIBING_TABLE;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> SEWING_TABLE;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> SHELF;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> BOAT;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> SUPPORT;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> CHEST_MINECART;
-
-    //public final SimpleEntrySet<WoodType, BarrelBlock> AXLE;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> BLADED_AXLE;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> ENCASED_AXLE;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> CLUTCH;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> GEAR_BOX;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> WATER_WHEEL;
-
-    //public final SimpleEntrySet<WoodType, BarrelBlock> BISMUTH_BRONZE_HANGING_SIGN;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> BLACK_BRONZE_HANGING_SIGN;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> BRONZE_HANGING_SIGN;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> COPPER_HANGING_SIGN;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> WROUGHT_IRON_HANGING_SIGN;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> STEEL_HANGING_SIGN;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> BLACK_STEEL_HANGING_SIGN;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> BLUE_STEEL_HANGING_SIGN;
-    //public final SimpleEntrySet<WoodType, BarrelBlock> RED_STEEL_HANGING_SIGN;
 
     public TFCWoodModule(String modId) {
-        super(modId, "tfc");
+        super(modId, "firma_compat");
 
         ResourceKey<CreativeModeTab> tab = CreativeModeTabs.BUILDING_BLOCKS;
 
         LUMBER = ItemOnlyEntrySet.builder(WoodType.class, "lumber",
-                        getModItem("wood/lumber/oak"), () -> VanillaWoodTypes.OAK,
+                        getModItem("oak_lumber"), () -> VanillaWoodTypes.OAK,
                         w -> new Item(new Item.Properties())
                 )
                 .setTabKey(tab)
@@ -100,16 +66,15 @@ public class TFCWoodModule extends SimpleModule {
         this.addEntry(LUMBER);
 
         TWIG = SimpleEntrySet.builder(WoodType.class, "twig",
-                        getModBlock("wood/twig/oak"), () -> VanillaWoodTypes.OAK,
+                        getModBlock("oak_twig"), () -> VanillaWoodTypes.OAK,
                         w -> new GroundcoverBlock(GroundcoverBlockType.STICK)
                 )
-                .addTexture(modRes("item/wood/twig"), PaletteStrategies.MAIN_CHILD)
-                .addTexture(modRes("block/wood/log/oak"), PaletteStrategies.LOG_SIDE_STANDARD)
-                .addTexture(modRes("block/wood/log_top/oak"), PaletteStrategies.STRIPPED_LOG_TOP_STANDARD)
+                .addTexture(modRes("item/oak_twig"), PaletteStrategies.MAIN_CHILD)
+                .addTexture(ResourceLocation.parse("minecraft:block/oak_log"), PaletteStrategies.LOG_SIDE_STANDARD)
+                .addTexture(ResourceLocation.parse("minecraft:block/oak_log_top"), PaletteStrategies.STRIPPED_LOG_TOP_STANDARD)
                 .addTag(modRes("twigs"), Registries.BLOCK)
                 .addTag(BlockTags.MINEABLE_WITH_AXE, Registries.BLOCK)
                 .addTag(modRes("twigs"), Registries.ITEM)
-                .addRecipe(modRes("crafting/wood/tool_rack/oak"))
                 .setTabKey(tab)
                 .build();
         this.addEntry(TWIG);
@@ -154,29 +119,4 @@ public class TFCWoodModule extends SimpleModule {
             EveryCompat.LOGGER.error("Failed to generate the tfc data - fuel for {} : {}", woodType.getId(), e);
         }
     }
-
-    /*
-    public void createLogTag(String blockType, SimpleEntrySet<?,?> firstBlock, SimpleEntrySet<?,?> secondBlock, ResourceSink handler) {
-        for (var w : firstBlock.blocks.keySet()) {
-            boolean isTagFull = false;
-            SimpleTagBuilder tag = SimpleTagBuilder.of(EveryCompat.res(w.getAppendableId() + "_logs"));
-            Block firstB = firstBlock.blocks.get(w);
-            Block secondB = secondBlock.blocks.get(w);
-
-            if (firstB != null) {
-                isTagFull = true;
-                tag.addEntry(firstB);
-            }
-            if (secondB != null) {
-                isTagFull = true;
-                tag.addEntry(secondB);
-            }
-            if (isTagFull) {
-                handler.addTag(tag, Registries.ITEM);
-                handler.addTag(tag, Registries.BLOCK);
-            }
-        }
-    }
-     */
-
 }

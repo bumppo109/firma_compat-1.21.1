@@ -1,7 +1,0 @@
-{
-	"parent": "tfc:block/loom",
-	"textures": {
-		"texture": "minecraft:block/warped_planks",
-		"particle": "minecraft:block/warped_planks"
-	}
-}

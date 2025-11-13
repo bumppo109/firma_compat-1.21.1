@@ -6,6 +6,7 @@ import com.google.common.base.Suppliers;
 import net.dries007.tfc.common.blockentities.FarmlandBlockEntity;
 import net.dries007.tfc.common.blockentities.TFCBlockEntities;
 import net.dries007.tfc.common.blocks.ExtendedProperties;
+import net.dries007.tfc.common.blocks.GroundcoverBlock;
 import net.dries007.tfc.common.blocks.TFCBlocks;
 import net.dries007.tfc.common.blocks.devices.DryingBricksBlock;
 import net.dries007.tfc.common.blocks.rock.AqueductBlock;
@@ -18,6 +19,7 @@ import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -57,6 +59,28 @@ public class ModBlocks {
             () -> new ConnectedDuffBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.PODZOL).requiresCorrectToolForDrops(),ModBlocks.DIRT,Suppliers.ofInstance(Blocks.DIRT_PATH),ModBlocks.FARMLAND));
     public static final DeferredBlock<Block> FARMLAND = registerBlock("farmland",
             () -> new FarmlandBlock(ExtendedProperties.of(MapColor.DIRT).requiresCorrectToolForDrops().strength(1.3F).sound(SoundType.GRAVEL).randomTicks().isViewBlocking(TFCBlocks::always).isSuffocating(TFCBlocks::always).blockEntity(TFCBlockEntities.FARMLAND).serverTicks(FarmlandBlockEntity::serverTick),Suppliers.ofInstance(Blocks.DIRT)));
+
+    //Wood Blocks
+    public static final DeferredBlock<Block> ACACIA_TWIG = registerBlock("acacia_twig",
+            () -> GroundcoverBlock.twig(ExtendedProperties.of(BlockBehaviour.Properties.ofFullCopy(Blocks.GRASS_BLOCK)).strength(0.05F, 0.0F).sound(SoundType.NETHER_WART).noCollission().pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> BIRCH_TWIG = registerBlock("birch_twig",
+            () -> GroundcoverBlock.twig(ExtendedProperties.of(BlockBehaviour.Properties.ofFullCopy(Blocks.GRASS_BLOCK)).strength(0.05F, 0.0F).sound(SoundType.NETHER_WART).noCollission().pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> CHERRY_TWIG = registerBlock("cherry_twig",
+            () -> GroundcoverBlock.twig(ExtendedProperties.of(BlockBehaviour.Properties.ofFullCopy(Blocks.GRASS_BLOCK)).strength(0.05F, 0.0F).sound(SoundType.NETHER_WART).noCollission().pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> DARK_OAK_TWIG = registerBlock("dark_oak_twig",
+            () -> GroundcoverBlock.twig(ExtendedProperties.of(BlockBehaviour.Properties.ofFullCopy(Blocks.GRASS_BLOCK)).strength(0.05F, 0.0F).sound(SoundType.NETHER_WART).noCollission().pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> JUNGLE_TWIG = registerBlock("jungle_twig",
+            () -> GroundcoverBlock.twig(ExtendedProperties.of(BlockBehaviour.Properties.ofFullCopy(Blocks.GRASS_BLOCK)).strength(0.05F, 0.0F).sound(SoundType.NETHER_WART).noCollission().pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> MANGROVE_TWIG = registerBlock("mangrove_twig",
+            () -> GroundcoverBlock.twig(ExtendedProperties.of(BlockBehaviour.Properties.ofFullCopy(Blocks.GRASS_BLOCK)).strength(0.05F, 0.0F).sound(SoundType.NETHER_WART).noCollission().pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> OAK_TWIG = registerBlock("oak_twig",
+            () -> GroundcoverBlock.twig(ExtendedProperties.of(BlockBehaviour.Properties.ofFullCopy(Blocks.GRASS_BLOCK)).strength(0.05F, 0.0F).sound(SoundType.NETHER_WART).noCollission().pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> SPRUCE_TWIG = registerBlock("spruce_twig",
+            () -> GroundcoverBlock.twig(ExtendedProperties.of(BlockBehaviour.Properties.ofFullCopy(Blocks.GRASS_BLOCK)).strength(0.05F, 0.0F).sound(SoundType.NETHER_WART).noCollission().pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> CRIMSON_TWIG = registerBlock("crimson_twig",
+            () -> GroundcoverBlock.twig(ExtendedProperties.of(BlockBehaviour.Properties.ofFullCopy(Blocks.GRASS_BLOCK)).strength(0.05F, 0.0F).sound(SoundType.NETHER_WART).noCollission().pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> WARPED_TWIG = registerBlock("warped_twig",
+            () -> GroundcoverBlock.twig(ExtendedProperties.of(BlockBehaviour.Properties.ofFullCopy(Blocks.GRASS_BLOCK)).strength(0.05F, 0.0F).sound(SoundType.NETHER_WART).noCollission().pushReaction(PushReaction.DESTROY)));
 
     //Stone Blocks
     //loose
