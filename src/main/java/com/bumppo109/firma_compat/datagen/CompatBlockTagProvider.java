@@ -53,8 +53,8 @@ public class CompatBlockTagProvider extends BlockTagsProvider {
         addAllCompatWoods(Wood.BlockType.TRAPPED_CHEST, Tags.Blocks.CHESTS_TRAPPED);
         addAllCompatWoods(Wood.BlockType.HORIZONTAL_SUPPORT, TFCTags.Blocks.SUPPORT_BEAMS);
         addAllCompatWoods(Wood.BlockType.VERTICAL_SUPPORT, TFCTags.Blocks.SUPPORT_BEAMS);
-        //addAllCompatWoods(Wood.BlockType.SIGN, BlockTags.STANDING_SIGNS);
-        //addAllCompatWoods(Wood.BlockType.WALL_SIGN, BlockTags.WALL_SIGNS);
+        addAllCompatWoods(Wood.BlockType.SIGN, BlockTags.STANDING_SIGNS);
+        addAllCompatWoods(Wood.BlockType.WALL_SIGN, BlockTags.WALL_SIGNS);
     }
 
     private void addAllCompatWoods(Wood.BlockType type, TagKey<Block> tagKey)

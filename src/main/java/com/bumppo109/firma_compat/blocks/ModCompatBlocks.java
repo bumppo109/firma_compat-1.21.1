@@ -98,7 +98,7 @@ public class ModCompatBlocks
     public static void registerFlowerPotFlowers()
     {
         FlowerPotBlock pot = (FlowerPotBlock) Blocks.FLOWER_POT;
-        //WOODS.forEach((wood, map) -> pot.addPlant(map.get(VanillaWood.BlockType.SAPLING).getId(), map.get(VanillaWood.BlockType.POTTED_SAPLING)));
+        //WOODS.forEach((wood, map) -> pot.addPlant(map.get(Wood.BlockType.SAPLING).getId(), map.get(Wood.BlockType.POTTED_SAPLING)));
         //TREE_SPECIES.forEach((wood, map) -> pot.addPlant(map.get(TreeSpecies.BlockType.SAPLING).getId(), map.get(TreeSpecies.BlockType.POTTED_SAPLING)));
     }
 
