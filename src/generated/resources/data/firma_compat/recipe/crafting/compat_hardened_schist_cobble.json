@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "tfc:rock/loose/schist"
+    },
+    "X": {
+      "item": "tfc:mortar"
+    }
+  },
+  "pattern": [
+    "LXL",
+    "XLX",
+    "LXL"
+  ],
+  "result": {
+    "count": 4,
+    "id": "firma_compat:compat_hardened_schist_cobble"
+  }
+}

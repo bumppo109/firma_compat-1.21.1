@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "firma_compat:block/twig/jungle"
+      },
+      {
+        "model": "firma_compat:block/twig/jungle",
+        "y": 90
+      },
+      {
+        "model": "firma_compat:block/twig/jungle",
+        "y": 180
+      },
+      {
+        "model": "firma_compat:block/twig/jungle",
+        "y": 270
+      },
+      {
+        "model": "firma_compat:block/twig_45/jungle"
+      },
+      {
+        "model": "firma_compat:block/twig_45/jungle",
+        "y": 90
+      },
+      {
+        "model": "firma_compat:block/twig_45/jungle",
+        "y": 180
+      },
+      {
+        "model": "firma_compat:block/twig_45/jungle",
+        "y": 270
+      }
+    ]
+  }
+}

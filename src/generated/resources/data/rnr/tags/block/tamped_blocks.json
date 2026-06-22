@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "firma_compat:tamped_dirt",
+      "required": false
+    },
+    {
+      "id": "firma_compat:tamped_mud",
+      "required": false
+    }
+  ]
+}

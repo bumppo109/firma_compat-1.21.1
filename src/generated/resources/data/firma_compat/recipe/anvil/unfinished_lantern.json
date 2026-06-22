@@ -1,0 +1,15 @@
+{
+  "type": "tfc:anvil",
+  "ingredient": {
+    "tag": "c:ingots/cast_iron"
+  },
+  "result": {
+    "count": 1,
+    "id": "firma_compat:unfinished_lantern"
+  },
+  "rules": [
+    "draw_third_last",
+    "bend_second_last",
+    "bend_last"
+  ]
+}

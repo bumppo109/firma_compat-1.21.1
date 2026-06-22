@@ -1,0 +1,7 @@
+{
+  "parent": "tfc:block/ore",
+  "textures": {
+    "all": "minecraft:block/basalt_side",
+    "overlay": "tfc:block/ore/normal_limonite"
+  }
+}
