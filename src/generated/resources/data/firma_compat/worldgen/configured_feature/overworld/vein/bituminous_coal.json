@@ -4,7 +4,7 @@
     "blocks": [
       {
         "replace": [
-          "minecraft:andesite"
+          "minecraft:netherrack"
         ],
         "with": [
           {
@@ -14,37 +14,7 @@
       },
       {
         "replace": [
-          "minecraft:granite"
-        ],
-        "with": [
-          {
-            "block": "tfc:bituminous_coal"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:diorite"
-        ],
-        "with": [
-          {
-            "block": "tfc:bituminous_coal"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:dripstone_block"
-        ],
-        "with": [
-          {
-            "block": "tfc:bituminous_coal"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:deepslate"
+          "minecraft:blackstone"
         ],
         "with": [
           {
@@ -64,7 +34,7 @@
       },
       {
         "replace": [
-          "minecraft:netherrack"
+          "minecraft:end_stone"
         ],
         "with": [
           {
@@ -84,26 +54,6 @@
       },
       {
         "replace": [
-          "minecraft:tuff"
-        ],
-        "with": [
-          {
-            "block": "tfc:bituminous_coal"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:end_stone"
-        ],
-        "with": [
-          {
-            "block": "tfc:bituminous_coal"
-          }
-        ]
-      },
-      {
-        "replace": [
           "minecraft:stone"
         ],
         "with": [
@@ -114,7 +64,57 @@
       },
       {
         "replace": [
-          "minecraft:blackstone"
+          "minecraft:diorite"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:granite"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:deepslate"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:andesite"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:dripstone_block"
+        ],
+        "with": [
+          {
+            "block": "tfc:bituminous_coal"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:tuff"
         ],
         "with": [
           {

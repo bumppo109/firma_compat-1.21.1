@@ -4,11 +4,61 @@
     "blocks": [
       {
         "replace": [
-          "minecraft:end_stone"
+          "minecraft:andesite"
         ],
         "with": [
           {
-            "block": "firma_compat:end_stone_gypsum_ore"
+            "block": "firma_compat:andesite_gypsum_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:tuff"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:tuff_gypsum_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:calcite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:calcite_gypsum_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:blackstone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:blackstone_gypsum_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:dripstone_block"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:dripstone_gypsum_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:netherrack"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:netherrack_gypsum_ore"
           }
         ]
       },
@@ -34,61 +84,21 @@
       },
       {
         "replace": [
+          "minecraft:end_stone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:end_stone_gypsum_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
           "minecraft:deepslate"
         ],
         "with": [
           {
             "block": "firma_compat:deepslate_gypsum_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:dripstone_block"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:dripstone_gypsum_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:blackstone"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:blackstone_gypsum_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:netherrack"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:netherrack_gypsum_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:andesite"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:andesite_gypsum_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:tuff"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:tuff_gypsum_ore"
           }
         ]
       },
@@ -109,16 +119,6 @@
         "with": [
           {
             "block": "firma_compat:diorite_gypsum_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:calcite"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:calcite_gypsum_ore"
           }
         ]
       }

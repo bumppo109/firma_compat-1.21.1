@@ -4,19 +4,19 @@
     "blocks": [
       {
         "replace": [
-          "minecraft:tuff"
+          "minecraft:dripstone_block"
         ],
         "with": [
           {
-            "block": "firma_compat:poor_tuff_native_silver_ore",
+            "block": "firma_compat:poor_dripstone_native_silver_ore",
             "weight": 70.0
           },
           {
-            "block": "firma_compat:normal_tuff_native_silver_ore",
+            "block": "firma_compat:normal_dripstone_native_silver_ore",
             "weight": 25.0
           },
           {
-            "block": "firma_compat:rich_tuff_native_silver_ore",
+            "block": "firma_compat:rich_dripstone_native_silver_ore",
             "weight": 5.0
           }
         ]
@@ -42,82 +42,6 @@
       },
       {
         "replace": [
-          "minecraft:netherrack"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:poor_netherrack_native_silver_ore",
-            "weight": 70.0
-          },
-          {
-            "block": "firma_compat:normal_netherrack_native_silver_ore",
-            "weight": 25.0
-          },
-          {
-            "block": "firma_compat:rich_netherrack_native_silver_ore",
-            "weight": 5.0
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:end_stone"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:poor_end_stone_native_silver_ore",
-            "weight": 70.0
-          },
-          {
-            "block": "firma_compat:normal_end_stone_native_silver_ore",
-            "weight": 25.0
-          },
-          {
-            "block": "firma_compat:rich_end_stone_native_silver_ore",
-            "weight": 5.0
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:blackstone"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:poor_blackstone_native_silver_ore",
-            "weight": 70.0
-          },
-          {
-            "block": "firma_compat:normal_blackstone_native_silver_ore",
-            "weight": 25.0
-          },
-          {
-            "block": "firma_compat:rich_blackstone_native_silver_ore",
-            "weight": 5.0
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:granite"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:poor_granite_native_silver_ore",
-            "weight": 70.0
-          },
-          {
-            "block": "firma_compat:normal_granite_native_silver_ore",
-            "weight": 25.0
-          },
-          {
-            "block": "firma_compat:rich_granite_native_silver_ore",
-            "weight": 5.0
-          }
-        ]
-      },
-      {
-        "replace": [
           "minecraft:calcite"
         ],
         "with": [
@@ -137,19 +61,19 @@
       },
       {
         "replace": [
-          "minecraft:dripstone_block"
+          "minecraft:netherrack"
         ],
         "with": [
           {
-            "block": "firma_compat:poor_dripstone_native_silver_ore",
+            "block": "firma_compat:poor_netherrack_native_silver_ore",
             "weight": 70.0
           },
           {
-            "block": "firma_compat:normal_dripstone_native_silver_ore",
+            "block": "firma_compat:normal_netherrack_native_silver_ore",
             "weight": 25.0
           },
           {
-            "block": "firma_compat:rich_dripstone_native_silver_ore",
+            "block": "firma_compat:rich_netherrack_native_silver_ore",
             "weight": 5.0
           }
         ]
@@ -175,19 +99,19 @@
       },
       {
         "replace": [
-          "minecraft:andesite"
+          "minecraft:blackstone"
         ],
         "with": [
           {
-            "block": "firma_compat:poor_andesite_native_silver_ore",
+            "block": "firma_compat:poor_blackstone_native_silver_ore",
             "weight": 70.0
           },
           {
-            "block": "firma_compat:normal_andesite_native_silver_ore",
+            "block": "firma_compat:normal_blackstone_native_silver_ore",
             "weight": 25.0
           },
           {
-            "block": "firma_compat:rich_andesite_native_silver_ore",
+            "block": "firma_compat:rich_blackstone_native_silver_ore",
             "weight": 5.0
           }
         ]
@@ -213,6 +137,63 @@
       },
       {
         "replace": [
+          "minecraft:granite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:poor_granite_native_silver_ore",
+            "weight": 70.0
+          },
+          {
+            "block": "firma_compat:normal_granite_native_silver_ore",
+            "weight": 25.0
+          },
+          {
+            "block": "firma_compat:rich_granite_native_silver_ore",
+            "weight": 5.0
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:tuff"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:poor_tuff_native_silver_ore",
+            "weight": 70.0
+          },
+          {
+            "block": "firma_compat:normal_tuff_native_silver_ore",
+            "weight": 25.0
+          },
+          {
+            "block": "firma_compat:rich_tuff_native_silver_ore",
+            "weight": 5.0
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:end_stone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:poor_end_stone_native_silver_ore",
+            "weight": 70.0
+          },
+          {
+            "block": "firma_compat:normal_end_stone_native_silver_ore",
+            "weight": 25.0
+          },
+          {
+            "block": "firma_compat:rich_end_stone_native_silver_ore",
+            "weight": 5.0
+          }
+        ]
+      },
+      {
+        "replace": [
           "minecraft:stone"
         ],
         "with": [
@@ -226,6 +207,25 @@
           },
           {
             "block": "firma_compat:rich_stone_native_silver_ore",
+            "weight": 5.0
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:andesite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:poor_andesite_native_silver_ore",
+            "weight": 70.0
+          },
+          {
+            "block": "firma_compat:normal_andesite_native_silver_ore",
+            "weight": 25.0
+          },
+          {
+            "block": "firma_compat:rich_andesite_native_silver_ore",
             "weight": 5.0
           }
         ]

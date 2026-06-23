@@ -4,6 +4,26 @@
     "blocks": [
       {
         "replace": [
+          "minecraft:calcite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:calcite_ruby_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:deepslate"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:deepslate_ruby_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
           "minecraft:diorite"
         ],
         "with": [
@@ -14,11 +34,31 @@
       },
       {
         "replace": [
-          "minecraft:blackstone"
+          "minecraft:end_stone"
         ],
         "with": [
           {
-            "block": "firma_compat:blackstone_ruby_ore"
+            "block": "firma_compat:end_stone_ruby_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:stone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:stone_ruby_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:dripstone_block"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:dripstone_ruby_ore"
           }
         ]
       },
@@ -44,51 +84,11 @@
       },
       {
         "replace": [
-          "minecraft:dripstone_block"
+          "minecraft:basalt"
         ],
         "with": [
           {
-            "block": "firma_compat:dripstone_ruby_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:granite"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:granite_ruby_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:end_stone"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:end_stone_ruby_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:deepslate"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:deepslate_ruby_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:stone"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:stone_ruby_ore"
+            "block": "firma_compat:basalt_ruby_ore"
           }
         ]
       },
@@ -104,21 +104,21 @@
       },
       {
         "replace": [
-          "minecraft:basalt"
+          "minecraft:granite"
         ],
         "with": [
           {
-            "block": "firma_compat:basalt_ruby_ore"
+            "block": "firma_compat:granite_ruby_ore"
           }
         ]
       },
       {
         "replace": [
-          "minecraft:calcite"
+          "minecraft:blackstone"
         ],
         "with": [
           {
-            "block": "firma_compat:calcite_ruby_ore"
+            "block": "firma_compat:blackstone_ruby_ore"
           }
         ]
       }

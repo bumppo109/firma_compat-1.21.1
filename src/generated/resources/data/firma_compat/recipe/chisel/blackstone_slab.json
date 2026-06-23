@@ -5,7 +5,7 @@
   ],
   "item_output": {
     "count": 1,
-    "id": "minecraft:blackstone_slab"
+    "id": "firma_compat:blackstone_loose"
   },
   "mode": "tfc:slab",
   "result": "minecraft:blackstone_slab"

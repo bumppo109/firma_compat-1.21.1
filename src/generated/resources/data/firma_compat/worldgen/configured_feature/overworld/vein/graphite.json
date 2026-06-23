@@ -4,11 +4,11 @@
     "blocks": [
       {
         "replace": [
-          "minecraft:stone"
+          "minecraft:tuff"
         ],
         "with": [
           {
-            "block": "firma_compat:stone_graphite_ore"
+            "block": "firma_compat:tuff_graphite_ore"
           }
         ]
       },
@@ -24,31 +24,11 @@
       },
       {
         "replace": [
-          "minecraft:basalt"
+          "minecraft:dripstone_block"
         ],
         "with": [
           {
-            "block": "firma_compat:basalt_graphite_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:andesite"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:andesite_graphite_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:diorite"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:diorite_graphite_ore"
+            "block": "firma_compat:dripstone_graphite_ore"
           }
         ]
       },
@@ -64,21 +44,21 @@
       },
       {
         "replace": [
-          "minecraft:end_stone"
+          "minecraft:diorite"
         ],
         "with": [
           {
-            "block": "firma_compat:end_stone_graphite_ore"
+            "block": "firma_compat:diorite_graphite_ore"
           }
         ]
       },
       {
         "replace": [
-          "minecraft:blackstone"
+          "minecraft:end_stone"
         ],
         "with": [
           {
-            "block": "firma_compat:blackstone_graphite_ore"
+            "block": "firma_compat:end_stone_graphite_ore"
           }
         ]
       },
@@ -94,21 +74,21 @@
       },
       {
         "replace": [
-          "minecraft:tuff"
+          "minecraft:andesite"
         ],
         "with": [
           {
-            "block": "firma_compat:tuff_graphite_ore"
+            "block": "firma_compat:andesite_graphite_ore"
           }
         ]
       },
       {
         "replace": [
-          "minecraft:dripstone_block"
+          "minecraft:stone"
         ],
         "with": [
           {
-            "block": "firma_compat:dripstone_graphite_ore"
+            "block": "firma_compat:stone_graphite_ore"
           }
         ]
       },
@@ -119,6 +99,26 @@
         "with": [
           {
             "block": "firma_compat:netherrack_graphite_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:basalt_graphite_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:blackstone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:blackstone_graphite_ore"
           }
         ]
       }

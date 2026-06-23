@@ -4,56 +4,6 @@
     "blocks": [
       {
         "replace": [
-          "minecraft:diorite"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:diorite_borax_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:blackstone"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:blackstone_borax_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:basalt"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:basalt_borax_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:granite"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:granite_borax_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:netherrack"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:netherrack_borax_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
           "minecraft:andesite"
         ],
         "with": [
@@ -69,6 +19,16 @@
         "with": [
           {
             "block": "firma_compat:calcite_borax_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:granite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:granite_borax_ore"
           }
         ]
       },
@@ -94,11 +54,41 @@
       },
       {
         "replace": [
+          "minecraft:diorite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:diorite_borax_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
           "minecraft:dripstone_block"
         ],
         "with": [
           {
             "block": "firma_compat:dripstone_borax_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:stone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:stone_borax_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:netherrack"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:netherrack_borax_ore"
           }
         ]
       },
@@ -114,11 +104,21 @@
       },
       {
         "replace": [
-          "minecraft:stone"
+          "minecraft:blackstone"
         ],
         "with": [
           {
-            "block": "firma_compat:stone_borax_ore"
+            "block": "firma_compat:blackstone_borax_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:basalt_borax_ore"
           }
         ]
       }

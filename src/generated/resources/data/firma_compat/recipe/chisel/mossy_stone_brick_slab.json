@@ -5,7 +5,7 @@
   ],
   "item_output": {
     "count": 1,
-    "id": "minecraft:mossy_stone_brick_slab"
+    "id": "firma_compat:stone_loose"
   },
   "mode": "tfc:slab",
   "result": "minecraft:mossy_stone_brick_slab"

@@ -5,7 +5,7 @@
   ],
   "item_output": {
     "count": 1,
-    "id": "minecraft:chiseled_deepslate"
+    "id": "firma_compat:deepslate_brick"
   },
   "mode": "tfc:smooth",
   "result": "minecraft:chiseled_deepslate"

@@ -3,10 +3,6 @@
   "ingredient": [
     "minecraft:purpur_block"
   ],
-  "item_output": {
-    "count": 1,
-    "id": "minecraft:purpur_slab"
-  },
   "mode": "tfc:slab",
   "result": "minecraft:purpur_slab"
 }

@@ -5,7 +5,7 @@
   ],
   "item_output": {
     "count": 1,
-    "id": "minecraft:brick_slab"
+    "id": "minecraft:brick"
   },
   "mode": "tfc:slab",
   "result": "minecraft:brick_slab"

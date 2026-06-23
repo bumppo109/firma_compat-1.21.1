@@ -5,7 +5,7 @@
   ],
   "item_output": {
     "count": 1,
-    "id": "minecraft:deepslate_tile_slab"
+    "id": "firma_compat:deepslate_loose"
   },
   "mode": "tfc:slab",
   "result": "minecraft:deepslate_tile_slab"

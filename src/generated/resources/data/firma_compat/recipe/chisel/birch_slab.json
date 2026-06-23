@@ -5,7 +5,7 @@
   ],
   "item_output": {
     "count": 1,
-    "id": "minecraft:birch_slab"
+    "id": "firma_compat:birch_lumber"
   },
   "mode": "tfc:slab",
   "result": "minecraft:birch_slab"

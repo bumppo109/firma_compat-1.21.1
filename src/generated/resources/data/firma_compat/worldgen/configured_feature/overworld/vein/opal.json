@@ -4,21 +4,11 @@
     "blocks": [
       {
         "replace": [
-          "minecraft:granite"
+          "minecraft:dripstone_block"
         ],
         "with": [
           {
-            "block": "firma_compat:granite_opal_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:stone"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:stone_opal_ore"
+            "block": "firma_compat:dripstone_opal_ore"
           }
         ]
       },
@@ -44,21 +34,21 @@
       },
       {
         "replace": [
-          "minecraft:end_stone"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:end_stone_opal_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
           "minecraft:diorite"
         ],
         "with": [
           {
             "block": "firma_compat:diorite_opal_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:end_stone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:end_stone_opal_ore"
           }
         ]
       },
@@ -74,6 +64,26 @@
       },
       {
         "replace": [
+          "minecraft:calcite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:calcite_opal_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:stone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:stone_opal_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
           "minecraft:blackstone"
         ],
         "with": [
@@ -84,21 +94,11 @@
       },
       {
         "replace": [
-          "minecraft:netherrack"
+          "minecraft:granite"
         ],
         "with": [
           {
-            "block": "firma_compat:netherrack_opal_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:dripstone_block"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:dripstone_opal_ore"
+            "block": "firma_compat:granite_opal_ore"
           }
         ]
       },
@@ -114,11 +114,11 @@
       },
       {
         "replace": [
-          "minecraft:calcite"
+          "minecraft:netherrack"
         ],
         "with": [
           {
-            "block": "firma_compat:calcite_opal_ore"
+            "block": "firma_compat:netherrack_opal_ore"
           }
         ]
       }

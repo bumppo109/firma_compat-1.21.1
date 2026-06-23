@@ -5,7 +5,7 @@
   ],
   "item_output": {
     "count": 1,
-    "id": "minecraft:chiseled_quartz_block"
+    "id": "firma_compat:quartz_brick"
   },
   "mode": "tfc:smooth",
   "result": "minecraft:chiseled_quartz_block"

@@ -4,91 +4,11 @@
     "blocks": [
       {
         "replace": [
-          "minecraft:diorite"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:diorite_diamond_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:deepslate"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:deepslate_diamond_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:andesite"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:andesite_diamond_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:blackstone"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:blackstone_diamond_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:dripstone_block"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:dripstone_diamond_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:stone"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:stone_diamond_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:tuff"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:tuff_diamond_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
           "minecraft:netherrack"
         ],
         "with": [
           {
             "block": "firma_compat:netherrack_diamond_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:calcite"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:calcite_diamond_ore"
           }
         ]
       },
@@ -104,11 +24,11 @@
       },
       {
         "replace": [
-          "minecraft:end_stone"
+          "minecraft:stone"
         ],
         "with": [
           {
-            "block": "firma_compat:end_stone_diamond_ore"
+            "block": "firma_compat:stone_diamond_ore"
           }
         ]
       },
@@ -119,6 +39,86 @@
         "with": [
           {
             "block": "firma_compat:basalt_diamond_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:dripstone_block"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:dripstone_diamond_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:andesite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:andesite_diamond_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:calcite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:calcite_diamond_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:end_stone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:end_stone_diamond_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:deepslate"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:deepslate_diamond_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:blackstone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:blackstone_diamond_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:diorite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:diorite_diamond_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:tuff"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:tuff_diamond_ore"
           }
         ]
       }

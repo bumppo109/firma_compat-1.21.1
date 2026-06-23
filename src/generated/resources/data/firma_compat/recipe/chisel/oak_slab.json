@@ -5,7 +5,7 @@
   ],
   "item_output": {
     "count": 1,
-    "id": "minecraft:oak_slab"
+    "id": "firma_compat:oak_lumber"
   },
   "mode": "tfc:slab",
   "result": "minecraft:oak_slab"

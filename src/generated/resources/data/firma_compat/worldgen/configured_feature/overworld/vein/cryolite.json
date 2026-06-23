@@ -4,36 +4,6 @@
     "blocks": [
       {
         "replace": [
-          "minecraft:netherrack"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:netherrack_cryolite_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:blackstone"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:blackstone_cryolite_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:andesite"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:andesite_cryolite_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
           "minecraft:end_stone"
         ],
         "with": [
@@ -44,11 +14,11 @@
       },
       {
         "replace": [
-          "minecraft:dripstone_block"
+          "minecraft:calcite"
         ],
         "with": [
           {
-            "block": "firma_compat:dripstone_cryolite_ore"
+            "block": "firma_compat:calcite_cryolite_ore"
           }
         ]
       },
@@ -64,11 +34,41 @@
       },
       {
         "replace": [
-          "minecraft:calcite"
+          "minecraft:blackstone"
         ],
         "with": [
           {
-            "block": "firma_compat:calcite_cryolite_ore"
+            "block": "firma_compat:blackstone_cryolite_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:netherrack"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:netherrack_cryolite_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:basalt_cryolite_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:diorite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:diorite_cryolite_ore"
           }
         ]
       },
@@ -94,31 +94,31 @@
       },
       {
         "replace": [
+          "minecraft:andesite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:andesite_cryolite_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:dripstone_block"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:dripstone_cryolite_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
           "minecraft:granite"
         ],
         "with": [
           {
             "block": "firma_compat:granite_cryolite_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:diorite"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:diorite_cryolite_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:basalt"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:basalt_cryolite_ore"
           }
         ]
       }

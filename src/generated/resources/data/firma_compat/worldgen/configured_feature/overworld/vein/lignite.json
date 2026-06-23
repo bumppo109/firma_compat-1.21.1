@@ -4,46 +4,6 @@
     "blocks": [
       {
         "replace": [
-          "minecraft:netherrack"
-        ],
-        "with": [
-          {
-            "block": "tfc:lignite"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:basalt"
-        ],
-        "with": [
-          {
-            "block": "tfc:lignite"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:diorite"
-        ],
-        "with": [
-          {
-            "block": "tfc:lignite"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:stone"
-        ],
-        "with": [
-          {
-            "block": "tfc:lignite"
-          }
-        ]
-      },
-      {
-        "replace": [
           "minecraft:granite"
         ],
         "with": [
@@ -64,16 +24,6 @@
       },
       {
         "replace": [
-          "minecraft:andesite"
-        ],
-        "with": [
-          {
-            "block": "tfc:lignite"
-          }
-        ]
-      },
-      {
-        "replace": [
           "minecraft:calcite"
         ],
         "with": [
@@ -84,17 +34,7 @@
       },
       {
         "replace": [
-          "minecraft:dripstone_block"
-        ],
-        "with": [
-          {
-            "block": "tfc:lignite"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:tuff"
+          "minecraft:diorite"
         ],
         "with": [
           {
@@ -115,6 +55,66 @@
       {
         "replace": [
           "minecraft:deepslate"
+        ],
+        "with": [
+          {
+            "block": "tfc:lignite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:netherrack"
+        ],
+        "with": [
+          {
+            "block": "tfc:lignite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:tuff"
+        ],
+        "with": [
+          {
+            "block": "tfc:lignite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "block": "tfc:lignite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:stone"
+        ],
+        "with": [
+          {
+            "block": "tfc:lignite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:dripstone_block"
+        ],
+        "with": [
+          {
+            "block": "tfc:lignite"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:andesite"
         ],
         "with": [
           {

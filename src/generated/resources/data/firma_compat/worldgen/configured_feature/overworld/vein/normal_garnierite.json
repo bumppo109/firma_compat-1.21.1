@@ -4,57 +4,19 @@
     "blocks": [
       {
         "replace": [
-          "minecraft:granite"
+          "minecraft:tuff"
         ],
         "with": [
           {
-            "block": "firma_compat:poor_granite_garnierite_ore",
+            "block": "firma_compat:poor_tuff_garnierite_ore",
             "weight": 35.0
           },
           {
-            "block": "firma_compat:normal_granite_garnierite_ore",
+            "block": "firma_compat:normal_tuff_garnierite_ore",
             "weight": 40.0
           },
           {
-            "block": "firma_compat:rich_granite_garnierite_ore",
-            "weight": 25.0
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:basalt"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:poor_basalt_garnierite_ore",
-            "weight": 35.0
-          },
-          {
-            "block": "firma_compat:normal_basalt_garnierite_ore",
-            "weight": 40.0
-          },
-          {
-            "block": "firma_compat:rich_basalt_garnierite_ore",
-            "weight": 25.0
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:end_stone"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:poor_end_stone_garnierite_ore",
-            "weight": 35.0
-          },
-          {
-            "block": "firma_compat:normal_end_stone_garnierite_ore",
-            "weight": 40.0
-          },
-          {
-            "block": "firma_compat:rich_end_stone_garnierite_ore",
+            "block": "firma_compat:rich_tuff_garnierite_ore",
             "weight": 25.0
           }
         ]
@@ -80,38 +42,19 @@
       },
       {
         "replace": [
-          "minecraft:tuff"
+          "minecraft:andesite"
         ],
         "with": [
           {
-            "block": "firma_compat:poor_tuff_garnierite_ore",
+            "block": "firma_compat:poor_andesite_garnierite_ore",
             "weight": 35.0
           },
           {
-            "block": "firma_compat:normal_tuff_garnierite_ore",
+            "block": "firma_compat:normal_andesite_garnierite_ore",
             "weight": 40.0
           },
           {
-            "block": "firma_compat:rich_tuff_garnierite_ore",
-            "weight": 25.0
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:netherrack"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:poor_netherrack_garnierite_ore",
-            "weight": 35.0
-          },
-          {
-            "block": "firma_compat:normal_netherrack_garnierite_ore",
-            "weight": 40.0
-          },
-          {
-            "block": "firma_compat:rich_netherrack_garnierite_ore",
+            "block": "firma_compat:rich_andesite_garnierite_ore",
             "weight": 25.0
           }
         ]
@@ -137,57 +80,38 @@
       },
       {
         "replace": [
-          "minecraft:dripstone_block"
+          "minecraft:granite"
         ],
         "with": [
           {
-            "block": "firma_compat:poor_dripstone_garnierite_ore",
+            "block": "firma_compat:poor_granite_garnierite_ore",
             "weight": 35.0
           },
           {
-            "block": "firma_compat:normal_dripstone_garnierite_ore",
+            "block": "firma_compat:normal_granite_garnierite_ore",
             "weight": 40.0
           },
           {
-            "block": "firma_compat:rich_dripstone_garnierite_ore",
+            "block": "firma_compat:rich_granite_garnierite_ore",
             "weight": 25.0
           }
         ]
       },
       {
         "replace": [
-          "minecraft:andesite"
+          "minecraft:netherrack"
         ],
         "with": [
           {
-            "block": "firma_compat:poor_andesite_garnierite_ore",
+            "block": "firma_compat:poor_netherrack_garnierite_ore",
             "weight": 35.0
           },
           {
-            "block": "firma_compat:normal_andesite_garnierite_ore",
+            "block": "firma_compat:normal_netherrack_garnierite_ore",
             "weight": 40.0
           },
           {
-            "block": "firma_compat:rich_andesite_garnierite_ore",
-            "weight": 25.0
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:blackstone"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:poor_blackstone_garnierite_ore",
-            "weight": 35.0
-          },
-          {
-            "block": "firma_compat:normal_blackstone_garnierite_ore",
-            "weight": 40.0
-          },
-          {
-            "block": "firma_compat:rich_blackstone_garnierite_ore",
+            "block": "firma_compat:rich_netherrack_garnierite_ore",
             "weight": 25.0
           }
         ]
@@ -213,6 +137,25 @@
       },
       {
         "replace": [
+          "minecraft:dripstone_block"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:poor_dripstone_garnierite_ore",
+            "weight": 35.0
+          },
+          {
+            "block": "firma_compat:normal_dripstone_garnierite_ore",
+            "weight": 40.0
+          },
+          {
+            "block": "firma_compat:rich_dripstone_garnierite_ore",
+            "weight": 25.0
+          }
+        ]
+      },
+      {
+        "replace": [
           "minecraft:deepslate"
         ],
         "with": [
@@ -226,6 +169,63 @@
           },
           {
             "block": "firma_compat:rich_deepslate_garnierite_ore",
+            "weight": 25.0
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:poor_basalt_garnierite_ore",
+            "weight": 35.0
+          },
+          {
+            "block": "firma_compat:normal_basalt_garnierite_ore",
+            "weight": 40.0
+          },
+          {
+            "block": "firma_compat:rich_basalt_garnierite_ore",
+            "weight": 25.0
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:blackstone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:poor_blackstone_garnierite_ore",
+            "weight": 35.0
+          },
+          {
+            "block": "firma_compat:normal_blackstone_garnierite_ore",
+            "weight": 40.0
+          },
+          {
+            "block": "firma_compat:rich_blackstone_garnierite_ore",
+            "weight": 25.0
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:end_stone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:poor_end_stone_garnierite_ore",
+            "weight": 35.0
+          },
+          {
+            "block": "firma_compat:normal_end_stone_garnierite_ore",
+            "weight": 40.0
+          },
+          {
+            "block": "firma_compat:rich_end_stone_garnierite_ore",
             "weight": 25.0
           }
         ]

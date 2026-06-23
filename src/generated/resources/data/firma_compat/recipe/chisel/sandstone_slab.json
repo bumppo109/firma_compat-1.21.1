@@ -3,10 +3,6 @@
   "ingredient": [
     "minecraft:sandstone"
   ],
-  "item_output": {
-    "count": 1,
-    "id": "minecraft:sandstone_slab"
-  },
   "mode": "tfc:slab",
   "result": "minecraft:sandstone_slab"
 }

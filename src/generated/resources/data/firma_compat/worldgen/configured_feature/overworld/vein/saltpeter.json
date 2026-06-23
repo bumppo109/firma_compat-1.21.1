@@ -4,51 +4,11 @@
     "blocks": [
       {
         "replace": [
-          "minecraft:blackstone"
+          "minecraft:deepslate"
         ],
         "with": [
           {
-            "block": "firma_compat:blackstone_saltpeter_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:netherrack"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:netherrack_saltpeter_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:calcite"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:calcite_saltpeter_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:granite"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:granite_saltpeter_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:andesite"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:andesite_saltpeter_ore"
+            "block": "firma_compat:deepslate_saltpeter_ore"
           }
         ]
       },
@@ -74,31 +34,11 @@
       },
       {
         "replace": [
-          "minecraft:stone"
+          "minecraft:blackstone"
         ],
         "with": [
           {
-            "block": "firma_compat:stone_saltpeter_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:basalt"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:basalt_saltpeter_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:dripstone_block"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:dripstone_saltpeter_ore"
+            "block": "firma_compat:blackstone_saltpeter_ore"
           }
         ]
       },
@@ -114,11 +54,71 @@
       },
       {
         "replace": [
-          "minecraft:deepslate"
+          "minecraft:netherrack"
         ],
         "with": [
           {
-            "block": "firma_compat:deepslate_saltpeter_ore"
+            "block": "firma_compat:netherrack_saltpeter_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:andesite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:andesite_saltpeter_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:stone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:stone_saltpeter_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:dripstone_block"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:dripstone_saltpeter_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:calcite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:calcite_saltpeter_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:granite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:granite_saltpeter_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:basalt"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:basalt_saltpeter_ore"
           }
         ]
       }

@@ -5,7 +5,7 @@
   ],
   "item_output": {
     "count": 1,
-    "id": "minecraft:chiseled_polished_blackstone"
+    "id": "firma_compat:polished_blackstone_brick"
   },
   "mode": "tfc:smooth",
   "result": "minecraft:chiseled_polished_blackstone"

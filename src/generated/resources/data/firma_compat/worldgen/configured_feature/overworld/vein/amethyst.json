@@ -4,6 +4,16 @@
     "blocks": [
       {
         "replace": [
+          "minecraft:deepslate"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:deepslate_amethyst_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
           "minecraft:blackstone"
         ],
         "with": [
@@ -24,41 +34,21 @@
       },
       {
         "replace": [
-          "minecraft:calcite"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:calcite_amethyst_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:dripstone_block"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:dripstone_amethyst_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:end_stone"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:end_stone_amethyst_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
           "minecraft:netherrack"
         ],
         "with": [
           {
             "block": "firma_compat:netherrack_amethyst_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:calcite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:calcite_amethyst_ore"
           }
         ]
       },
@@ -84,21 +74,21 @@
       },
       {
         "replace": [
-          "minecraft:deepslate"
+          "minecraft:stone"
         ],
         "with": [
           {
-            "block": "firma_compat:deepslate_amethyst_ore"
+            "block": "firma_compat:stone_amethyst_ore"
           }
         ]
       },
       {
         "replace": [
-          "minecraft:diorite"
+          "minecraft:dripstone_block"
         ],
         "with": [
           {
-            "block": "firma_compat:diorite_amethyst_ore"
+            "block": "firma_compat:dripstone_amethyst_ore"
           }
         ]
       },
@@ -114,11 +104,21 @@
       },
       {
         "replace": [
-          "minecraft:stone"
+          "minecraft:diorite"
         ],
         "with": [
           {
-            "block": "firma_compat:stone_amethyst_ore"
+            "block": "firma_compat:diorite_amethyst_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:end_stone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:end_stone_amethyst_ore"
           }
         ]
       }

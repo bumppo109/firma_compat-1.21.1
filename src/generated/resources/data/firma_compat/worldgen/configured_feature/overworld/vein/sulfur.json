@@ -4,31 +4,11 @@
     "blocks": [
       {
         "replace": [
-          "minecraft:dripstone_block"
+          "minecraft:netherrack"
         ],
         "with": [
           {
-            "block": "firma_compat:dripstone_sulfur_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:tuff"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:tuff_sulfur_ore"
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:end_stone"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:end_stone_sulfur_ore"
+            "block": "firma_compat:netherrack_sulfur_ore"
           }
         ]
       },
@@ -44,6 +24,16 @@
       },
       {
         "replace": [
+          "minecraft:dripstone_block"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:dripstone_sulfur_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
           "minecraft:basalt"
         ],
         "with": [
@@ -54,21 +44,21 @@
       },
       {
         "replace": [
-          "minecraft:granite"
+          "minecraft:andesite"
         ],
         "with": [
           {
-            "block": "firma_compat:granite_sulfur_ore"
+            "block": "firma_compat:andesite_sulfur_ore"
           }
         ]
       },
       {
         "replace": [
-          "minecraft:diorite"
+          "minecraft:calcite"
         ],
         "with": [
           {
-            "block": "firma_compat:diorite_sulfur_ore"
+            "block": "firma_compat:calcite_sulfur_ore"
           }
         ]
       },
@@ -94,31 +84,41 @@
       },
       {
         "replace": [
-          "minecraft:calcite"
+          "minecraft:end_stone"
         ],
         "with": [
           {
-            "block": "firma_compat:calcite_sulfur_ore"
+            "block": "firma_compat:end_stone_sulfur_ore"
           }
         ]
       },
       {
         "replace": [
-          "minecraft:andesite"
+          "minecraft:tuff"
         ],
         "with": [
           {
-            "block": "firma_compat:andesite_sulfur_ore"
+            "block": "firma_compat:tuff_sulfur_ore"
           }
         ]
       },
       {
         "replace": [
-          "minecraft:netherrack"
+          "minecraft:diorite"
         ],
         "with": [
           {
-            "block": "firma_compat:netherrack_sulfur_ore"
+            "block": "firma_compat:diorite_sulfur_ore"
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:granite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:granite_sulfur_ore"
           }
         ]
       }

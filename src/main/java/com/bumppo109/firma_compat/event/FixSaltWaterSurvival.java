@@ -3,22 +3,16 @@ package com.bumppo109.firma_compat.event;
 import com.bumppo109.firma_compat.util.ModTags;
 import net.dries007.tfc.common.fluids.TFCFluids;
 import net.minecraft.core.BlockPos;
-import net.minecraft.tags.FluidTags;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.monster.Drowned;
 import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.level.material.FluidState;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.living.LivingBreatheEvent;
-import net.neoforged.neoforge.event.entity.living.LivingDamageEvent;
-import net.neoforged.neoforge.event.entity.living.LivingDrownEvent;
-
-import java.util.Objects;
 
 @EventBusSubscriber(modid = "firma_compat") // Replace with your mod ID
-public class FixDrownedConversion {
+public class FixSaltWaterSurvival {
 
     @SubscribeEvent
     public static void handleSaltWaterBreathing(LivingBreatheEvent event) {

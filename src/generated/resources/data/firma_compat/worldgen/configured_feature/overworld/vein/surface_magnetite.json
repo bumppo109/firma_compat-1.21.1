@@ -4,38 +4,19 @@
     "blocks": [
       {
         "replace": [
-          "minecraft:blackstone"
+          "minecraft:granite"
         ],
         "with": [
           {
-            "block": "firma_compat:poor_blackstone_magnetite_ore",
+            "block": "firma_compat:poor_granite_magnetite_ore",
             "weight": 70.0
           },
           {
-            "block": "firma_compat:normal_blackstone_magnetite_ore",
+            "block": "firma_compat:normal_granite_magnetite_ore",
             "weight": 25.0
           },
           {
-            "block": "firma_compat:rich_blackstone_magnetite_ore",
-            "weight": 5.0
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:dripstone_block"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:poor_dripstone_magnetite_ore",
-            "weight": 70.0
-          },
-          {
-            "block": "firma_compat:normal_dripstone_magnetite_ore",
-            "weight": 25.0
-          },
-          {
-            "block": "firma_compat:rich_dripstone_magnetite_ore",
+            "block": "firma_compat:rich_granite_magnetite_ore",
             "weight": 5.0
           }
         ]
@@ -61,25 +42,6 @@
       },
       {
         "replace": [
-          "minecraft:calcite"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:poor_calcite_magnetite_ore",
-            "weight": 70.0
-          },
-          {
-            "block": "firma_compat:normal_calcite_magnetite_ore",
-            "weight": 25.0
-          },
-          {
-            "block": "firma_compat:rich_calcite_magnetite_ore",
-            "weight": 5.0
-          }
-        ]
-      },
-      {
-        "replace": [
           "minecraft:netherrack"
         ],
         "with": [
@@ -99,6 +61,25 @@
       },
       {
         "replace": [
+          "minecraft:stone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:poor_stone_magnetite_ore",
+            "weight": 70.0
+          },
+          {
+            "block": "firma_compat:normal_stone_magnetite_ore",
+            "weight": 25.0
+          },
+          {
+            "block": "firma_compat:rich_stone_magnetite_ore",
+            "weight": 5.0
+          }
+        ]
+      },
+      {
+        "replace": [
           "minecraft:tuff"
         ],
         "with": [
@@ -112,6 +93,63 @@
           },
           {
             "block": "firma_compat:rich_tuff_magnetite_ore",
+            "weight": 5.0
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:calcite"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:poor_calcite_magnetite_ore",
+            "weight": 70.0
+          },
+          {
+            "block": "firma_compat:normal_calcite_magnetite_ore",
+            "weight": 25.0
+          },
+          {
+            "block": "firma_compat:rich_calcite_magnetite_ore",
+            "weight": 5.0
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:dripstone_block"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:poor_dripstone_magnetite_ore",
+            "weight": 70.0
+          },
+          {
+            "block": "firma_compat:normal_dripstone_magnetite_ore",
+            "weight": 25.0
+          },
+          {
+            "block": "firma_compat:rich_dripstone_magnetite_ore",
+            "weight": 5.0
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:deepslate"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:poor_deepslate_magnetite_ore",
+            "weight": 70.0
+          },
+          {
+            "block": "firma_compat:normal_deepslate_magnetite_ore",
+            "weight": 25.0
+          },
+          {
+            "block": "firma_compat:rich_deepslate_magnetite_ore",
             "weight": 5.0
           }
         ]
@@ -156,38 +194,19 @@
       },
       {
         "replace": [
-          "minecraft:granite"
+          "minecraft:blackstone"
         ],
         "with": [
           {
-            "block": "firma_compat:poor_granite_magnetite_ore",
+            "block": "firma_compat:poor_blackstone_magnetite_ore",
             "weight": 70.0
           },
           {
-            "block": "firma_compat:normal_granite_magnetite_ore",
+            "block": "firma_compat:normal_blackstone_magnetite_ore",
             "weight": 25.0
           },
           {
-            "block": "firma_compat:rich_granite_magnetite_ore",
-            "weight": 5.0
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:deepslate"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:poor_deepslate_magnetite_ore",
-            "weight": 70.0
-          },
-          {
-            "block": "firma_compat:normal_deepslate_magnetite_ore",
-            "weight": 25.0
-          },
-          {
-            "block": "firma_compat:rich_deepslate_magnetite_ore",
+            "block": "firma_compat:rich_blackstone_magnetite_ore",
             "weight": 5.0
           }
         ]
@@ -207,25 +226,6 @@
           },
           {
             "block": "firma_compat:rich_diorite_magnetite_ore",
-            "weight": 5.0
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:stone"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:poor_stone_magnetite_ore",
-            "weight": 70.0
-          },
-          {
-            "block": "firma_compat:normal_stone_magnetite_ore",
-            "weight": 25.0
-          },
-          {
-            "block": "firma_compat:rich_stone_magnetite_ore",
             "weight": 5.0
           }
         ]

@@ -4,19 +4,38 @@
     "blocks": [
       {
         "replace": [
-          "minecraft:netherrack"
+          "minecraft:end_stone"
         ],
         "with": [
           {
-            "block": "firma_compat:poor_netherrack_tetrahedrite_ore",
+            "block": "firma_compat:poor_end_stone_tetrahedrite_ore",
             "weight": 35.0
           },
           {
-            "block": "firma_compat:normal_netherrack_tetrahedrite_ore",
+            "block": "firma_compat:normal_end_stone_tetrahedrite_ore",
             "weight": 40.0
           },
           {
-            "block": "firma_compat:rich_netherrack_tetrahedrite_ore",
+            "block": "firma_compat:rich_end_stone_tetrahedrite_ore",
+            "weight": 25.0
+          }
+        ]
+      },
+      {
+        "replace": [
+          "minecraft:blackstone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:poor_blackstone_tetrahedrite_ore",
+            "weight": 35.0
+          },
+          {
+            "block": "firma_compat:normal_blackstone_tetrahedrite_ore",
+            "weight": 40.0
+          },
+          {
+            "block": "firma_compat:rich_blackstone_tetrahedrite_ore",
             "weight": 25.0
           }
         ]
@@ -42,19 +61,19 @@
       },
       {
         "replace": [
-          "minecraft:deepslate"
+          "minecraft:andesite"
         ],
         "with": [
           {
-            "block": "firma_compat:poor_deepslate_tetrahedrite_ore",
+            "block": "firma_compat:poor_andesite_tetrahedrite_ore",
             "weight": 35.0
           },
           {
-            "block": "firma_compat:normal_deepslate_tetrahedrite_ore",
+            "block": "firma_compat:normal_andesite_tetrahedrite_ore",
             "weight": 40.0
           },
           {
-            "block": "firma_compat:rich_deepslate_tetrahedrite_ore",
+            "block": "firma_compat:rich_andesite_tetrahedrite_ore",
             "weight": 25.0
           }
         ]
@@ -99,38 +118,19 @@
       },
       {
         "replace": [
-          "minecraft:stone"
+          "minecraft:netherrack"
         ],
         "with": [
           {
-            "block": "firma_compat:poor_stone_tetrahedrite_ore",
+            "block": "firma_compat:poor_netherrack_tetrahedrite_ore",
             "weight": 35.0
           },
           {
-            "block": "firma_compat:normal_stone_tetrahedrite_ore",
+            "block": "firma_compat:normal_netherrack_tetrahedrite_ore",
             "weight": 40.0
           },
           {
-            "block": "firma_compat:rich_stone_tetrahedrite_ore",
-            "weight": 25.0
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:andesite"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:poor_andesite_tetrahedrite_ore",
-            "weight": 35.0
-          },
-          {
-            "block": "firma_compat:normal_andesite_tetrahedrite_ore",
-            "weight": 40.0
-          },
-          {
-            "block": "firma_compat:rich_andesite_tetrahedrite_ore",
+            "block": "firma_compat:rich_netherrack_tetrahedrite_ore",
             "weight": 25.0
           }
         ]
@@ -156,6 +156,25 @@
       },
       {
         "replace": [
+          "minecraft:stone"
+        ],
+        "with": [
+          {
+            "block": "firma_compat:poor_stone_tetrahedrite_ore",
+            "weight": 35.0
+          },
+          {
+            "block": "firma_compat:normal_stone_tetrahedrite_ore",
+            "weight": 40.0
+          },
+          {
+            "block": "firma_compat:rich_stone_tetrahedrite_ore",
+            "weight": 25.0
+          }
+        ]
+      },
+      {
+        "replace": [
           "minecraft:dripstone_block"
         ],
         "with": [
@@ -169,25 +188,6 @@
           },
           {
             "block": "firma_compat:rich_dripstone_tetrahedrite_ore",
-            "weight": 25.0
-          }
-        ]
-      },
-      {
-        "replace": [
-          "minecraft:blackstone"
-        ],
-        "with": [
-          {
-            "block": "firma_compat:poor_blackstone_tetrahedrite_ore",
-            "weight": 35.0
-          },
-          {
-            "block": "firma_compat:normal_blackstone_tetrahedrite_ore",
-            "weight": 40.0
-          },
-          {
-            "block": "firma_compat:rich_blackstone_tetrahedrite_ore",
             "weight": 25.0
           }
         ]
@@ -213,19 +213,19 @@
       },
       {
         "replace": [
-          "minecraft:end_stone"
+          "minecraft:deepslate"
         ],
         "with": [
           {
-            "block": "firma_compat:poor_end_stone_tetrahedrite_ore",
+            "block": "firma_compat:poor_deepslate_tetrahedrite_ore",
             "weight": 35.0
           },
           {
-            "block": "firma_compat:normal_end_stone_tetrahedrite_ore",
+            "block": "firma_compat:normal_deepslate_tetrahedrite_ore",
             "weight": 40.0
           },
           {
-            "block": "firma_compat:rich_end_stone_tetrahedrite_ore",
+            "block": "firma_compat:rich_deepslate_tetrahedrite_ore",
             "weight": 25.0
           }
         ]

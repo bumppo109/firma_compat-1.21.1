@@ -20,6 +20,7 @@ public class FirmaCompatConfig {
 
     public static class Common {
 
+        public final ModConfigSpec.DoubleValue skeletonVariantChance;
         public final ModConfigSpec.IntValue sheepWoolRegrowthDelayTicks;
         public final ModConfigSpec.IntValue cowMilkingDelayTicks;
 
@@ -33,7 +34,19 @@ public class FirmaCompatConfig {
 
         public Common(ModConfigSpec.Builder builder) {
 
-            builder.push("animals");
+            builder.push("entities");
+
+            skeletonVariantChance = builder
+                    .comment(
+                            "Chance that a Skeleton will spawn as its variant given TFC climate is appropriate.",
+                            "Default is 0.6 (60%)"
+                    )
+                    .defineInRange(
+                            "sheepWoolRegrowthDelayTicks",
+                            0.6,
+                            0,
+                            1.0
+                    );
 
             sheepWoolRegrowthDelayTicks = builder
                     .comment(

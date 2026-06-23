@@ -5,7 +5,7 @@
   ],
   "item_output": {
     "count": 1,
-    "id": "minecraft:chiseled_tuff_bricks"
+    "id": "firma_compat:tuff_brick"
   },
   "mode": "tfc:smooth",
   "result": "minecraft:chiseled_tuff_bricks"

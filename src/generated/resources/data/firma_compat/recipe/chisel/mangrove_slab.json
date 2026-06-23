@@ -5,7 +5,7 @@
   ],
   "item_output": {
     "count": 1,
-    "id": "minecraft:mangrove_slab"
+    "id": "firma_compat:mangrove_lumber"
   },
   "mode": "tfc:slab",
   "result": "minecraft:mangrove_slab"
