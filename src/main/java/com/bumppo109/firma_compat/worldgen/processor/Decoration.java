@@ -1,10 +1,10 @@
-package com.bumppo109.firma_compat.worldgen.processor.rock;
+package com.bumppo109.firma_compat.worldgen.processor;
 
 
 import net.minecraft.world.level.block.*;
 
 
-public enum RockDecoration
+public enum Decoration
 {
     BLOCK,
     SLAB,
@@ -12,7 +12,7 @@ public enum RockDecoration
     WALL;
 
 
-    public static RockDecoration of(Block block)
+    public static Decoration of(Block block)
     {
         if (block instanceof SlabBlock)
         {

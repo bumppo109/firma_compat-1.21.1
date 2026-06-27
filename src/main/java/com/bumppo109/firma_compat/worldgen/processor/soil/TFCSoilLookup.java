@@ -1,15 +1,17 @@
 package com.bumppo109.firma_compat.worldgen.processor.soil;
 
+
+import com.bumppo109.firma_compat.worldgen.processor.Decoration;
+
 import net.dries007.tfc.common.blocks.TFCBlocks;
 import net.dries007.tfc.common.blocks.soil.SoilBlockType;
+
 import net.minecraft.world.level.block.state.BlockState;
 
 
-public final class TFCBlockLookup
+
+public final class TFCSoilLookup
 {
-    private TFCBlockLookup()
-    {
-    }
 
 
     public static BlockState get(
@@ -18,36 +20,42 @@ public final class TFCBlockLookup
             Decoration decoration)
     {
 
-        if (type == SoilBlockType.MUD_BRICKS)
+        if(type == SoilBlockType.MUD_BRICKS)
         {
-            var decorations =
-                    TFCBlocks.MUD_BRICK_DECORATIONS.get(variant);
+
+            var holder =
+                    TFCBlocks.MUD_BRICK_DECORATIONS
+                            .get(variant);
 
 
-            return switch (decoration)
+            return switch(decoration)
             {
                 case STAIRS ->
-                        decorations.stair()
+                        holder.stair()
                                 .get()
                                 .defaultBlockState();
 
 
                 case SLAB ->
-                        decorations.slab()
+                        holder.slab()
                                 .get()
                                 .defaultBlockState();
 
 
-                case BLOCK ->
+                default ->
                         variant.getBlock(type)
                                 .get()
                                 .defaultBlockState();
             };
+
         }
 
 
-        return variant.getBlock(type)
+        return variant
+                .getBlock(type)
                 .get()
                 .defaultBlockState();
+
     }
+
 }

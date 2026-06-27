@@ -1,14 +1,13 @@
 package com.bumppo109.firma_compat.util;
 
-import com.bumppo109.firma_compat.worldgen.processor.RockReplacement;
-import com.bumppo109.firma_compat.worldgen.processor.rock.TFCRockProcessor;
+import com.bumppo109.firma_compat.worldgen.processor.ProcessorReplacement;
+import com.bumppo109.firma_compat.worldgen.processor.TFCRockProcessor;
 import com.bumppo109.firma_compat.worldgen.processor.soil.TFCSoilProcessor;
 import com.bumppo109.firma_compat.worldgen.processor.soil.TFCSoilProcessor.TagReplacement;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.dries007.tfc.common.blocks.rock.Rock;
 import net.dries007.tfc.common.blocks.soil.SoilBlockType;
 import net.minecraft.core.registries.BuiltInRegistries;
 
@@ -99,10 +98,10 @@ public final class TFCCodecs
                     )
             );
 
-    public static final Codec<RockReplacement> ROCK_REPLACEMENT =
+    public static final Codec<ProcessorReplacement> ROCK_REPLACEMENT =
             Codec.STRING.xmap(
-                    RockReplacement::valueOf,
-                    RockReplacement::name
+                    ProcessorReplacement::valueOf,
+                    ProcessorReplacement::name
             );
 
 

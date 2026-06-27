@@ -2,7 +2,7 @@ package com.bumppo109.firma_compat.worldgen.processor.rock;
 
 
 import com.bumppo109.firma_compat.block.ModBlocks;
-import com.bumppo109.firma_compat.worldgen.processor.RockReplacement;
+import com.bumppo109.firma_compat.worldgen.processor.Decoration;
 import net.dries007.tfc.common.blocks.TFCBlocks;
 import net.dries007.tfc.common.blocks.DecorationBlockHolder;
 import net.dries007.tfc.common.blocks.rock.Rock;
@@ -47,7 +47,7 @@ public final class TFCRockLookup
     public static BlockState get(
             RockSettings rock,
             RockReplacement replacement,
-            RockDecoration decoration)
+            Decoration decoration)
     {
         return getBlock(
                 rock,
@@ -61,7 +61,7 @@ public final class TFCRockLookup
     private static Block getBlock(
             RockSettings rock,
             RockReplacement replacement,
-            RockDecoration decoration)
+            Decoration decoration)
     {
         return switch (replacement)
         {
@@ -117,7 +117,7 @@ public final class TFCRockLookup
     private static Block decorated(
             RockSettings settings,
             BlockType type,
-            RockDecoration decoration)
+            Decoration decoration)
     {
         Rock rock =
                 ROCK_LOOKUP.get(settings.raw());
@@ -129,7 +129,7 @@ public final class TFCRockLookup
         }
 
 
-        if (decoration == RockDecoration.BLOCK)
+        if (decoration == Decoration.BLOCK)
         {
             return TFCBlocks.ROCK_BLOCKS
                     .get(rock)
