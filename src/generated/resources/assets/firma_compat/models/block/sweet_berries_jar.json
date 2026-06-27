@@ -1,6 +1,0 @@
-{
-  "parent": "tfc:block/jar",
-  "textures": {
-    "1": "firma_compat:block/sweet_berries_jar"
-  }
-}

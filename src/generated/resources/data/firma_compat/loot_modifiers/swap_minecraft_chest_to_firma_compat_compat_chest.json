@@ -1,6 +1,0 @@
-{
-  "type": "firma_compat:item_swap",
-  "conditions": [],
-  "from": "minecraft:chest",
-  "to": "firma_compat:compat_chest"
-}

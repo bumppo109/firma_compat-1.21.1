@@ -14,56 +14,82 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.entity.EntityJoinLevelEvent;
 
-@EventBusSubscriber(modid = "firma_compat")
-public class SkeletonBoggedReplacement {
 
-    /**
-     * 1.0 = replace every skeleton
-     * 0.5 = replace half
-     * 0.25 = replace one quarter
-     * 0.0 = replace none
-     */
-    public static final double REPLACEMENT_CHANCE = FirmaCompatConfig.COMMON.skeletonVariantChance.get();
+@EventBusSubscriber(modid = "firma_compat")
+public class SkeletonBoggedReplacement
+{
 
     @SubscribeEvent
-    public static void replaceSkeletonWithVariant(EntityJoinLevelEvent event) {
-
-        if (!(event.getLevel() instanceof ServerLevel level)) {
+    public static void replaceSkeletonWithVariant(
+            EntityJoinLevelEvent event)
+    {
+        if (!(event.getLevel() instanceof ServerLevel level))
+        {
             return;
         }
 
-        if (event.loadedFromDisk()) {
+
+        if (event.loadedFromDisk())
+        {
             return;
         }
 
-        if (!(event.getEntity() instanceof Skeleton skeleton)) {
+
+        if (!(event.getEntity() instanceof Skeleton skeleton))
+        {
             return;
         }
 
-        if (level.random.nextDouble() >= REPLACEMENT_CHANCE) {
+
+        double chance =
+                FirmaCompatConfig.COMMON
+                        .skeletonVariantChance
+                        .get();
+
+
+        if (level.random.nextDouble() >= chance)
+        {
             return;
         }
 
-        BlockPos pos = skeleton.blockPosition();
 
-        ChunkData data = ChunkData.get(level, pos);
-        if (data == null) {
+        BlockPos pos =
+                skeleton.blockPosition();
+
+
+        ChunkData data =
+                ChunkData.get(level, pos);
+
+
+        if (data == null)
+        {
             return;
         }
+
 
         AbstractSkeleton replacement = null;
 
-        if (isBoggedClimateValid(level, pos)) {
-            replacement = EntityType.BOGGED.create(level);
-        } else if (isStrayClimateValid(data, pos)) {
-            replacement = EntityType.STRAY.create(level);
+
+        if (isBoggedClimateValid(level, pos))
+        {
+            replacement =
+                    EntityType.BOGGED.create(level);
+        }
+        else if (isStrayClimateValid(data, pos))
+        {
+            replacement =
+                    EntityType.STRAY.create(level);
         }
 
-        if (replacement == null) {
+
+        if (replacement == null)
+        {
             return;
         }
 
+
         event.setCanceled(true);
+
 
         replacement.moveTo(
                 skeleton.getX(),
@@ -73,6 +99,7 @@ public class SkeletonBoggedReplacement {
                 skeleton.getXRot()
         );
 
+
         replacement.finalizeSpawn(
                 level,
                 level.getCurrentDifficultyAt(pos),
@@ -80,21 +107,45 @@ public class SkeletonBoggedReplacement {
                 null
         );
 
+
         level.addFreshEntity(replacement);
     }
 
-    private static boolean isBoggedClimateValid(ServerLevel level, BlockPos pos) {
-        var biome = level.getBiome(pos);
 
-        return biome.is(ResourceLocation.fromNamespaceAndPath("tfc", "lowlands"))
-                || biome.is(ResourceLocation.fromNamespaceAndPath("tfc", "salt_marsh"));
+    private static boolean isBoggedClimateValid(
+            ServerLevel level,
+            BlockPos pos)
+    {
+        var biome =
+                level.getBiome(pos);
+
+
+        return biome.is(
+                ResourceLocation.fromNamespaceAndPath(
+                        "tfc",
+                        "lowlands"
+                )
+        )
+                ||
+                biome.is(
+                        ResourceLocation.fromNamespaceAndPath(
+                                "tfc",
+                                "salt_marsh"
+                        )
+                );
     }
 
-    private static boolean isStrayClimateValid(ChunkData data, BlockPos pos) {
-        float temp = EnvironmentHelpers.adjustAvgTempForElev(
-                pos.getY(),
-                data.getAverageSeaLevelTemp(pos)
-        );
+
+    private static boolean isStrayClimateValid(
+            ChunkData data,
+            BlockPos pos)
+    {
+        float temp =
+                EnvironmentHelpers.adjustAvgTempForElev(
+                        pos.getY(),
+                        data.getAverageSeaLevelTemp(pos)
+                );
+
 
         return temp < 0.0f;
     }

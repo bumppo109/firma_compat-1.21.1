@@ -1,8 +1,0 @@
-{
-  "type": "tfc:chisel",
-  "ingredient": [
-    "minecraft:sandstone"
-  ],
-  "mode": "tfc:slab",
-  "result": "minecraft:sandstone_slab"
-}

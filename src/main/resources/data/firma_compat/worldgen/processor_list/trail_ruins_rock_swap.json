@@ -1,0 +1,27 @@
+{
+  "processors": [
+    {
+      "processor_type": "firma_compat:tfc_rock",
+      "replacements": {
+        "minecraft:stone": "RAW",
+        "minecraft:stone_stairs": "RAW",
+        "minecraft:stone_slab": "RAW",
+        "minecraft:cobblestone": "COBBLE",
+        "minecraft:cobblestone_stairs": "COBBLE",
+        "minecraft:cobblestone_slab": "COBBLE",
+        "minecraft:cobblestone_wall": "COBBLE",
+        "minecraft:gravel": "GRAVEL",
+        "minecraft:stone_bricks": "BRICKS",
+        "minecraft:stone_brick_stairs": "BRICKS",
+        "minecraft:stone_brick_slab": "BRICKS",
+        "minecraft:stone_brick_wall": "BRICKS",
+        "minecraft:cracked_stone_bricks": "CRACKED_BRICKS",
+        "minecraft:mossy_stone_bricks": "MOSSY_BRICKS",
+        "minecraft:mossy_stone_brick_stairs": "MOSSY_BRICKS",
+        "minecraft:mossy_stone_brick_slab": "MOSSY_BRICKS",
+        "minecraft:mossy_stone_brick_wall": "MOSSY_BRICKS"
+      }
+    }
+  ],
+  "processor_type": "minecraft:generic"
+}

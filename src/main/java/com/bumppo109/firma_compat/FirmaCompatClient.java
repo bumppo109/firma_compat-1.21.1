@@ -226,6 +226,69 @@ public class FirmaCompatClient {
                         "bluegill"
                 ).flops().build());
 
+        event.registerEntityRenderer(CompatTFCEntities.FRESHWATER_FISH.get(Fish.ARCTIC_CHAR).get(),
+                ctx -> new SimpleMobRenderer.Builder<>(
+                        ctx,
+                        part -> new ArcticCharModel(part),
+                        "arctic_char"
+                ).flops().build());
+
+        event.registerEntityRenderer(CompatTFCEntities.FRESHWATER_FISH.get(Fish.BURBOT).get(),
+                ctx -> new SimpleMobRenderer.Builder<>(
+                        ctx,
+                        part -> new BurbotModel(part),
+                        "burbot"
+                ).flops().build());
+
+        event.registerEntityRenderer(CompatTFCEntities.FRESHWATER_FISH.get(Fish.MUKSUN).get(),
+                ctx -> new SimpleMobRenderer.Builder<>(
+                        ctx,
+                        part -> new MuksunModel(part),
+                        "muksun"
+                ).flops().build());
+
+        event.registerEntityRenderer(CompatTFCEntities.FRESHWATER_FISH.get(Fish.NORTHERN_PIKE).get(),
+                ctx -> new SimpleMobRenderer.Builder<>(
+                        ctx,
+                        part -> new NorthernPikeModel(part),
+                        "northern_pike"
+                ).flops().build());
+
+        event.registerEntityRenderer(CompatTFCEntities.FRESHWATER_FISH.get(Fish.PACU).get(),
+                ctx -> new SimpleMobRenderer.Builder<>(
+                        ctx,
+                        part -> new PacuModel(part),
+                        "pacu"
+                ).flops().build());
+
+        event.registerEntityRenderer(CompatTFCEntities.FRESHWATER_FISH.get(Fish.PEACOCK_BASS).get(),
+                ctx -> new SimpleMobRenderer.Builder<>(
+                        ctx,
+                        part -> new PeacockBassModel(part),
+                        "peacock_bass"
+                ).flops().build());
+
+        event.registerEntityRenderer(CompatTFCEntities.FRESHWATER_FISH.get(Fish.RED_PIRANHA).get(),
+                ctx -> new SimpleMobRenderer.Builder<>(
+                        ctx,
+                        part -> new RedPiranhaModel(part),
+                        "red_piranha"
+                ).flops().build());
+
+        event.registerEntityRenderer(CompatTFCEntities.FRESHWATER_FISH.get(Fish.SPOTTED_GUDGEON).get(),
+                ctx -> new SimpleMobRenderer.Builder<>(
+                        ctx,
+                        part -> new SpottedGudgeonModel(part),
+                        "spotted_gudgeon"
+                ).flops().build());
+
+        event.registerEntityRenderer(CompatTFCEntities.FRESHWATER_FISH.get(Fish.TILAPIA).get(),
+                ctx -> new SimpleMobRenderer.Builder<>(
+                        ctx,
+                        part -> new TilapiaModel(part),
+                        "tilapia"
+                ).flops().build());
+
         event.registerEntityRenderer(CompatTFCEntities.TROPICAL_FISH.get(), TropicalFishRenderer::new);
         event.registerEntityRenderer(CompatTFCEntities.PUFFERFISH.get(), PufferfishRenderer::new);
         event.registerEntityRenderer(CompatTFCEntities.COD.get(), CodRenderer::new);

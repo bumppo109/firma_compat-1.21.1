@@ -5,6 +5,7 @@ import com.bumppo109.firma_compat.block.CompatWood;
 import com.bumppo109.firma_compat.block.ModBlocks;
 import com.eerussianguy.firmalife.common.blockentities.FLBlockEntities;
 import net.dries007.tfc.common.blockentities.TFCBlockEntities;
+import net.dries007.tfc.common.blocks.rock.Rock;
 import net.dries007.tfc.util.Metal;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -21,6 +22,11 @@ public class ModEvents {
     @SubscribeEvent
     public static void addToBlockEntities(BlockEntityTypeAddBlocksEvent event)
     {
+        //Suspicious Gravel
+        for (Rock rock : Rock.values()) {
+            event.modify(BlockEntityType.BRUSHABLE_BLOCK, ModBlocks.SUSPICIOUS_GRAVEL.get(rock).get());
+        }
+
         //Wood Good Module
         modifyBlockEntityType(
                 TFCBlockEntities.TOOL_RACK.get(),

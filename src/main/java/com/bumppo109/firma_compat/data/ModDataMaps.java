@@ -1,6 +1,7 @@
 package com.bumppo109.firma_compat.data;
 
 import com.bumppo109.firma_compat.FirmaCompat;
+import net.dries007.tfc.common.blocks.soil.SoilBlockType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
@@ -22,6 +23,7 @@ public class ModDataMaps {
                     Registries.BLOCK,
                     ResourceLocation.CODEC
             ).build();
+
     // Register the data map type (called from mod constructor or event bus)
     public static void register(RegisterDataMapTypesEvent event) {
         event.register(HARDENED_ROCK_REPLACEMENT);

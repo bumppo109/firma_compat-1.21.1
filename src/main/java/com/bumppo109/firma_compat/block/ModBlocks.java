@@ -8,7 +8,6 @@ import com.google.common.base.Suppliers;
 import net.dries007.tfc.common.blockentities.FarmlandBlockEntity;
 import net.dries007.tfc.common.blockentities.TFCBlockEntities;
 import net.dries007.tfc.common.blocks.ExtendedProperties;
-import net.dries007.tfc.common.blocks.HotWaterBlock;
 import net.dries007.tfc.common.blocks.TFCBlocks;
 import net.dries007.tfc.common.blocks.devices.DryingBricksBlock;
 import net.dries007.tfc.common.blocks.devices.LampBlock;
@@ -20,7 +19,6 @@ import net.dries007.tfc.common.blocks.wood.TFCChestBlock;
 import net.dries007.tfc.common.blocks.wood.TFCTrappedChestBlock;
 import net.dries007.tfc.common.fluids.FluidProperty;
 import net.dries007.tfc.common.fluids.IFluidLoggable;
-import net.dries007.tfc.common.fluids.TFCFluids;
 import net.dries007.tfc.common.items.ChestBlockItem;
 import net.dries007.tfc.util.Helpers;
 import net.dries007.tfc.util.Metal;
@@ -28,6 +26,7 @@ import net.dries007.tfc.util.registry.RegistrationHelpers;
 import net.dries007.tfc.util.registry.RegistryHolder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.ItemLike;
@@ -36,6 +35,7 @@ import net.minecraft.world.level.block.entity.ChestBlockEntity;
 import net.minecraft.world.level.block.entity.SignBlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.MapColor;
@@ -72,6 +72,14 @@ public class ModBlocks {
     public static final Map<Rock, Id<Block>> COMPAT_HARDENED_COBBLE =
             Helpers.mapOf(Rock.class,rock -> register("compat_hardened_" + rock.getSerializedName() + "_cobble",
                             () -> new Block(BlockBehaviour.Properties.ofFullCopy(TFCBlocks.ROCK_BLOCKS.get(rock).get(Rock.BlockType.COBBLE).get())))
+            );
+
+    public static final Map<Rock, Id<BrushableBlock>> SUSPICIOUS_GRAVEL =
+            Helpers.mapOf(Rock.class,rock -> register("suspicious_" + rock.getSerializedName() + "_gravel",
+                    () -> new BrushableBlock(
+                            TFCBlocks.ROCK_BLOCKS.get(rock).get(Rock.BlockType.GRAVEL).get(),
+                            SoundEvents.BRUSH_GRAVEL, SoundEvents.BRUSH_GRAVEL_COMPLETED,
+                            BlockBehaviour.Properties.of().mapColor(rock.color()).instrument(NoteBlockInstrument.SNARE).strength(0.25F).sound(SoundType.SUSPICIOUS_GRAVEL).pushReaction(PushReaction.DESTROY)))
             );
 
     public static final Map<Metal, Id<LampBlock>> COMPAT_LANTERNS =

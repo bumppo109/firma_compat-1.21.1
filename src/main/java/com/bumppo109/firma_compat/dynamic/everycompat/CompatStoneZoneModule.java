@@ -96,7 +96,7 @@ public class CompatStoneZoneModule extends StoneZoneModule {
                 .addTexture(modRes("item/stone_loose"))
                 .copyParentDrop()
                 .setTabKey(tab)
-                .excludeBlockTypes("tfc:.*")
+                .excludeBlockTypes("tfc:.*").excludeBlockTypes("nomansland:silt")
                 .build();
         this.addEntry(LOOSE);
 
@@ -111,7 +111,7 @@ public class CompatStoneZoneModule extends StoneZoneModule {
                 .addRecipe(modRes("crafting/loose_stone_cobble"))
                 .dropSelf()
                 .setTabKey(tab)
-                .excludeBlockTypes("tfc:.*")
+                .excludeBlockTypes("tfc:.*").excludeBlockTypes("nomansland:silt")
                 .build();
         this.addEntry(LOOSE_COBBLE);
 
@@ -125,7 +125,7 @@ public class CompatStoneZoneModule extends StoneZoneModule {
                 .defaultRecipe()
                 .dropSelf()
                 .setTabKey(tab)
-                .excludeBlockTypes("tfc:.*")
+                .excludeBlockTypes("tfc:.*").excludeBlockTypes("nomansland:silt")
                 .build();
         this.addEntry(HARDENED_COBBLE);
 
@@ -142,7 +142,7 @@ public class CompatStoneZoneModule extends StoneZoneModule {
                 .addTag(TFCTags.Blocks.CAN_COLLAPSE, Registries.BLOCK)
                 .noDrops()
                 .setTabKey(tab)
-                .excludeBlockTypes("tfc:.*")
+                .excludeBlockTypes("tfc:.*").excludeBlockTypes("nomansland:silt")
                 .build();
         this.addEntry(HARDENED);
 
@@ -153,7 +153,7 @@ public class CompatStoneZoneModule extends StoneZoneModule {
                 .requiresFromMap(LOOSE.blocks)
                 .addTexture(modRes("item/stone_brick"), PaletteStrategies.MAIN_CHILD)
                 .addTag(modRes("compat_brick"), Registries.ITEM)
-                .excludeBlockTypes("tfc:.*")
+                .excludeBlockTypes("tfc:.*").excludeBlockTypes("nomansland:silt")
                 .setTabKey(tab)
                 .build();
         this.addEntry(BRICK);
@@ -167,7 +167,7 @@ public class CompatStoneZoneModule extends StoneZoneModule {
                 .addTag(TFCTags.Blocks.AQUEDUCTS, Registries.BLOCK)
                 .addRecipe(modRes("crafting/stone_brick_aqueduct"))
                 .dropSelf()
-                .excludeBlockTypes("tfc:.*")
+                .excludeBlockTypes("tfc:.*").excludeBlockTypes("nomansland:silt")
                 .setTabKey(tab)
                 .build();
         this.addEntry(AQUEDUCT);
@@ -188,7 +188,7 @@ public class CompatStoneZoneModule extends StoneZoneModule {
                     .copyParentDrop()
                     .setRenderType(RenderLayer.CUTOUT)
                     .setTabKey(tab)
-                    .excludeBlockTypes("tfc:.*")
+                    .excludeBlockTypes("tfc:.*").excludeBlockTypes("nomansland:silt")
                     .build();
 
             this.addEntry(ungradedSet);
@@ -215,50 +215,14 @@ public class CompatStoneZoneModule extends StoneZoneModule {
                         .copyParentDrop()
                         .setRenderType(RenderLayer.CUTOUT)
                         .setTabKey(tab)
-                        .excludeBlockTypes("tfc:.*")
+                        .excludeBlockTypes("tfc:.*").excludeBlockTypes("nomansland:silt")
                         .build();
 
                 this.addEntry(gradedSet);
                 ORE_ENTRY_SETS.put(gradeName + "_" + oreName, gradedSet);
             }
         }
-
-        /* TODO - pending mod with mud brick set
-        MUD_BRICK = ItemOnlyEntrySet.builder(MudType.class, "brick",
-                        getModItem("mud_brick"), () -> VanillaMudTypes.MUD,
-                        w -> new Item(new Item.Properties())
-                )
-                .addTexture(modRes("item/mud_brick"), PaletteStrategies.MAIN_CHILD)
-                .excludeBlockTypes("tfc:.*")
-                .setTabKey(tab)
-                .build();
-        this.addEntry(MUD_BRICK);
-
-        DRYING_MUD_BRICK = StoneZoneEntrySet.of(MudType.class,"bricks", "drying",
-                        getModBlock("drying_mud_brick"), () -> VanillaMudTypes.MUD,
-                        mudType -> new DryingBricksBlock(ExtendedProperties.of(MapColor.DIRT).noCollission().noOcclusion().instabreak().sound(SoundType.STEM).randomTicks()
-                                .blockEntity(TFCBlockEntities.TICK_COUNTER), () -> MUD_BRICK.items.get(mudType))
-                )
-                .requiresFromMap(MUD_BRICK.items)
-                .addTag(BlockTags.MINEABLE_WITH_SHOVEL, Registries.BLOCK)
-                .addRecipe(modRes("crafting/drying_mud_bricks"))
-                .copyParentDrop()
-                .dropSelf()
-                .excludeBlockTypes("tfc:.*")
-                .setTabKey(tab)
-                .build();
-        this.addEntry(DRYING_MUD_BRICK);
-
-         */
     }
-
-    /*
-    @Override
-    public boolean isEntryAlreadyRegistered(String entrySetId, String blockId, BlockType blockType, Registry<?> registry) {
-        return false;
-    }
-     */
-
 
     @Override
     public void addDynamicClientResources(Consumer<ResourceGenTask> executor) {

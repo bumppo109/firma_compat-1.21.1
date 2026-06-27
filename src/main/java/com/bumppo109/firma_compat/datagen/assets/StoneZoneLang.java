@@ -17,7 +17,7 @@ public class StoneZoneLang extends LanguageProvider {
     protected void addTranslations() {
         add("block_type.firma_compat.loose", "%s Loose");
         add("block_type.firma_compat.hardened", "%s Hardened");
-        add("block_type.firma_compat.aqueduct", "%s Aqueduct");
+        add("block_type.firma_compat.brick_aqueduct", "%s Brick Aqueduct");
         add("item_type.firma_compat.brick", "%s Brick");
 
         add("block_type.firma_compat.loose_cobble", "Loose %s Cobble");

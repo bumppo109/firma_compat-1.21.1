@@ -1,7 +1,0 @@
-{
-  "parent": "firma_compat:block/vexxed_template/twig_45",
-  "textures": {
-    "side": "minecraft:block/warped_stem",
-    "top": "minecraft:block/warped_stem_top"
-  }
-}

@@ -69,11 +69,13 @@ import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent.Operatio
 import static vazkii.patchouli.api.PatchouliAPI.LOGGER;
 
 public class CompatFaunas {
+    //fish
     public static final CompatFaunas.Id<TFCCod> COD;
     public static final CompatFaunas.Id<Jellyfish> JELLYFISH;
     public static final CompatFaunas.Id<TFCTropicalFish> TROPICAL_FISH;
     public static final CompatFaunas.Id<TFCPufferfish> PUFFERFISH;
     public static final Map<Fish, CompatFaunas.Id<FreshwaterFish>> FISH;
+
     public static final CompatFaunas.Id<AquaticCritter> LOBSTER;
     public static final CompatFaunas.Id<AquaticCritter> CRAYFISH;
     public static final CompatFaunas.Id<AquaticCritter> ISOPOD;

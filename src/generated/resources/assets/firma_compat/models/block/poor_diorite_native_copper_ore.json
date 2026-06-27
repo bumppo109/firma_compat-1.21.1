@@ -1,7 +1,0 @@
-{
-  "parent": "tfc:block/ore",
-  "textures": {
-    "all": "minecraft:block/diorite",
-    "overlay": "tfc:block/ore/poor_native_copper"
-  }
-}

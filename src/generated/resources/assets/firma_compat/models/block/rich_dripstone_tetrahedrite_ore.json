@@ -1,7 +1,0 @@
-{
-  "parent": "tfc:block/ore",
-  "textures": {
-    "all": "minecraft:block/dripstone_block",
-    "overlay": "tfc:block/ore/rich_tetrahedrite"
-  }
-}

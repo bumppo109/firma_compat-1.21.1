@@ -179,7 +179,8 @@ dependencies {
     //1.21.1-4.0.19
     //implementation "curse.maven:terrafirmacraft-302973:7634816"
     //implementation "curse.maven:terrafirmacraft-302973:8063726"
-    implementation "curse.maven:terrafirmacraft-302973:8296252"
+    //implementation "curse.maven:terrafirmacraft-302973:8296252"
+    implementation "curse.maven:terrafirmacraft-302973:8319710"
 
     //Patchoili 1.21.1-92
     implementation "curse.maven:patchouli-306770:6842247"
@@ -214,7 +215,7 @@ dependencies {
     compileOnly "curse.maven:legendary-survival-overhaul-840254:7469871"
 
     //Lithostitched v1.5.7-Neoforge 1.21.1
-    compileOnly "curse.maven:lithostitched-936015:7395055"
+    implementation "curse.maven:lithostitched-936015:7395055"
 
     //Beneath
     compileOnly "curse.maven:beneath-1113980:7503901"

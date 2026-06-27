@@ -28,6 +28,11 @@ public class BuiltinItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        for (Rock rock : Rock.VALUES) {
+            Block susGravelBlock = ModBlocks.SUSPICIOUS_GRAVEL.get(rock).get();
+            withExistingParent(blockPathName(susGravelBlock), modLoc("block/suspicious_" + rock.getSerializedName() + "_gravel_0"));
+        }
+
         Item sweetBerryJar = ModItems.SWEET_BERRIES_JAR.get();
         Item sweetBerryJarUnsealed = ModItems.SWEET_BERRIES_JAR_UNSEALED.get();
         Item sweetBerryJam = ModItems.SWEET_BERRIES_JAM.get();

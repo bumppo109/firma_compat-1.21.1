@@ -42,6 +42,15 @@ public class BuiltinFauna extends DataManagerProvider<CompatFauna> {
         add(CompatFaunas.FISH.get(Fish.LARGEMOUTH_BASS), b -> b.temperature(0, 30).minGroundwater(250).months(FRESHWATER_FISH_MONTHS));
         add(CompatFaunas.FISH.get(Fish.SMALLMOUTH_BASS), b -> b.temperature(0, 30).minGroundwater(250).months(FRESHWATER_FISH_MONTHS));
         add(CompatFaunas.FISH.get(Fish.SALMON), b -> b.temperature(0, 30).minGroundwater(250).months(FRESHWATER_FISH_MONTHS));
+        add(CompatFaunas.FISH.get(Fish.ARCTIC_CHAR), b -> b.temperature(0, 30).minGroundwater(250).months(FRESHWATER_FISH_MONTHS));
+        add(CompatFaunas.FISH.get(Fish.BURBOT), b -> b.temperature(0, 30).minGroundwater(250).months(FRESHWATER_FISH_MONTHS));
+        add(CompatFaunas.FISH.get(Fish.MUKSUN), b -> b.temperature(0, 30).minGroundwater(250).months(FRESHWATER_FISH_MONTHS));
+        add(CompatFaunas.FISH.get(Fish.NORTHERN_PIKE), b -> b.temperature(0, 30).minGroundwater(250).months(FRESHWATER_FISH_MONTHS));
+        add(CompatFaunas.FISH.get(Fish.PACU), b -> b.temperature(0, 30).minGroundwater(250).months(FRESHWATER_FISH_MONTHS));
+        add(CompatFaunas.FISH.get(Fish.PEACOCK_BASS), b -> b.temperature(0, 30).minGroundwater(250).months(FRESHWATER_FISH_MONTHS));
+        add(CompatFaunas.FISH.get(Fish.RED_PIRANHA), b -> b.temperature(0, 30).minGroundwater(250).months(FRESHWATER_FISH_MONTHS));
+        add(CompatFaunas.FISH.get(Fish.SPOTTED_GUDGEON), b -> b.temperature(0, 30).minGroundwater(250).months(FRESHWATER_FISH_MONTHS));
+        add(CompatFaunas.FISH.get(Fish.TILAPIA), b -> b.temperature(0, 30).minGroundwater(250).months(FRESHWATER_FISH_MONTHS));
 
         add(CompatFaunas.PENGUIN, b -> b.maxTemperature(-5).minGroundwater(250));
         add(CompatFaunas.LEOPARD_SEAL, b -> b.maxTemperature(5).minGroundwater(250));

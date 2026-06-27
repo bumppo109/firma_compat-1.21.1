@@ -9,7 +9,6 @@ import com.bumppo109.firma_compat.integration.firmalife.CompatFLBlocks;
 import com.bumppo109.firma_compat.integration.rnr.CompatRNR;
 import com.bumppo109.firma_compat.integration.rnr.RNRCompatBlocks;
 import com.eerussianguy.firmalife.common.blocks.*;
-import net.dries007.tfc.common.blocks.TFCBlocks;
 import net.dries007.tfc.common.blocks.devices.BarrelBlock;
 import net.dries007.tfc.common.blocks.devices.DryingBricksBlock;
 import net.dries007.tfc.common.blocks.devices.SluiceBlock;
@@ -22,7 +21,9 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.StairsShape;
 import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
@@ -41,13 +42,27 @@ public class BuiltinBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
 
         for (Rock rock : Rock.values()){
-            ResourceLocation texture = ResourceLocation.fromNamespaceAndPath("tfc", "block/rock/cobble/" + rock.getSerializedName());
-            ModelFile cubeAll = models().cubeAll("hardened_" + rock.getSerializedName(), texture);
+            ResourceLocation cobbleTexture = ResourceLocation.fromNamespaceAndPath("tfc", "block/rock/cobble/" + rock.getSerializedName());
+            ResourceLocation susGravelTexture0 = ResourceLocation.fromNamespaceAndPath(FirmaCompat.MODID, "block/compat_suspicious_" + rock.getSerializedName() + "_gravel_0");
+            ResourceLocation susGravelTexture1 = ResourceLocation.fromNamespaceAndPath(FirmaCompat.MODID, "block/compat_suspicious_" + rock.getSerializedName() + "_gravel_1");
+            ResourceLocation susGravelTexture2 = ResourceLocation.fromNamespaceAndPath(FirmaCompat.MODID, "block/compat_suspicious_" + rock.getSerializedName() + "_gravel_2");
+            ResourceLocation susGravelTexture3 = ResourceLocation.fromNamespaceAndPath(FirmaCompat.MODID, "block/compat_suspicious_" + rock.getSerializedName() + "_gravel_3");
 
+            ModelFile hardenedCobbleModel = models().cubeAll("hardened_" + rock.getSerializedName(), cobbleTexture);
+            ModelFile susGravelModel0 = models().cubeAll("suspicious_" + rock.getSerializedName() + "_gravel_0", susGravelTexture0);
+            ModelFile susGravelModel1 = models().cubeAll("suspicious_" + rock.getSerializedName() + "_gravel_1", susGravelTexture1);
+            ModelFile susGravelModel2 = models().cubeAll("suspicious_" + rock.getSerializedName() + "_gravel_2", susGravelTexture2);
+            ModelFile susGravelModel3 = models().cubeAll("suspicious_" + rock.getSerializedName() + "_gravel_3", susGravelTexture3);
 
             Block hardCobbleBlock = ModBlocks.COMPAT_HARDENED_COBBLE.get(rock).get();
-            //blockstate and model files are not generated
-            simpleBlockWithItem(hardCobbleBlock, cubeAll);
+            Block susGravelBlock = ModBlocks.SUSPICIOUS_GRAVEL.get(rock).get();
+
+            simpleBlockWithItem(hardCobbleBlock, hardenedCobbleModel);
+            getVariantBuilder(susGravelBlock)
+                    .partialState().with(BlockStateProperties.DUSTED, 0).modelForState().modelFile(susGravelModel0).addModel()
+                    .partialState().with(BlockStateProperties.DUSTED, 1).modelForState().modelFile(susGravelModel1).addModel()
+                    .partialState().with(BlockStateProperties.DUSTED, 2).modelForState().modelFile(susGravelModel2).addModel()
+                    .partialState().with(BlockStateProperties.DUSTED, 3).modelForState().modelFile(susGravelModel3).addModel();
         }
 
         //Food

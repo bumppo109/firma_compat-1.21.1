@@ -4,7 +4,6 @@ import com.bumppo109.firma_compat.FirmaCompat;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.*;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.biome.Biome;
@@ -23,6 +22,22 @@ public class ModTags {
         public static final TagKey<Block> TWIGS = createTag("twigs");
         public static final TagKey<Block> UNLIT_BLOCKS = createTag("unlit_blocks");
         public static final TagKey<Block> HARDENED_COBBLESTONE = createTag("hardened_cobblestone");
+
+        public static final TagKey<Block> PROCESSOR_SOIL_TYPES = createTag("processor/soil_type");
+        public static final TagKey<Block> PROCESSOR_SOIL_TYPE_GRASS = createTag("processor/soil_type/grass");
+        public static final TagKey<Block> PROCESSOR_SOIL_TYPE_PODZOL = createTag("processor/soil_type/podzol");
+        public static final TagKey<Block> PROCESSOR_SOIL_TYPE_DIRT_PATH = createTag("processor/soil_type/dirt_path");
+        public static final TagKey<Block> PROCESSOR_SOIL_TYPE_DIRT = createTag("processor/soil_type/dirt");
+        public static final TagKey<Block> PROCESSOR_SOIL_TYPE_COARSE_DIRT = createTag("processor/soil_type/coarse_dirt");
+        public static final TagKey<Block> PROCESSOR_SOIL_TYPE_ROOTED_DIRT = createTag("processor/soil_type/rooted_dirt");
+        public static final TagKey<Block> PROCESSOR_SOIL_TYPE_FARMLAND = createTag("processor/soil_type/farmland");
+        public static final TagKey<Block> PROCESSOR_SOIL_TYPE_MUD = createTag("processor/soil_type/mud");
+        public static final TagKey<Block> PROCESSOR_SOIL_TYPE_MUD_BRICKS = createTag("processor/soil_type/mud_bricks");
+        public static final TagKey<Block> PROCESSOR_SOIL_TYPE_MUD_BRICK_STAIRS = createTag("processor/soil_type/mud_brick_stairs");
+        public static final TagKey<Block> PROCESSOR_SOIL_TYPE_MUD_BRICK_SLAB = createTag("processor/soil_type/mud_brick_slab");
+        public static final TagKey<Block> PROCESSOR_SOIL_TYPE_MUDDY_ROOT = createTag("processor/soil_type/muddy_root");
+
+        public static final TagKey<Block> PROCESSOR_REPLACE_STONE = createTag("processor/replace_stone");
 
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(FirmaCompat.MODID, name));

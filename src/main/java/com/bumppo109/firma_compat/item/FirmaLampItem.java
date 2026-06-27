@@ -5,10 +5,13 @@ import net.dries007.tfc.common.blocks.devices.LampBlock;
 import net.dries007.tfc.common.fluids.FluidHelpers;
 import net.dries007.tfc.common.items.LampBlockItem;
 import net.dries007.tfc.util.data.LampFuel;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.neoforge.fluids.FluidStack;
 import net.neoforged.neoforge.fluids.capability.IFluidHandler;
@@ -74,5 +77,14 @@ public class FirmaLampItem extends LampBlockItem {
                 handler.drain(1, IFluidHandler.FluidAction.EXECUTE);
             }
         }
+    }
+
+    @Override
+    public boolean shouldCauseReequipAnimation(
+            ItemStack oldStack,
+            ItemStack newStack,
+            boolean slotChanged
+    ) {
+        return false;
     }
 }

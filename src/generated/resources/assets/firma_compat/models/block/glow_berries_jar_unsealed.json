@@ -1,7 +1,0 @@
-{
-  "parent": "tfc:block/jar_no_lid",
-  "textures": {
-    "1": "firma_compat:block/glow_berries_jar",
-    "2": "tfc:block/jar_no_lid"
-  }
-}

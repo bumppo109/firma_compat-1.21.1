@@ -1,7 +1,0 @@
-{
-  "parent": "tfc:block/ore",
-  "textures": {
-    "all": "minecraft:block/tuff",
-    "overlay": "tfc:block/ore/normal_cassiterite"
-  }
-}
