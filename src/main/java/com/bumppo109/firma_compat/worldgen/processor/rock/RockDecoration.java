@@ -1,7 +1,7 @@
 package com.bumppo109.firma_compat.worldgen.processor.rock;
 
+
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.Block;
 
 
 public enum RockDecoration

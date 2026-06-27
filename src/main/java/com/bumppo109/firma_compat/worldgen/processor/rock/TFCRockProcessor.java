@@ -1,14 +1,14 @@
 package com.bumppo109.firma_compat.worldgen.processor.rock;
 
+
 import com.bumppo109.firma_compat.FirmaCompat;
 import com.bumppo109.firma_compat.util.TFCCodecs;
 import com.bumppo109.firma_compat.worldgen.processor.ModStructureProcessors;
-import com.mojang.serialization.MapCodec;
 
+import com.bumppo109.firma_compat.worldgen.processor.RockReplacement;
+import com.mojang.serialization.MapCodec;
 import net.dries007.tfc.common.blocks.rock.Rock;
-import net.dries007.tfc.common.blocks.rock.Rock.BlockType;
 import net.dries007.tfc.world.chunkdata.ChunkData;
-import net.dries007.tfc.world.chunkdata.RockData;
 import net.dries007.tfc.world.settings.RockSettings;
 
 import net.minecraft.core.BlockPos;
@@ -28,17 +28,18 @@ public class TFCRockProcessor extends StructureProcessor
             TFCCodecs.TFC_ROCK;
 
 
-    private final Map<Block, BlockType> replacements;
+    private final Map<Block, RockReplacement> replacements;
 
 
     public TFCRockProcessor(
-            Map<Block, BlockType> replacements)
+            Map<Block, RockReplacement> replacements)
     {
-        this.replacements = Map.copyOf(replacements);
+        this.replacements =
+                Map.copyOf(replacements);
     }
 
 
-    public Map<Block, BlockType> getReplacements()
+    public Map<Block, RockReplacement> getReplacements()
     {
         return replacements;
     }
@@ -58,13 +59,13 @@ public class TFCRockProcessor extends StructureProcessor
                 transformed.state();
 
 
-        BlockType type =
+        RockReplacement replacement =
                 replacements.get(
                         state.getBlock()
                 );
 
 
-        if (type == null)
+        if (replacement == null)
         {
             return transformed;
         }
@@ -90,10 +91,11 @@ public class TFCRockProcessor extends StructureProcessor
                 );
 
 
-        BlockState replacement =
+        BlockState result =
                 TFCRockLookup.get(
                         rock,
-                        type
+                        replacement,
+                        decoration
                 );
 
 
@@ -103,14 +105,14 @@ public class TFCRockProcessor extends StructureProcessor
                         state.getBlock()
                 ),
                 BuiltInRegistries.BLOCK.getKey(
-                        replacement.getBlock()
+                        result.getBlock()
                 )
         );
 
 
         return new StructureTemplate.StructureBlockInfo(
                 transformed.pos(),
-                replacement,
+                result,
                 transformed.nbt()
         );
     }

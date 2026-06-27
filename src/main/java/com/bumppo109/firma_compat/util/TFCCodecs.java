@@ -1,5 +1,6 @@
 package com.bumppo109.firma_compat.util;
 
+import com.bumppo109.firma_compat.worldgen.processor.RockReplacement;
 import com.bumppo109.firma_compat.worldgen.processor.rock.TFCRockProcessor;
 import com.bumppo109.firma_compat.worldgen.processor.soil.TFCSoilProcessor;
 import com.bumppo109.firma_compat.worldgen.processor.soil.TFCSoilProcessor.TagReplacement;
@@ -98,10 +99,10 @@ public final class TFCCodecs
                     )
             );
 
-    public static final Codec<Rock.BlockType> ROCK_BLOCK_TYPE =
+    public static final Codec<RockReplacement> ROCK_REPLACEMENT =
             Codec.STRING.xmap(
-                    Rock.BlockType::valueOf,
-                    Rock.BlockType::name
+                    RockReplacement::valueOf,
+                    RockReplacement::name
             );
 
 
@@ -111,7 +112,7 @@ public final class TFCCodecs
 
                                     Codec.unboundedMap(
                                                     BuiltInRegistries.BLOCK.byNameCodec(),
-                                                    ROCK_BLOCK_TYPE
+                                                    ROCK_REPLACEMENT
                                             )
                                             .optionalFieldOf(
                                                     "replacements",
