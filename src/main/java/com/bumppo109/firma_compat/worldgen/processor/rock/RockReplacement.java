@@ -11,12 +11,16 @@ public enum RockReplacement
 {
     RAW,
     HARDENED,
-    COBBLE,
+    LOOSE_COBBLE,
+    HARDENED_COBBLE,
     GRAVEL,
     BRICKS,
     CRACKED_BRICKS,
     MOSSY_BRICKS,
-    SUSPICIOUS_GRAVEL;
+    SAND,
+    SANDSTONE,
+    SUSPICIOUS_GRAVEL,
+    SUSPICIOUS_SAND;
 
 
 

@@ -13,9 +13,9 @@ public final class ModStructureProcessors
     public static final DeferredRegister<StructureProcessorType<?>> PROCESSORS =
             DeferredRegister.create(Registries.STRUCTURE_PROCESSOR, FirmaCompat.MODID);
 
-    public static final Supplier<StructureProcessorType<TFCProcessor>> TFC_PROCESSOR =
+    public static final Supplier<StructureProcessorType<TFCProcessor>> TFC_REPLACER =
             PROCESSORS.register(
-                    "tfc_processor",
+                    "tfc_replacer",
                     () -> () -> TFCProcessor.CODEC
             );
 

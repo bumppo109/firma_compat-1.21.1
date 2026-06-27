@@ -9,6 +9,7 @@ import com.bumppo109.firma_compat.integration.rnr.RNRCompatBlocks;
 import com.bumppo109.firma_compat.integration.rnr.RNRCompatItems;
 import net.dries007.tfc.common.blocks.rock.Ore;
 import net.dries007.tfc.common.blocks.rock.Rock;
+import net.dries007.tfc.common.blocks.soil.SandBlockType;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -17,6 +18,8 @@ import net.neoforged.fml.ModList;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+
+import java.util.Locale;
 
 import static com.bumppo109.firma_compat.block.ModBlocks.GRADED_ORES;
 import static com.bumppo109.firma_compat.block.ModBlocks.ORES;
@@ -31,6 +34,10 @@ public class BuiltinItemModelProvider extends ItemModelProvider {
         for (Rock rock : Rock.VALUES) {
             Block susGravelBlock = ModBlocks.SUSPICIOUS_GRAVEL.get(rock).get();
             withExistingParent(blockPathName(susGravelBlock), modLoc("block/suspicious_" + rock.getSerializedName() + "_gravel_0"));
+        }
+        for (SandBlockType sand : SandBlockType.values()) {
+            Block susSandBlock = ModBlocks.SUSPICIOUS_SAND.get(sand).get();
+            withExistingParent(blockPathName(susSandBlock), modLoc("block/suspicious_" + sand.name().toLowerCase(Locale.ROOT) + "_sand_0"));
         }
 
         Item sweetBerryJar = ModItems.SWEET_BERRIES_JAR.get();

@@ -1,9 +1,6 @@
 package com.bumppo109.firma_compat.util;
 
 import com.bumppo109.firma_compat.worldgen.processor.ProcessorReplacement;
-import com.bumppo109.firma_compat.worldgen.processor.TFCRockProcessor;
-import com.bumppo109.firma_compat.worldgen.processor.soil.TFCSoilProcessor;
-import com.bumppo109.firma_compat.worldgen.processor.soil.TFCSoilProcessor.TagReplacement;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.MapCodec;
@@ -39,92 +36,5 @@ public final class TFCCodecs
                         }
                     },
                     Enum::name
-            );
-
-
-    public static final Codec<TagReplacement> TAG_REPLACEMENT_CODEC =
-            RecordCodecBuilder.create(instance ->
-                    instance.group(
-
-                            net.minecraft.resources.ResourceLocation.CODEC
-                                    .fieldOf("tag")
-                                    .forGetter(
-                                            TagReplacement::getTagLocation
-                                    ),
-
-                            SOIL_BLOCK_TYPE
-                                    .fieldOf("soil")
-                                    .forGetter(
-                                            TagReplacement::getType
-                                    )
-
-                    ).apply(
-                            instance,
-                            TagReplacement::new
-                    )
-            );
-
-
-    public static final MapCodec<TFCSoilProcessor> TFC_SOIL =
-            RecordCodecBuilder.mapCodec(instance ->
-                    instance.group(
-
-                            Codec.unboundedMap(
-                                            BuiltInRegistries.BLOCK.byNameCodec(),
-                                            SOIL_BLOCK_TYPE
-                                    )
-                                    .optionalFieldOf(
-                                            "replacements",
-                                            Map.of()
-                                    )
-                                    .forGetter(
-                                            TFCSoilProcessor::getReplacements
-                                    ),
-
-
-                            TAG_REPLACEMENT_CODEC
-                                    .listOf()
-                                    .optionalFieldOf(
-                                            "tag_replacements",
-                                            List.of()
-                                    )
-                                    .forGetter(
-                                            TFCSoilProcessor::getTags
-                                    )
-
-                    ).apply(
-                            instance,
-                            TFCSoilProcessor::new
-                    )
-            );
-
-    public static final Codec<ProcessorReplacement> ROCK_REPLACEMENT =
-            Codec.STRING.xmap(
-                    ProcessorReplacement::valueOf,
-                    ProcessorReplacement::name
-            );
-
-
-    public static final MapCodec<TFCRockProcessor> TFC_ROCK =
-            RecordCodecBuilder.mapCodec(instance ->
-                    instance.group(
-
-                                    Codec.unboundedMap(
-                                                    BuiltInRegistries.BLOCK.byNameCodec(),
-                                                    ROCK_REPLACEMENT
-                                            )
-                                            .optionalFieldOf(
-                                                    "replacements",
-                                                    Map.of()
-                                            )
-                                            .forGetter(
-                                                    TFCRockProcessor::getReplacements
-                                            )
-
-                            )
-                            .apply(
-                                    instance,
-                                    TFCRockProcessor::new
-                            )
             );
 }

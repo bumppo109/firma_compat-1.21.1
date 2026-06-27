@@ -20,6 +20,7 @@ import com.therighthon.rnr.common.recipe.BlockModRecipe;
 import com.therighthon.rnr.common.recipe.MattockRecipe;
 import net.cinchtail.cinchsmissingblocks.CinchsMissingBlocks;
 import net.dries007.tfc.common.TFCTags;
+import net.dries007.tfc.common.blocks.TFCBlocks;
 import net.dries007.tfc.common.blocks.rock.Ore;
 import net.dries007.tfc.common.blocks.rock.Rock;
 import net.dries007.tfc.common.items.Food;
@@ -140,6 +141,25 @@ public class BuiltinRecipes extends RecipeProvider implements ModRecipes,
                     temperatureOf(melt.metal()),
                     false
             ));
+        }
+
+        //stonecutting
+        for(Rock rock : Rock.VALUES) {
+            add(new StonecutterRecipe("firma_compat",
+                    Ingredient.of(ModBlocks.COMPAT_HARDENED_COBBLE.get(rock).get()),
+                    new ItemStack(TFCBlocks.ROCK_DECORATIONS.get(rock).get(Rock.BlockType.COBBLE).slab().get(), 2)
+                    )
+            );
+            add(new StonecutterRecipe("firma_compat",
+                            Ingredient.of(ModBlocks.COMPAT_HARDENED_COBBLE.get(rock).get()),
+                            new ItemStack(TFCBlocks.ROCK_DECORATIONS.get(rock).get(Rock.BlockType.COBBLE).stair().get())
+                    )
+            );
+            add(new StonecutterRecipe("firma_compat",
+                            Ingredient.of(ModBlocks.COMPAT_HARDENED_COBBLE.get(rock).get()),
+                            new ItemStack(TFCBlocks.ROCK_DECORATIONS.get(rock).get(Rock.BlockType.COBBLE).wall().get())
+                    )
+            );
         }
 
         //Landslide Recipes

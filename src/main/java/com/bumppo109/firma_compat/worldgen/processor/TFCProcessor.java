@@ -168,7 +168,7 @@ public class TFCProcessor
     @Override
     protected StructureProcessorType<?> getType()
     {
-        return ModStructureProcessors.TFC_PROCESSOR.get();
+        return ModStructureProcessors.TFC_REPLACER.get();
     }
 
 }

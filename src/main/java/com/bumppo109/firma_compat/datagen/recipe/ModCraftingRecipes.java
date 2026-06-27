@@ -3,6 +3,7 @@ package com.bumppo109.firma_compat.datagen.recipe;
 import com.bumppo109.firma_compat.block.*;
 import com.bumppo109.firma_compat.item.ModItems;
 import com.bumppo109.firma_compat.util.ModTags;
+import com.bumppo109.firma_compat.worldgen.processor.Decoration;
 import net.dries007.tfc.common.TFCTags;
 import net.dries007.tfc.common.blocks.DecorationBlockHolder;
 import net.dries007.tfc.common.blocks.TFCBlocks;
@@ -321,6 +322,18 @@ public interface ModCraftingRecipes extends ModRecipes
                 "polished_blackstone_bricks_from_polished_blackstone_stonecutting"
         );
 
+        //remove TFC
+        /*
+        for(Rock rock : Rock.values()) {
+            remove("tfc/rock/cobble/" + rock.getSerializedName() + "_slab");
+            remove("tfc/rock/cobble/" + rock.getSerializedName() + "_stairs");
+            remove("tfc/chisel/rock/cobble/" + rock.getSerializedName() + "_slab");
+            remove("tfc/chisel/rock/cobble/" + rock.getSerializedName() + "_stairs");
+            remove("tfc/rock/cobble/" + rock.getSerializedName() + "_wall");
+        }
+
+         */
+
         for(String suffix : List.of("copper","chiseled_copper", "cut_copper", "copper_bulb", "copper_door", "copper_trapdoor", "copper_grate")){
             if(suffix.equals("cut_copper")){
                 remove(
@@ -619,12 +632,28 @@ public interface ModCraftingRecipes extends ModRecipes
 
         for(Rock rock : Rock.values()){
             Block hardenedCobbleBlock = ModBlocks.COMPAT_HARDENED_COBBLE.get(rock).get();
+            Block cobbleSlabBlock = TFCBlocks.ROCK_DECORATIONS.get(rock).get(Rock.BlockType.COBBLE).slab().get();
+            Block cobbleStairBlock = TFCBlocks.ROCK_DECORATIONS.get(rock).get(Rock.BlockType.COBBLE).stair().get();
+            Block cobbleWallBlock = TFCBlocks.ROCK_DECORATIONS.get(rock).get(Rock.BlockType.COBBLE).wall().get();
 
             recipe()
                     .input('L', TFCBlocks.ROCK_BLOCKS.get(rock).get(Rock.BlockType.LOOSE).get().asItem())
                     .input('X', TFCItems.MORTAR)
                     .pattern("LXL", "XLX", "LXL")
                     .shaped(hardenedCobbleBlock, 4);
+            recipe()
+                    .input('X', ModBlocks.COMPAT_HARDENED_COBBLE.get(rock).get().asItem())
+                    .pattern("XXX")
+                    .shaped(cobbleSlabBlock, 6);
+            recipe()
+                    .input('X', ModBlocks.COMPAT_HARDENED_COBBLE.get(rock).get().asItem())
+                    .pattern("X  ", "XX ", "XXX")
+                    .shaped(cobbleStairBlock, 4);
+            recipe()
+                    .input('X', ModBlocks.COMPAT_HARDENED_COBBLE.get(rock).get().asItem())
+                    .pattern("XXX", "XXX")
+                    .shaped(cobbleWallBlock, 6);
+
         }
 
         for(CompatRock rock : CompatRock.VALUES){

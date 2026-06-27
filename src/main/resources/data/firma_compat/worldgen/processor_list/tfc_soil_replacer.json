@@ -1,0 +1,53 @@
+{
+  "processors": [
+    {
+      "processor_type": "firma_compat:tfc_replacer",
+      "replacements": {
+        "minecraft:grass_block": {
+          "type": "soil",
+          "replacement": "GRASS"
+        },
+        "minecraft:podzol": {
+          "type": "soil",
+          "replacement": "DUFF"
+        },
+        "minecraft:dirt_path": {
+          "type": "soil",
+          "replacement": "GRASS_PATH"
+        },
+        "minecraft:dirt": {
+          "type": "soil",
+          "replacement": "DIRT"
+        },
+        "minecraft:rooted_dirt": {
+          "type": "soil",
+          "replacement": "ROOTED_DIRT"
+        },
+        "minecraft:coarse_dirt": {
+          "type": "soil",
+          "replacement": "COARSE_DIRT"
+        },
+        "minecraft:farmland": {
+          "type": "soil",
+          "replacement": "FARMLAND"
+        },
+        "minecraft:mud": {
+          "type": "soil",
+          "replacement": "MUD"
+        },
+        "minecraft:mud_bricks": {
+          "type": "soil",
+          "replacement": "MUD_BRICKS"
+        },
+        "minecraft:mud_brick_stairs": {
+          "type": "soil",
+          "replacement": "MUD_BRICKS"
+        },
+        "minecraft:mud_brick_slab": {
+          "type": "soil",
+          "replacement": "MUD_BRICKS"
+        }
+      }
+    }
+  ]
+}

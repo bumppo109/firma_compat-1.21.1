@@ -26,7 +26,7 @@ public record SoilReplacement(
                                                     SoilBlockType::valueOf,
                                                     Enum::name
                                             )
-                                            .fieldOf("soil")
+                                            .fieldOf("replacement")
                                             .forGetter(
                                                     SoilReplacement::type
                                             )

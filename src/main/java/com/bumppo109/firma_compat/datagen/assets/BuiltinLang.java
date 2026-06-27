@@ -10,6 +10,7 @@ import com.bumppo109.firma_compat.integration.rnr.RNRCompatItems;
 import net.dries007.tfc.common.blocks.TFCBlocks;
 import net.dries007.tfc.common.blocks.rock.Ore;
 import net.dries007.tfc.common.blocks.rock.Rock;
+import net.dries007.tfc.common.blocks.soil.SandBlockType;
 import net.dries007.tfc.util.Metal;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -17,6 +18,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.LanguageProvider;
+
+import java.util.Locale;
 
 public class BuiltinLang extends LanguageProvider {
     public BuiltinLang(PackOutput output) {
@@ -200,8 +203,15 @@ public class BuiltinLang extends LanguageProvider {
 
         for(Rock rock : Rock.values()){
             Block hardCobbleBlock = ModBlocks.COMPAT_HARDENED_COBBLE.get(rock).get();
+            Block susGravelBlock = ModBlocks.SUSPICIOUS_GRAVEL.get(rock).get();
 
             add(hardCobbleBlock, "Hardened " + cleanUpString(rock.getSerializedName()) + " Cobble");
+            add(susGravelBlock, "Suspicious " + cleanUpString(rock.getSerializedName()) + " Gravel");
+        }
+        for (SandBlockType sand : SandBlockType.values()) {
+            Block susSandBlock = ModBlocks.SUSPICIOUS_SAND.get(sand).get();
+
+            add(susSandBlock, "Suspicious " + cleanUpString(sand.name().toLowerCase(Locale.ROOT)) + " Sand");
         }
 
         // Wood Related

@@ -15,6 +15,7 @@ import net.dries007.tfc.common.blocks.rock.AqueductBlock;
 import net.dries007.tfc.common.blocks.rock.Rock;
 import net.dries007.tfc.common.blocks.rock.RockAnvilBlock;
 import net.dries007.tfc.common.blocks.soil.FarmlandBlock;
+import net.dries007.tfc.common.blocks.soil.SandBlockType;
 import net.dries007.tfc.common.blocks.wood.TFCChestBlock;
 import net.dries007.tfc.common.blocks.wood.TFCTrappedChestBlock;
 import net.dries007.tfc.common.fluids.FluidProperty;
@@ -45,6 +46,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Locale;
 import java.util.Map;
 import java.util.function.BiFunction;
 import java.util.function.Function;
@@ -79,7 +81,25 @@ public class ModBlocks {
                     () -> new BrushableBlock(
                             TFCBlocks.ROCK_BLOCKS.get(rock).get(Rock.BlockType.GRAVEL).get(),
                             SoundEvents.BRUSH_GRAVEL, SoundEvents.BRUSH_GRAVEL_COMPLETED,
-                            BlockBehaviour.Properties.of().mapColor(rock.color()).instrument(NoteBlockInstrument.SNARE).strength(0.25F).sound(SoundType.SUSPICIOUS_GRAVEL).pushReaction(PushReaction.DESTROY)))
+                            BlockBehaviour.Properties.of()
+                                    .mapColor(rock.color())
+                                    .instrument(NoteBlockInstrument.SNARE)
+                                    .strength(0.25F)
+                                    .sound(SoundType.SUSPICIOUS_GRAVEL)
+                                    .pushReaction(PushReaction.DESTROY)))
+            );
+
+    public static final Map<SandBlockType, Id<BrushableBlock>> SUSPICIOUS_SAND =
+            Helpers.mapOf(SandBlockType.class,sand -> register("suspicious_" + sand.name().toLowerCase(Locale.ROOT) + "_sand",
+                    () -> new BrushableBlock(
+                            TFCBlocks.SAND.get(sand).get(),
+                            SoundEvents.BRUSH_SAND, SoundEvents.BRUSH_SAND_COMPLETED,
+                            BlockBehaviour.Properties.of()
+                                    .mapColor(sand.getMaterialColor())
+                                    .instrument(NoteBlockInstrument.SNARE)
+                                    .strength(0.25F)
+                                    .sound(SoundType.SUSPICIOUS_SAND)
+                                    .pushReaction(PushReaction.DESTROY)))
             );
 
     public static final Map<Metal, Id<LampBlock>> COMPAT_LANTERNS =

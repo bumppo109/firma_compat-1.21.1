@@ -5,8 +5,10 @@ import net.dries007.tfc.common.blocks.devices.LampBlock;
 import net.dries007.tfc.common.fluids.FluidHelpers;
 import net.dries007.tfc.common.items.LampBlockItem;
 import net.dries007.tfc.util.data.LampFuel;
+import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
@@ -15,6 +17,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.neoforge.fluids.FluidStack;
 import net.neoforged.neoforge.fluids.capability.IFluidHandler;
+
+import javax.annotation.Nullable;
 
 public class FirmaLampItem extends LampBlockItem {
 
@@ -86,5 +90,36 @@ public class FirmaLampItem extends LampBlockItem {
             boolean slotChanged
     ) {
         return false;
+    }
+
+    @Override
+    protected boolean updateCustomBlockEntityTag(
+            BlockPos pos,
+            Level level,
+            @Nullable Player player,
+            ItemStack stack,
+            BlockState state
+    ) {
+        boolean result = super.updateCustomBlockEntityTag(
+                pos,
+                level,
+                player,
+                stack,
+                state
+        );
+
+        if (!level.isClientSide && isLit(stack)) {
+            BlockState placedState = level.getBlockState(pos);
+
+            if (placedState.hasProperty(LampBlock.LIT)) {
+                level.setBlock(
+                        pos,
+                        placedState.setValue(LampBlock.LIT, true),
+                        Block.UPDATE_ALL
+                );
+            }
+        }
+
+        return result;
     }
 }

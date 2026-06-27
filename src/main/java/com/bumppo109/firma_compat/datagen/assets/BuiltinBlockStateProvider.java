@@ -16,6 +16,7 @@ import net.dries007.tfc.common.blocks.rock.LooseRockBlock;
 import net.dries007.tfc.common.blocks.rock.Ore;
 import net.dries007.tfc.common.blocks.rock.Rock;
 import net.dries007.tfc.common.blocks.rock.RockSpikeBlock;
+import net.dries007.tfc.common.blocks.soil.SandBlockType;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -31,6 +32,8 @@ import net.neoforged.neoforge.client.model.generators.ConfiguredModel;
 import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.client.model.generators.VariantBlockStateBuilder;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
+
+import java.util.Locale;
 
 public class BuiltinBlockStateProvider extends BlockStateProvider {
     public BuiltinBlockStateProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -63,6 +66,28 @@ public class BuiltinBlockStateProvider extends BlockStateProvider {
                     .partialState().with(BlockStateProperties.DUSTED, 1).modelForState().modelFile(susGravelModel1).addModel()
                     .partialState().with(BlockStateProperties.DUSTED, 2).modelForState().modelFile(susGravelModel2).addModel()
                     .partialState().with(BlockStateProperties.DUSTED, 3).modelForState().modelFile(susGravelModel3).addModel();
+        }
+
+        for (SandBlockType sand : SandBlockType.values()){
+            String sandSerializedName = sand.name().toLowerCase(Locale.ROOT);
+
+            ResourceLocation susSandTexture0 = ResourceLocation.fromNamespaceAndPath(FirmaCompat.MODID, "block/suspicious_" + sandSerializedName + "_sand_0");
+            ResourceLocation susSandTexture1 = ResourceLocation.fromNamespaceAndPath(FirmaCompat.MODID, "block/suspicious_" + sandSerializedName + "_sand_1");
+            ResourceLocation susSandTexture2 = ResourceLocation.fromNamespaceAndPath(FirmaCompat.MODID, "block/suspicious_" + sandSerializedName + "_sand_2");
+            ResourceLocation susSandTexture3 = ResourceLocation.fromNamespaceAndPath(FirmaCompat.MODID, "block/suspicious_" + sandSerializedName + "_sand_3");
+
+            ModelFile susSandModel0 = models().cubeAll("suspicious_" + sandSerializedName + "_sand_0", susSandTexture0);
+            ModelFile susSandModel1 = models().cubeAll("suspicious_" + sandSerializedName + "_sand_1", susSandTexture1);
+            ModelFile susSandModel2 = models().cubeAll("suspicious_" + sandSerializedName + "_sand_2", susSandTexture2);
+            ModelFile susSandModel3 = models().cubeAll("suspicious_" + sandSerializedName + "_sand_3", susSandTexture3);
+
+            Block susSandBlock = ModBlocks.SUSPICIOUS_SAND.get(sand).get();
+
+            getVariantBuilder(susSandBlock)
+                    .partialState().with(BlockStateProperties.DUSTED, 0).modelForState().modelFile(susSandModel0).addModel()
+                    .partialState().with(BlockStateProperties.DUSTED, 1).modelForState().modelFile(susSandModel1).addModel()
+                    .partialState().with(BlockStateProperties.DUSTED, 2).modelForState().modelFile(susSandModel2).addModel()
+                    .partialState().with(BlockStateProperties.DUSTED, 3).modelForState().modelFile(susSandModel3).addModel();
         }
 
         //Food

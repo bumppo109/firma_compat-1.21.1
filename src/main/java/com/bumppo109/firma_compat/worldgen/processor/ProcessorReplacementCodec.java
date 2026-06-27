@@ -34,6 +34,8 @@ public final class ProcessorReplacementCodec
 
             case SoilReplacement ignored ->
                     "soil";
+
+            default -> throw new IllegalStateException("Unexpected ProcessorReplacement value: " + replacement);
         };
     }
 

@@ -1,11 +1,8 @@
 package com.bumppo109.firma_compat.datagen.recipe;
 
-import com.bumppo109.firma_compat.block.CompatRock;
-import com.bumppo109.firma_compat.block.CompatWood;
 import com.bumppo109.firma_compat.block.ModBlocks;
-import com.bumppo109.firma_compat.item.ModItems;
-import net.dries007.tfc.common.blocks.DecorationBlockHolder;
 import net.dries007.tfc.common.blocks.TFCBlocks;
+import net.dries007.tfc.common.blocks.rock.Rock;
 import net.dries007.tfc.common.player.ChiselMode;
 import net.dries007.tfc.common.recipes.ChiselRecipe;
 import net.dries007.tfc.common.recipes.ingredients.BlockIngredient;
@@ -24,264 +21,281 @@ public interface ModChiselRecipes extends ModRecipes
 {
     default void chiselRecipes()
     {
+        //TFC Hardened Cobble
+        for (Rock rock : Rock.VALUES) {
+            stairSlab(
+                    () -> ModBlocks.COMPAT_HARDENED_COBBLE.get(rock).get(),
+                    () -> TFCBlocks.ROCK_DECORATIONS.get(rock).get(Rock.BlockType.COBBLE).stair().get(),
+                    () -> TFCBlocks.ROCK_DECORATIONS.get(rock).get(Rock.BlockType.COBBLE).slab().get(),
+                    TFCBlocks.ROCK_DECORATIONS.get(rock).get(Rock.BlockType.COBBLE).slab().get().asItem()
+            );
+        }
         //Rock
         stairSlab(
                 () -> Blocks.STONE,
                 () -> Blocks.STONE_STAIRS,
                 () -> Blocks.STONE_SLAB,
-                ModBlocks.ROCK_BLOCKS.get(CompatRock.STONE).get(CompatRock.BlockType.LOOSE).get().asItem()
+                Blocks.STONE_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.COBBLESTONE,
                 () -> Blocks.COBBLESTONE_STAIRS,
                 () -> Blocks.COBBLESTONE_SLAB,
-                ModBlocks.ROCK_BLOCKS.get(CompatRock.STONE).get(CompatRock.BlockType.LOOSE).get().asItem()
+                Blocks.COBBLESTONE_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.MOSSY_COBBLESTONE,
                 () -> Blocks.MOSSY_COBBLESTONE_STAIRS,
                 () -> Blocks.MOSSY_COBBLESTONE_SLAB,
-                ModBlocks.ROCK_BLOCKS.get(CompatRock.STONE).get(CompatRock.BlockType.LOOSE).get().asItem()
+                Blocks.MOSSY_COBBLESTONE_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.STONE_BRICKS,
                 () -> Blocks.STONE_BRICK_STAIRS,
                 () -> Blocks.STONE_BRICK_SLAB,
-                ModItems.STONE_BRICK.get()
+                Blocks.STONE_BRICK_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.MOSSY_STONE_BRICKS,
                 () -> Blocks.MOSSY_STONE_BRICK_STAIRS,
                 () -> Blocks.MOSSY_STONE_BRICK_SLAB,
-                ModBlocks.ROCK_BLOCKS.get(CompatRock.STONE).get(CompatRock.BlockType.LOOSE).get().asItem()
+                Blocks.MOSSY_STONE_BRICK_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.GRANITE,
                 () -> Blocks.GRANITE_STAIRS,
                 () -> Blocks.GRANITE_SLAB,
-                ModBlocks.ROCK_BLOCKS.get(CompatRock.GRANITE).get(CompatRock.BlockType.LOOSE).get().asItem()
+                Blocks.GRANITE_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.POLISHED_GRANITE,
                 () -> Blocks.POLISHED_GRANITE_STAIRS,
                 () -> Blocks.POLISHED_GRANITE_SLAB,
-                ModBlocks.ROCK_BLOCKS.get(CompatRock.GRANITE).get(CompatRock.BlockType.LOOSE).get().asItem()
+                Blocks.POLISHED_GRANITE_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.ANDESITE,
                 () -> Blocks.ANDESITE_STAIRS,
                 () -> Blocks.ANDESITE_SLAB,
-                ModBlocks.ROCK_BLOCKS.get(CompatRock.ANDESITE).get(CompatRock.BlockType.LOOSE).get().asItem()
+                Blocks.ANDESITE_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.POLISHED_ANDESITE,
                 () -> Blocks.POLISHED_ANDESITE_STAIRS,
                 () -> Blocks.POLISHED_ANDESITE_SLAB,
-                ModBlocks.ROCK_BLOCKS.get(CompatRock.ANDESITE).get(CompatRock.BlockType.LOOSE).get().asItem()
+                Blocks.POLISHED_ANDESITE_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.DIORITE,
                 () -> Blocks.DIORITE_STAIRS,
                 () -> Blocks.DIORITE_SLAB,
-                ModBlocks.ROCK_BLOCKS.get(CompatRock.DIORITE).get(CompatRock.BlockType.LOOSE).get().asItem()
+                Blocks.DIORITE_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.POLISHED_DIORITE,
                 () -> Blocks.POLISHED_DIORITE_STAIRS,
                 () -> Blocks.POLISHED_DIORITE_SLAB,
-                ModBlocks.ROCK_BLOCKS.get(CompatRock.DIORITE).get(CompatRock.BlockType.LOOSE).get().asItem()
+                Blocks.POLISHED_DIORITE_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.COBBLED_DEEPSLATE,
                 () -> Blocks.COBBLED_DEEPSLATE_STAIRS,
                 () -> Blocks.COBBLED_DEEPSLATE_SLAB,
-                ModBlocks.ROCK_BLOCKS.get(CompatRock.DEEPSLATE).get(CompatRock.BlockType.LOOSE).get().asItem()
+                Blocks.COBBLED_DEEPSLATE_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.POLISHED_DEEPSLATE,
                 () -> Blocks.POLISHED_DEEPSLATE_STAIRS,
                 () -> Blocks.POLISHED_DEEPSLATE_SLAB,
-                ModBlocks.ROCK_BLOCKS.get(CompatRock.DEEPSLATE).get(CompatRock.BlockType.LOOSE).get().asItem()
+                Blocks.POLISHED_DEEPSLATE_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.DEEPSLATE_TILES,
                 () -> Blocks.DEEPSLATE_TILE_STAIRS,
                 () -> Blocks.DEEPSLATE_TILE_SLAB,
-                ModBlocks.ROCK_BLOCKS.get(CompatRock.DEEPSLATE).get(CompatRock.BlockType.LOOSE).get().asItem()
+                Blocks.DEEPSLATE_TILE_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.TUFF,
                 () -> Blocks.TUFF_STAIRS,
                 () -> Blocks.TUFF_SLAB,
-                ModBlocks.ROCK_BLOCKS.get(CompatRock.TUFF).get(CompatRock.BlockType.LOOSE).get().asItem()
+                Blocks.TUFF_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.POLISHED_TUFF,
                 () -> Blocks.POLISHED_TUFF_STAIRS,
                 () -> Blocks.POLISHED_TUFF_SLAB,
-                ModBlocks.ROCK_BLOCKS.get(CompatRock.TUFF).get(CompatRock.BlockType.LOOSE).get().asItem()
+                Blocks.POLISHED_TUFF_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.TUFF_BRICKS,
                 () -> Blocks.TUFF_BRICK_STAIRS,
                 () -> Blocks.TUFF_BRICK_SLAB,
-                ModBlocks.ROCK_BLOCKS.get(CompatRock.TUFF).get(CompatRock.BlockType.LOOSE).get().asItem()
+                Blocks.TUFF_BRICK_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.BRICKS,
                 () -> Blocks.BRICK_STAIRS,
                 () -> Blocks.BRICK_SLAB,
-                Items.BRICK
+                Blocks.BRICK_SLAB.asItem()
         );
-        stairSlabNoExtra(
+        stairSlab(
                 () -> Blocks.MUD_BRICKS,
                 () -> Blocks.MUD_BRICK_STAIRS,
-                () -> Blocks.MUD_BRICK_SLAB
+                () -> Blocks.MUD_BRICK_SLAB,
+                Blocks.MUD_BRICK_SLAB.asItem()
         );
-        stairSlabNoExtra(
+        stairSlab(
                 () -> Blocks.SANDSTONE,
                 () -> Blocks.SANDSTONE_STAIRS,
-                () -> Blocks.SANDSTONE_SLAB
+                () -> Blocks.SANDSTONE_SLAB,
+                Blocks.SANDSTONE_SLAB.asItem()
         );
-        stairSlabNoExtra(
+        stairSlab(
                 () -> Blocks.SMOOTH_SANDSTONE,
                 () -> Blocks.SMOOTH_SANDSTONE_STAIRS,
-                () -> Blocks.SMOOTH_SANDSTONE_SLAB
+                () -> Blocks.SMOOTH_SANDSTONE_SLAB,
+                Blocks.SMOOTH_SANDSTONE_SLAB.asItem()
         );
-        stairSlabNoExtra(
+        stairSlab(
                 () -> Blocks.RED_SANDSTONE,
                 () -> Blocks.RED_SANDSTONE_STAIRS,
-                () -> Blocks.RED_SANDSTONE_SLAB
+                () -> Blocks.RED_SANDSTONE_SLAB,
+                Blocks.RED_SANDSTONE_SLAB.asItem()
         );
-        stairSlabNoExtra(
+        stairSlab(
                 () -> Blocks.SMOOTH_RED_SANDSTONE,
                 () -> Blocks.SMOOTH_RED_SANDSTONE_STAIRS,
-                () -> Blocks.SMOOTH_RED_SANDSTONE_SLAB
+                () -> Blocks.SMOOTH_RED_SANDSTONE_SLAB,
+                Blocks.SMOOTH_RED_SANDSTONE_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.PRISMARINE,
                 () -> Blocks.PRISMARINE_STAIRS,
                 () -> Blocks.PRISMARINE_SLAB,
-                Items.PRISMARINE_SHARD
+                Blocks.PRISMARINE_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.PRISMARINE_BRICKS,
                 () -> Blocks.PRISMARINE_BRICK_STAIRS,
                 () -> Blocks.PRISMARINE_BRICK_SLAB,
-                Items.PRISMARINE_SHARD
+                Blocks.PRISMARINE_BRICK_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.DARK_PRISMARINE,
                 () -> Blocks.DARK_PRISMARINE_STAIRS,
                 () -> Blocks.DARK_PRISMARINE_SLAB,
-                Items.PRISMARINE_SHARD
+                Blocks.DARK_PRISMARINE_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.NETHER_BRICKS,
                 () -> Blocks.NETHER_BRICK_STAIRS,
                 () -> Blocks.NETHER_BRICK_SLAB,
-                Items.NETHER_BRICK
+                Blocks.NETHER_BRICK_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.RED_NETHER_BRICKS,
                 () -> Blocks.RED_NETHER_BRICK_STAIRS,
                 () -> Blocks.RED_NETHER_BRICK_SLAB,
-                Items.NETHER_BRICK
+                Blocks.RED_NETHER_BRICK_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.BLACKSTONE,
                 () -> Blocks.BLACKSTONE_STAIRS,
                 () -> Blocks.BLACKSTONE_SLAB,
-                ModBlocks.ROCK_BLOCKS.get(CompatRock.BLACKSTONE).get(CompatRock.BlockType.LOOSE).get().asItem()
+                Blocks.BLACKSTONE_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.POLISHED_BLACKSTONE,
                 () -> Blocks.POLISHED_BLACKSTONE_STAIRS,
                 () -> Blocks.POLISHED_BLACKSTONE_SLAB,
-                ModBlocks.ROCK_BLOCKS.get(CompatRock.BLACKSTONE).get(CompatRock.BlockType.LOOSE).get().asItem()
+                Blocks.POLISHED_BLACKSTONE_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.POLISHED_BLACKSTONE_BRICKS,
                 () -> Blocks.POLISHED_BLACKSTONE_BRICK_STAIRS,
                 () -> Blocks.POLISHED_BLACKSTONE_BRICK_SLAB,
-                ModBlocks.ROCK_BLOCKS.get(CompatRock.BLACKSTONE).get(CompatRock.BlockType.LOOSE).get().asItem()
+                Blocks.POLISHED_BLACKSTONE_BRICK_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.END_STONE_BRICKS,
                 () -> Blocks.END_STONE_BRICK_STAIRS,
                 () -> Blocks.END_STONE_BRICK_SLAB,
-                ModBlocks.ROCK_BLOCKS.get(CompatRock.END_STONE).get(CompatRock.BlockType.LOOSE).get().asItem()
+                Blocks.END_STONE_BRICK_SLAB.asItem()
         );
-        stairSlabNoExtra(
+        stairSlab(
                 () -> Blocks.PURPUR_BLOCK,
                 () -> Blocks.PURPUR_STAIRS,
-                () -> Blocks.PURPUR_SLAB
+                () -> Blocks.PURPUR_SLAB,
+                Blocks.PURPUR_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.QUARTZ_BLOCK,
                 () -> Blocks.QUARTZ_STAIRS,
                 () -> Blocks.QUARTZ_SLAB,
-                Items.QUARTZ
+                Blocks.QUARTZ_BLOCK.asItem()
         );
         stairSlab(
                 () -> Blocks.SMOOTH_QUARTZ,
                 () -> Blocks.SMOOTH_QUARTZ_STAIRS,
                 () -> Blocks.SMOOTH_QUARTZ_SLAB,
-                Items.QUARTZ
+                Blocks.SMOOTH_QUARTZ.asItem()
         );
         chisel(
                 List.of(() -> Blocks.SMOOTH_STONE),
                 () -> Blocks.SMOOTH_STONE_SLAB,
                 ChiselMode.SLAB,
-                ItemStackProvider.of(ModBlocks.ROCK_BLOCKS.get(CompatRock.STONE).get(CompatRock.BlockType.LOOSE).get().asItem())
+                ItemStackProvider.of(Blocks.SMOOTH_STONE_SLAB.asItem())
         );
         chisel(
                 List.of(() -> Blocks.CUT_SANDSTONE),
                 () -> Blocks.CUT_SANDSTONE_SLAB,
                 ChiselMode.SLAB,
-                ItemStackProvider.empty()
+                ItemStackProvider.of(Blocks.CUT_SANDSTONE_SLAB.asItem())
         );
         chisel(
                 List.of(() -> Blocks.CUT_RED_SANDSTONE),
                 () -> Blocks.CUT_RED_SANDSTONE_SLAB,
                 ChiselMode.SLAB,
-                ItemStackProvider.empty()
+                ItemStackProvider.of(Blocks.CUT_RED_SANDSTONE_SLAB.asItem())
         );
+
+    //chiseling
         chisel(
                 List.of(() -> Blocks.BASALT),
                 () -> Blocks.SMOOTH_BASALT,
                 ChiselMode.SMOOTH,
-                ItemStackProvider.of(ModBlocks.ROCK_BLOCKS.get(CompatRock.BASALT).get(CompatRock.BlockType.LOOSE).get().asItem())
+                ItemStackProvider.empty()
         );
         chisel(
                 List.of(() -> Blocks.SMOOTH_BASALT),
                 () -> Blocks.POLISHED_BASALT,
                 ChiselMode.SMOOTH,
-                ItemStackProvider.of(ModBlocks.ROCK_BLOCKS.get(CompatRock.BASALT).get(CompatRock.BlockType.LOOSE).get().asItem())
+                ItemStackProvider.empty()
         );
         chisel(
                 List.of(() -> Blocks.STONE_BRICKS),
                 () -> Blocks.CHISELED_STONE_BRICKS,
                 ChiselMode.SMOOTH,
-                ItemStackProvider.of(ModItems.STONE_BRICK)
+                ItemStackProvider.empty()
         );
         chisel(
                 List.of(() -> Blocks.DEEPSLATE_BRICKS),
                 () -> Blocks.CHISELED_DEEPSLATE,
                 ChiselMode.SMOOTH,
-                ItemStackProvider.of(ModItems.DEEPSLATE_BRICK)
+                ItemStackProvider.empty()
         );
         chisel(
                 List.of(() -> Blocks.POLISHED_TUFF),
                 () -> Blocks.CHISELED_TUFF,
                 ChiselMode.SMOOTH,
-                ItemStackProvider.of(ModBlocks.ROCK_BLOCKS.get(CompatRock.TUFF).get(CompatRock.BlockType.LOOSE).get().asItem())
+                ItemStackProvider.empty()
         );
         chisel(
                 List.of(() -> Blocks.TUFF_BRICKS),
                 () -> Blocks.CHISELED_TUFF_BRICKS,
                 ChiselMode.SMOOTH,
-                ItemStackProvider.of(ModItems.TUFF_BRICK)
+                ItemStackProvider.empty()
         );
         chisel(
                 List.of(() -> Blocks.CUT_SANDSTONE),
@@ -299,19 +313,19 @@ public interface ModChiselRecipes extends ModRecipes
                 List.of(() -> Blocks.NETHER_BRICKS),
                 () -> Blocks.CHISELED_NETHER_BRICKS,
                 ChiselMode.SMOOTH,
-                ItemStackProvider.of(Items.NETHER_BRICK)
+                ItemStackProvider.empty()
         );
         chisel(
                 List.of(() -> Blocks.POLISHED_BLACKSTONE_BRICKS),
                 () -> Blocks.CHISELED_POLISHED_BLACKSTONE,
                 ChiselMode.SMOOTH,
-                ItemStackProvider.of(ModItems.POLISHED_BLACKSTONE_BRICK.get())
+                ItemStackProvider.empty()
         );
         chisel(
                 List.of(() -> Blocks.QUARTZ_BRICKS),
                 () -> Blocks.CHISELED_QUARTZ_BLOCK,
                 ChiselMode.SMOOTH,
-                ItemStackProvider.of(ModItems.QUARTZ_BRICK.get())
+                ItemStackProvider.empty()
         );
 
         //Wood
@@ -319,61 +333,61 @@ public interface ModChiselRecipes extends ModRecipes
                 () -> Blocks.ACACIA_PLANKS,
                 () -> Blocks.ACACIA_STAIRS,
                 () -> Blocks.ACACIA_SLAB,
-                ModItems.LUMBER.get(CompatWood.ACACIA).get()
+                Blocks.ACACIA_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.BIRCH_PLANKS,
                 () -> Blocks.BIRCH_STAIRS,
                 () -> Blocks.BIRCH_SLAB,
-                ModItems.LUMBER.get(CompatWood.BIRCH).get()
+                Blocks.BIRCH_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.CHERRY_PLANKS,
                 () -> Blocks.CHERRY_STAIRS,
                 () -> Blocks.CHERRY_SLAB,
-                ModItems.LUMBER.get(CompatWood.CHERRY).get()
+                Blocks.CHERRY_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.DARK_OAK_PLANKS,
                 () -> Blocks.DARK_OAK_STAIRS,
                 () -> Blocks.DARK_OAK_SLAB,
-                ModItems.LUMBER.get(CompatWood.DARK_OAK).get()
+                Blocks.DARK_OAK_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.JUNGLE_PLANKS,
                 () -> Blocks.JUNGLE_STAIRS,
                 () -> Blocks.JUNGLE_SLAB,
-                ModItems.LUMBER.get(CompatWood.JUNGLE).get()
+                Blocks.JUNGLE_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.MANGROVE_PLANKS,
                 () -> Blocks.MANGROVE_STAIRS,
                 () -> Blocks.MANGROVE_SLAB,
-                ModItems.LUMBER.get(CompatWood.MANGROVE).get()
+                Blocks.MANGROVE_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.OAK_PLANKS,
                 () -> Blocks.OAK_STAIRS,
                 () -> Blocks.OAK_SLAB,
-                ModItems.LUMBER.get(CompatWood.OAK).get()
+                Blocks.OAK_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.SPRUCE_PLANKS,
                 () -> Blocks.SPRUCE_STAIRS,
                 () -> Blocks.SPRUCE_SLAB,
-                ModItems.LUMBER.get(CompatWood.SPRUCE).get()
+                Blocks.SPRUCE_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.CRIMSON_PLANKS,
                 () -> Blocks.CRIMSON_STAIRS,
                 () -> Blocks.CRIMSON_SLAB,
-                ModItems.LUMBER.get(CompatWood.CRIMSON).get()
+                Blocks.CRIMSON_SLAB.asItem()
         );
         stairSlab(
                 () -> Blocks.WARPED_PLANKS,
                 () -> Blocks.WARPED_STAIRS,
                 () -> Blocks.WARPED_SLAB,
-                ModItems.LUMBER.get(CompatWood.WARPED).get()
+                Blocks.WARPED_SLAB.asItem()
         );
 
         //Copper
@@ -381,25 +395,25 @@ public interface ModChiselRecipes extends ModRecipes
                 List.of(() -> TFCBlocks.METALS.get(Metal.COPPER).get(Metal.BlockType.BLOCK).get()),
                 () -> Blocks.CHISELED_COPPER,
                 ChiselMode.SMOOTH,
-                ItemStackProvider.of(Blocks.CHISELED_COPPER.asItem())
+                ItemStackProvider.empty()
         );
         chisel(
                 List.of(() -> TFCBlocks.METALS.get(Metal.COPPER).get(Metal.BlockType.EXPOSED_BLOCK).get()),
                 () -> Blocks.EXPOSED_CHISELED_COPPER,
                 ChiselMode.SMOOTH,
-                ItemStackProvider.of(Blocks.EXPOSED_CHISELED_COPPER.asItem())
+                ItemStackProvider.empty()
         );
         chisel(
                 List.of(() -> TFCBlocks.METALS.get(Metal.COPPER).get(Metal.BlockType.WEATHERED_BLOCK).get()),
                 () -> Blocks.WEATHERED_CHISELED_COPPER,
                 ChiselMode.SMOOTH,
-                ItemStackProvider.of(Blocks.WEATHERED_CHISELED_COPPER.asItem())
+                ItemStackProvider.empty()
         );
         chisel(
                 List.of(() -> TFCBlocks.METALS.get(Metal.COPPER).get(Metal.BlockType.OXIDIZED_BLOCK).get()),
                 () -> Blocks.OXIDIZED_CHISELED_COPPER,
                 ChiselMode.SMOOTH,
-                ItemStackProvider.of(Blocks.OXIDIZED_CHISELED_COPPER.asItem())
+                ItemStackProvider.empty()
         );
     }
 

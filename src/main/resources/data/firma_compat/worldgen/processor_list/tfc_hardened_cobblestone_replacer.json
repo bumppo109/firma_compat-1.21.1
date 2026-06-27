@@ -1,0 +1,13 @@
+{
+  "processors": [
+    {
+      "processor_type": "firma_compat:tfc_replacer",
+      "replacements": {
+        "minecraft:cobblestone": {
+          "type": "rock",
+          "replacement": "HARDENED_COBBLE"
+        }
+      }
+    }
+  ]
+}
