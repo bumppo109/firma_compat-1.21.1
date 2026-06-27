@@ -1,17 +1,15 @@
 package com.bumppo109.firma_compat.worldgen.processor.rock;
 
-
 import com.bumppo109.firma_compat.block.ModBlocks;
 import com.bumppo109.firma_compat.worldgen.processor.Decoration;
-import net.dries007.tfc.common.blocks.TFCBlocks;
+
 import net.dries007.tfc.common.blocks.DecorationBlockHolder;
+import net.dries007.tfc.common.blocks.TFCBlocks;
 import net.dries007.tfc.common.blocks.rock.Rock;
 import net.dries007.tfc.common.blocks.rock.Rock.BlockType;
-import net.dries007.tfc.common.blocks.soil.SandBlockType;
 import net.dries007.tfc.world.settings.RockSettings;
 
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.IdentityHashMap;
@@ -20,6 +18,7 @@ import java.util.Map;
 
 public final class TFCRockLookup
 {
+
     private TFCRockLookup()
     {
     }
@@ -33,73 +32,117 @@ public final class TFCRockLookup
     {
         for (Rock rock : Rock.values())
         {
-            ROCK_LOOKUP.put(
-                    TFCBlocks.ROCK_BLOCKS
-                            .get(rock)
-                            .get(BlockType.RAW)
-                            .get(),
 
-                    rock
-            );
+            for (BlockType type : BlockType.values())
+            {
+                var holder =
+                        TFCBlocks.ROCK_BLOCKS
+                                .get(rock)
+                                .get(type);
+
+
+                if (holder != null)
+                {
+                    ROCK_LOOKUP.put(
+                            holder.get(),
+                            rock
+                    );
+                }
+            }
+
+
+            var decorations =
+                    TFCBlocks.ROCK_DECORATIONS
+                            .get(rock);
+
+
+            for (BlockType type : BlockType.values())
+            {
+                DecorationBlockHolder holder =
+                        decorations.get(type);
+
+
+                if (holder != null)
+                {
+                    ROCK_LOOKUP.put(
+                            holder.stair().get(),
+                            rock
+                    );
+
+                    ROCK_LOOKUP.put(
+                            holder.slab().get(),
+                            rock
+                    );
+
+                    ROCK_LOOKUP.put(
+                            holder.wall().get(),
+                            rock
+                    );
+                }
+            }
         }
     }
 
 
 
     public static BlockState get(
-            RockSettings rock,
+            RockSettings settings,
             RockReplacement replacement,
             Decoration decoration)
     {
+
         return getBlock(
-                rock,
+                settings,
                 replacement,
                 decoration
-        ).defaultBlockState();
+        )
+                .defaultBlockState();
     }
 
 
 
     private static Block getBlock(
-            RockSettings rock,
+            RockSettings settings,
             RockReplacement replacement,
             Decoration decoration)
     {
+
+        Rock rock =
+                ROCK_LOOKUP.get(
+                        settings.raw()
+                );
+
+
         return switch (replacement)
         {
+
             case RAW ->
-                    rock.raw();
+                    settings.raw();
 
 
             case HARDENED ->
-                    rock.hardened();
-
-
-            case LOOSE_COBBLE -> rock.cobble();
-
-
-            case HARDENED_COBBLE -> hardenedCobble(rock, decoration);
+                    settings.hardened();
 
 
             case GRAVEL ->
-                    rock.gravel();
+                    settings.gravel();
 
 
             case SAND ->
-                    rock.sand();
+                    settings.sand();
 
 
             case SANDSTONE ->
-                    rock.sandstone();
+                    settings.sandstone();
 
 
-            case SUSPICIOUS_GRAVEL ->
-                    suspiciousGravel(
-                            rock
-                    );
+            case LOOSE_COBBLE -> TFCBlocks.ROCK_BLOCKS.get(rock).get(BlockType.COBBLE).get();
 
 
-            case SUSPICIOUS_SAND -> suspiciousSand(rock);
+            case HARDENED_COBBLE ->
+                    ModBlocks.COMPAT_HARDENED_COBBLE
+                            .get(rock)
+                            .get();
 
 
             case BRICKS ->
@@ -124,23 +167,26 @@ public final class TFCRockLookup
                             BlockType.MOSSY_BRICKS,
                             decoration
                     );
+
+
+            default ->
+                    settings.raw();
         };
     }
 
 
 
     private static Block decorated(
-            RockSettings settings,
+            Rock rock,
             BlockType type,
             Decoration decoration)
     {
-        Rock rock =
-                ROCK_LOOKUP.get(settings.raw());
-
 
         if (rock == null)
         {
-            return settings.raw();
+            throw new IllegalStateException(
+                    "No TFC rock for replacement"
+            );
         }
 
 
@@ -159,72 +205,19 @@ public final class TFCRockLookup
                         .get(type);
 
 
-        return decoratorSwitch(decoration, holder);
-    }
-
-    private static Block hardenedCobble(RockSettings settings, Decoration decoration) {
-        Rock rock = ROCK_LOOKUP.get(settings.raw());
-
-        if (rock == null) {
-            return settings.raw();
-        }
-
-        if (decoration == Decoration.BLOCK) {
-            return ModBlocks.COMPAT_HARDENED_COBBLE.get(rock).get();
-        }
-
-
-        DecorationBlockHolder holder =
-                TFCBlocks.ROCK_DECORATIONS
-                        .get(rock)
-                        .get(BlockType.COBBLE);
-
-
-        return decoratorSwitch(decoration, holder);
-    }
-
-    private static Block decoratorSwitch(Decoration decoration, DecorationBlockHolder holder) {
-        return switch (decoration) {
+        return switch (decoration)
+        {
             case STAIRS ->
-                    holder.stair()
-                            .get();
+                    holder.stair().get();
 
             case SLAB ->
-                    holder.slab()
-                            .get();
+                    holder.slab().get();
 
             case WALL ->
-                    holder.wall()
-                            .get();
+                    holder.wall().get();
 
-            case BLOCK ->
+            default ->
                     throw new IllegalStateException();
         };
-    }
-
-    private static Block suspiciousGravel(
-            RockSettings settings)
-    {
-        Rock rock = ROCK_LOOKUP.get(settings.raw());
-
-        if (rock == null) {
-            return Blocks.RED_WOOL;
-            //return settings.gravel();
-        }
-
-        return Blocks.GREEN_WOOL;
-        //return ModBlocks.SUSPICIOUS_GRAVEL.get(rock).get();
-    }
-
-    private static Block suspiciousSand(RockSettings settings) {
-
-        for (SandBlockType sandBlockType : SandBlockType.values()) {
-
-            if(settings.sand().equals(TFCBlocks.SAND.get(sandBlockType).get())) {
-                return ModBlocks.SUSPICIOUS_SAND.get(sandBlockType).get();
-            }
-        }
-
-        return settings.sand();
     }
 }
