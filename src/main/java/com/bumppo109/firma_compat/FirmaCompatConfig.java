@@ -42,7 +42,7 @@ public class FirmaCompatConfig {
                             "Default is 0.6 (60%)"
                     )
                     .defineInRange(
-                            "sheepWoolRegrowthDelayTicks",
+                            "skeletonVariantChance",
                             0.6,
                             0,
                             1.0
@@ -76,7 +76,7 @@ public class FirmaCompatConfig {
 
             builder.pop();
 
-            builder.push("climate");
+            builder.push("world");
 
             tempLerpValue = builder
                     .comment(
@@ -137,18 +137,14 @@ public class FirmaCompatConfig {
                             Double.MAX_VALUE
                     );
 
-            builder.pop();
-
-            builder.push("world");
-
             oceanDepthScale = builder
                     .comment(
-                            "Depth scale for ocean depth",
-                            "Default: 2"
+                            "Scale for ocean depth, no change by default",
+                            "Default: 1"
                     )
                     .defineInRange(
                             "oceanDepthScale",
-                            2.0,
+                            1.0,
                             0.0,
                             4.0
                     );

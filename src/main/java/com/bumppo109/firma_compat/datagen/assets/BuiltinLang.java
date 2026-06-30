@@ -28,6 +28,20 @@ public class BuiltinLang extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
+        //config
+        add("firma_compat.configuration.entities", "Entities");
+        add("firma_compat.configuration.skeletonVariantChance", "Skeleton Variant Chance");
+        add("firma_compat.configuration.sheepWoolRegrowthDelayTicks", "Sheep Wool Regrowth Delay");
+        add("firma_compat.configuration.cowMilkingDelayTicks", "Cow Milking Delay");
+
+        add("firma_compat.configuration.world", "World");
+        add("firma_compat.configuration.tempLerpValue", "Temperature Alignment Value");
+        add("firma_compat.configuration.doTempLerp", "Should do Temperature Alignment");
+        add("firma_compat.configuration.tempScale", "Scale Noise to Temperature");
+        add("firma_compat.configuration.tempShift", "Temperature Shift Value");
+        add("firma_compat.configuration.rainScale", "Scale Noise to Rainfall");
+        add("firma_compat.configuration.oceanDepthScale", "Scale Ocean Depth");
+
         add("firma_compat.creative_tab.firma_compat", "Firma Compat");
 
         add("fluid.firma_compat.metal.netherite", "Molten Netherite");

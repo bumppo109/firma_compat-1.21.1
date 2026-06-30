@@ -1,0 +1,7 @@
+{
+  "parent": "firma_compat:block/vexxed_template/jar_unsealed",
+  "textures": {
+    "1": "firma_compat:block/sweet_berries_jar",
+    "2": "tfc:block/jar_no_lid"
+  }
+}

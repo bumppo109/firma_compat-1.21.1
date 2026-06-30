@@ -110,8 +110,7 @@ public class ModBlocks {
                             () -> new LampBlock(
                                     ExtendedProperties.of()
                                             .mapColor(metal.mapColor())
-                                            .noOcclusion()
-                                            .sound(SoundType.LANTERN)
+                                            .noOcclusion().sound(SoundType.LANTERN)
                                             .strength(4.0F, 10.0F)
                                             .randomTicks()
                                             .pushReaction(PushReaction.DESTROY)

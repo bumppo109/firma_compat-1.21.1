@@ -170,6 +170,7 @@ public class BuiltinItemModelProvider extends ItemModelProvider {
 
             withExistingParent(blockPathName(spikeBlock), modLoc("block/spike/" + rock.getSerializedName() + "_base"));
 
+
             // Rock ores (non-graded)
             var oreMap = ORES.get(rock);
             if (oreMap != null) {

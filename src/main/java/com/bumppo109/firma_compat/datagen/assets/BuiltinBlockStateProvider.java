@@ -9,6 +9,7 @@ import com.bumppo109.firma_compat.integration.firmalife.CompatFLBlocks;
 import com.bumppo109.firma_compat.integration.rnr.CompatRNR;
 import com.bumppo109.firma_compat.integration.rnr.RNRCompatBlocks;
 import com.eerussianguy.firmalife.common.blocks.*;
+import net.dries007.tfc.common.blocks.RopeAnchorBlock;
 import net.dries007.tfc.common.blocks.devices.BarrelBlock;
 import net.dries007.tfc.common.blocks.devices.DryingBricksBlock;
 import net.dries007.tfc.common.blocks.devices.SluiceBlock;
@@ -124,6 +125,17 @@ public class BuiltinBlockStateProvider extends BlockStateProvider {
                 .texture("1", glowBerryJarTexture)
                 .texture("2", ResourceLocation.fromNamespaceAndPath("tfc", "block/jar_no_lid"));
 
+        //vexxed unsealed jar
+        /*
+        ModelFile vexxedSweetUnsealedJar = models()
+                .withExistingParent(("sweet_berries_jar_unsealed"), modLoc("block/vexxed_template/jar_unsealed"))
+                .texture("1", sweetBerryJarTexture);
+        ModelFile vexxedGlowUnsealedJar = models()
+                .withExistingParent(("glow_berries_jar_unsealed"), modLoc("block/vexxed_template/jar_unsealed"))
+                .texture("1", glowBerryJarTexture);
+
+         */
+
         for (CompatWood wood : CompatWood.VALUES) {
             String woodName = wood.getSerializedName();
 
@@ -173,16 +185,6 @@ public class BuiltinBlockStateProvider extends BlockStateProvider {
                     .texture("side", logSideTexture)
                     .texture("top", logTopTexture);
 
-            ModelFile vexxedTwigModel = models()
-                    .withExistingParent(("block/twig/" + woodName), modLoc("block/vexxed_template/twig"))
-                    .texture("side", logSideTexture)
-                    .texture("top", logTopTexture);
-
-            ModelFile vexxed45Twig = models()
-                    .withExistingParent(("block/twig_45/" + woodName), modLoc("block/vexxed_template/twig_45"))
-                    .texture("side", logSideTexture)
-                    .texture("top", logTopTexture);
-
             simpleBlock(twigBlock,
                     ConfiguredModel.builder()
                             .modelFile(twigModel).rotationY(90).buildLast(),
@@ -193,7 +195,18 @@ public class BuiltinBlockStateProvider extends BlockStateProvider {
                     ConfiguredModel.builder()
                             .modelFile(twigModel).rotationY(270).buildLast()
             );
+
             /* Vexxed Twig
+            ModelFile vexxed45Twig = models()
+                    .withExistingParent(("block/twig_45/" + woodName), modLoc("block/vexxed_template/twig_45"))
+                    .texture("side", logSideTexture)
+                    .texture("top", logTopTexture);
+
+            ModelFile vexxedTwigModel = models()
+                    .withExistingParent(("block/twig/" + woodName), modLoc("block/vexxed_template/twig"))
+                    .texture("side", logSideTexture)
+                    .texture("top", logTopTexture);
+
             simpleBlock(twigBlock,
                     ConfiguredModel.builder()
                             .modelFile(vexxedTwigModel).buildLast(),
@@ -915,6 +928,7 @@ public class BuiltinBlockStateProvider extends BlockStateProvider {
             Block looseCobbleBlock = ModBlocks.ROCK_BLOCKS.get(rock).get(CompatRock.BlockType.LOOSE_COBBLE).get();
             Block hardenedCobbleBlock = ModBlocks.ROCK_BLOCKS.get(rock).get(CompatRock.BlockType.HARDENED_COBBLE).get();
             Block spikeBlock = ModBlocks.ROCK_BLOCKS.get(rock).get(CompatRock.BlockType.SPIKE).get();
+            Block ropeAnchorBlock = ModBlocks.ROCK_BLOCKS.get(rock).get(CompatRock.BlockType.ROPE_ANCHOR).get();
 
             Block rawBlock = switch (rockName) {
                 case "dripstone" -> Blocks.DRIPSTONE_BLOCK;
@@ -1034,6 +1048,15 @@ public class BuiltinBlockStateProvider extends BlockStateProvider {
                     .modelForState().modelFile(spikeMiddleModel).addModel()
                     .partialState().with(RockSpikeBlock.PART, RockSpikeBlock.Part.TIP)
                     .modelForState().modelFile(spikeTipModel).addModel();
+
+            ModelFile rockRopeAnchorModel = models().withExistingParent(("block/rope_anchor/" + rockName), ResourceLocation.fromNamespaceAndPath("tfc", "block/horizontal_rope_anchored"))
+                    .texture("texture", rockTexture);
+
+            getVariantBuilder(ropeAnchorBlock).partialState()
+                    .partialState().with(RopeAnchorBlock.FACING, Direction.EAST).modelForState().modelFile(rockRopeAnchorModel).rotationY(90).addModel()
+                    .partialState().with(RopeAnchorBlock.FACING, Direction.NORTH).modelForState().modelFile(rockRopeAnchorModel).addModel()
+                    .partialState().with(RopeAnchorBlock.FACING, Direction.SOUTH).modelForState().modelFile(rockRopeAnchorModel).rotationY(180).addModel()
+                    .partialState().with(RopeAnchorBlock.FACING, Direction.WEST).modelForState().modelFile(rockRopeAnchorModel).rotationY(270).addModel();
 
             if(ModList.get().isLoaded("firmalife")){
                 for(Ore.Grade grade : Ore.Grade.values()){

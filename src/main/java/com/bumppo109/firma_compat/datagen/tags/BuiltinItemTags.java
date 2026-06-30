@@ -110,6 +110,10 @@ public class BuiltinItemTags extends TagsProvider<Item> implements ModAccessors
         tag(PRESERVES)
                 .add(ModItems.SWEET_BERRIES_JAR_UNSEALED.get())
                 .add(ModItems.GLOW_BERRIES_JAR_UNSEALED.get());
+        tag(JAM)
+                .add(ModItems.SWEET_BERRIES_JAM.get())
+                .add(ModItems.GLOW_BERRIES_JAM.get());
+
         //Metal
         for(CompatMetal metal : CompatMetal.values()){
             if (metal.defaultOnlyParts()) {

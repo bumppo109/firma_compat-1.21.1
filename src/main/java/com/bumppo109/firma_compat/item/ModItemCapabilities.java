@@ -7,6 +7,7 @@ import net.dries007.tfc.common.component.fluid.FluidContainer;
 import net.dries007.tfc.common.component.fluid.FluidContainerHandler;
 import net.dries007.tfc.common.items.LampBlockItem;
 import net.dries007.tfc.config.TFCConfig;
+import net.dries007.tfc.util.Metal;
 import net.dries007.tfc.util.data.LampFuel;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -23,7 +24,7 @@ public class ModItemCapabilities {
     public static void register(RegisterCapabilitiesEvent event)
     {
 
-        //Wood Module
+    //Barrels
         final ItemLike[] compatBarrels = BuiltInRegistries.BLOCK.stream()
                 .filter(block -> {
                     ResourceLocation id = BuiltInRegistries.BLOCK.getKey(block);
@@ -34,6 +35,19 @@ public class ModItemCapabilities {
 
         event.registerItem(FLUID, (stack, context) -> new Barrel(stack), compatBarrels);
 
+    //Lanterns
+        for(Metal metal : Metal.values()) {
+            if(metal.allParts()) {
+                event.registerItem(
+                        Capabilities.FluidHandler.ITEM,
+                        (stack, ctx) -> new FluidContainerHandler(
+                                stack,
+                                ((LampBlockItem) stack.getItem()).containerInfo()
+                        ),
+                        ModBlocks.COMPAT_LANTERNS.get(metal).get().asItem()
+                );
+            }
+        }
         event.registerItem(
                 Capabilities.FluidHandler.ITEM,
                 (stack, ctx) -> new FluidContainerHandler(

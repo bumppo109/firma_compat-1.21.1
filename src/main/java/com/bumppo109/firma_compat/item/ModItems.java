@@ -35,14 +35,13 @@ public class ModItems {
             () -> new Item((new Item.Properties()).component(Lore.TYPE, Lore.SEALED)));
     public static final ItemId SWEET_BERRIES_JAR_UNSEALED = register("sweet_berries_jar_unsealed",
             () -> new Item((new Item.Properties()).component(Lore.TYPE, Lore.UNSEALED).craftRemainder(TFCItems.EMPTY_JAR.get())));
-    public static final ItemId SWEET_BERRIES_JAM = register("sweet_berries_jam",
-            () -> new Item((new Item.Properties())));
+    public static final ItemId SWEET_BERRIES_JAM = register("sweet_berries_jam", () -> new Item((new Item.Properties())));
+
     public static final ItemId GLOW_BERRIES_JAR = register("glow_berries_jar",
             () -> new Item((new Item.Properties()).component(Lore.TYPE, Lore.SEALED)));
     public static final ItemId GLOW_BERRIES_JAR_UNSEALED = register("glow_berries_jar_unsealed",
             () -> new Item((new Item.Properties()).component(Lore.TYPE, Lore.UNSEALED).craftRemainder(TFCItems.EMPTY_JAR.get())));
-    public static final ItemId GLOW_BERRIES_JAM = register("glow_berries_jam",
-            () -> new Item((new Item.Properties())));
+    public static final ItemId GLOW_BERRIES_JAM = register("glow_berries_jam", () -> new Item((new Item.Properties())));
 
     //Wood
     public static final ItemId COMPAT_CHEST_MINECART = register("compat_chest_minecart",

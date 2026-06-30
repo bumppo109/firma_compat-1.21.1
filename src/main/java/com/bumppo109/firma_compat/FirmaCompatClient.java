@@ -5,7 +5,6 @@ import com.bumppo109.firma_compat.block.CompatWood;
 import com.bumppo109.firma_compat.block.ModBlocks;
 import com.bumppo109.firma_compat.entity.CompatTFCEntities;
 import com.bumppo109.firma_compat.fluid.ModFluids;
-import com.bumppo109.firma_compat.integration.dynamic_light.DynamicLighHandler;
 import com.bumppo109.firma_compat.item.ModItems;
 import com.bumppo109.firma_compat.integration.firmalife.CompatFLBlocks;
 import com.bumppo109.firma_compat.data.ModDataComponents;
@@ -54,7 +53,6 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
-import static com.bumppo109.firma_compat.FirmaCompat.isDynamicLightLoaded;
 import static com.bumppo109.firma_compat.block.CompatWood.BlockType.*;
 import static com.bumppo109.firma_compat.block.CompatWood.BlockType.BARREL;
 import static com.bumppo109.firma_compat.block.CompatWood.BlockType.CLUTCH;
@@ -75,10 +73,6 @@ public class FirmaCompatClient {
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
 
-        if(isDynamicLightLoaded){
-            DynamicLighHandler.initDynamicLight();
-        }
-
         // Render Types
         final RenderType solid = RenderType.solid();
         final RenderType cutout = RenderType.cutout();
@@ -92,14 +86,14 @@ public class FirmaCompatClient {
         });
 
         registerLampLitProperty(ModBlocks.LANTERN.get());
+        ItemBlockRenderTypes.setRenderLayer(ModBlocks.LANTERN.get(), cutout);
 
         for(Metal metal : Metal.values()){
             if(metal.allParts()){
                 registerLampLitProperty(ModBlocks.COMPAT_LANTERNS.get(metal).get());
+                ItemBlockRenderTypes.setRenderLayer(ModBlocks.COMPAT_LANTERNS.get(metal).get(), cutout);
             }
         }
-
-        ItemBlockRenderTypes.setRenderLayer(ModBlocks.LANTERN.get(), cutout);
 
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.CASSITERITE_GRAVEL_DEPOSIT.get(), cutout);
         ItemBlockRenderTypes.setRenderLayer(ModBlocks.NATIVE_COPPER_GRAVEL_DEPOSIT.get(), cutout);

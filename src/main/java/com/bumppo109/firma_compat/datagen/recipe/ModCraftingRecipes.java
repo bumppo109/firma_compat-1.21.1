@@ -624,11 +624,11 @@ public interface ModCraftingRecipes extends ModRecipes
                 .shapeless(ModItems.BAMBOO_LUMBER, 2);
 
         //Rock
-        recipe().useTool(TFCTags.Items.TOOLS_CHISEL, ModItems.ANDESITE_BRICK, ModBlocks.ROCK_BLOCKS.get(CompatRock.ANDESITE).get(CompatRock.BlockType.LOOSE).get().asItem());
-        recipe().useTool(TFCTags.Items.TOOLS_CHISEL, ModItems.GRANITE_BRICK, ModBlocks.ROCK_BLOCKS.get(CompatRock.GRANITE).get(CompatRock.BlockType.LOOSE).get().asItem());
-        recipe().useTool(TFCTags.Items.TOOLS_CHISEL, ModItems.DIORITE_BRICK, ModBlocks.ROCK_BLOCKS.get(CompatRock.DIORITE).get(CompatRock.BlockType.LOOSE).get().asItem());
-        recipe().useTool(TFCTags.Items.TOOLS_CHISEL, ModItems.DRIPSTONE_BRICK, ModBlocks.ROCK_BLOCKS.get(CompatRock.DRIPSTONE).get(CompatRock.BlockType.LOOSE).get().asItem());
-        recipe().useTool(TFCTags.Items.TOOLS_CHISEL, ModItems.CALCITE_BRICK, ModBlocks.ROCK_BLOCKS.get(CompatRock.CALCITE).get(CompatRock.BlockType.LOOSE).get().asItem());
+        recipe().useTool(TFCTags.Items.TOOLS_CHISEL, ModBlocks.ROCK_BLOCKS.get(CompatRock.ANDESITE).get(CompatRock.BlockType.LOOSE).get().asItem(), ModItems.ANDESITE_BRICK.get());
+        recipe().useTool(TFCTags.Items.TOOLS_CHISEL, ModBlocks.ROCK_BLOCKS.get(CompatRock.GRANITE).get(CompatRock.BlockType.LOOSE).get().asItem(), ModItems.GRANITE_BRICK.get());
+        recipe().useTool(TFCTags.Items.TOOLS_CHISEL, ModBlocks.ROCK_BLOCKS.get(CompatRock.DIORITE).get(CompatRock.BlockType.LOOSE).get().asItem(), ModItems.DIORITE_BRICK.get());
+        recipe().useTool(TFCTags.Items.TOOLS_CHISEL, ModBlocks.ROCK_BLOCKS.get(CompatRock.DRIPSTONE).get(CompatRock.BlockType.LOOSE).get().asItem(), ModItems.DRIPSTONE_BRICK.get());
+        recipe().useTool(TFCTags.Items.TOOLS_CHISEL, ModBlocks.ROCK_BLOCKS.get(CompatRock.CALCITE).get(CompatRock.BlockType.LOOSE).get().asItem(), ModItems.CALCITE_BRICK.get());
 
         for(Rock rock : Rock.values()){
             Block hardenedCobbleBlock = ModBlocks.COMPAT_HARDENED_COBBLE.get(rock).get();

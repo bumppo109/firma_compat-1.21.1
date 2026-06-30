@@ -66,33 +66,12 @@ public class BuiltinBlockTags extends TagsProvider<Block> implements ModAccessor
     @Override
     protected void addTags(HolderLookup.Provider provider)
     {
-        //Processors
-        tag(ModTags.Blocks.PROCESSOR_SOIL_TYPES)
-                .addTag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_GRASS)
-                .addTag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_PODZOL)
-                .addTag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_DIRT_PATH)
-                .addTag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_DIRT)
-                .addTag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_COARSE_DIRT)
-                .addTag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_ROOTED_DIRT)
-                .addTag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_FARMLAND)
-                .addTag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_MUD)
-                .addTag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_MUD_BRICKS)
-                .addTag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_MUD_BRICK_STAIRS)
-                .addTag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_MUD_BRICK_SLAB)
-                .addTag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_MUDDY_ROOT);
+        tag(ModTags.Blocks.CHISELED_BOOKSHELVES).add(Blocks.CHISELED_BOOKSHELF);
 
-        tag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_GRASS).add(Blocks.GRASS_BLOCK);
-        tag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_PODZOL).add(Blocks.PODZOL);
-        tag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_DIRT_PATH).add(Blocks.DIRT_PATH);
-        tag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_DIRT).add(Blocks.DIRT);
-        tag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_COARSE_DIRT).add(Blocks.COARSE_DIRT);
-        tag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_ROOTED_DIRT).add(Blocks.ROOTED_DIRT);
-        tag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_FARMLAND).add(Blocks.FARMLAND);
-        tag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_MUD).add(Blocks.MUD);
-        tag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_MUD_BRICKS).add(Blocks.MUD_BRICKS);
-        tag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_MUD_BRICK_STAIRS).add(Blocks.MUD_BRICK_STAIRS);
-        tag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_MUD_BRICK_SLAB).add(Blocks.MUD_BRICK_SLAB);
-        tag(ModTags.Blocks.PROCESSOR_SOIL_TYPE_MUDDY_ROOT).add(Blocks.MUDDY_MANGROVE_ROOTS);
+        for (Wood wood : Wood.VALUES) {
+            tag(ModTags.Blocks.CHISELED_BOOKSHELVES)
+                    .add(TFCBlocks.WOODS.get(wood).get(Wood.BlockType.BOOKSHELF).get());
+        }
 
         //Util
         tag(PREVENT_INTERACTION)
